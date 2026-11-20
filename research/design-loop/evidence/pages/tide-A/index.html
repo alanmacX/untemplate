@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>潮线</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      background: #0d151b;
+      color: #e0e5e4;
+      font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC",
+                   "SimSun", serif;
+      --inset: clamp(1.5rem, 12vw, 12rem);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .scene {
+      position: fixed;
+      z-index: 0;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      background: linear-gradient(
+        #0c121a 0%,
+        #263940 44%,
+        #1c2e35 44.2%,
+        #0e191f 78%,
+        #1a2228 100%
+      );
+    }
+
+    .scene canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .scene::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background: linear-gradient(
+        90deg,
+        rgb(6 12 18 / 52%),
+        rgb(6 12 18 / 24%) 54%,
+        transparent 92%
+      );
+    }
+
+    .poem {
+      position: relative;
+      z-index: 1;
+      padding-inline: var(--inset);
+    }
+
+    .opening,
+    .passage {
+      display: grid;
+      align-content: start;
+    }
+
+    .opening {
+      min-block-size: 100vh;
+      min-block-size: 100svh;
+      padding-block: 12vh 4rem;
+      padding-block-start: 12svh;
+      grid-template-rows: minmax(37vh, auto) auto;
+      grid-template-rows: minmax(37svh, auto) auto;
+    }
+
+    h1,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      align-self: start;
+      font-size: clamp(2.5rem, 5.8vw, 5rem);
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.14em;
+    }
+
+    p {
+      max-inline-size: 22em;
+      font-size: clamp(1.25rem, 2.45vw, 2.125rem);
+      line-height: 1.85;
+      letter-spacing: 0.055em;
+      line-break: strict;
+      text-shadow: 0 1px 12px #0b141b;
+    }
+
+    .passage {
+      min-block-size: 60vh;
+      min-block-size: 60svh;
+      padding-block: 19vh 4rem;
+      padding-block-start: 19svh;
+    }
+
+    .ending {
+      min-block-size: 84vh;
+      min-block-size: 84svh;
+      padding-block-start: 33vh;
+      padding-block-start: 33svh;
+    }
+
+    @media (max-width: 40rem) {
+      :root {
+        --inset: clamp(1.5rem, 8vw, 3rem);
+      }
+
+      p {
+        max-inline-size: 18em;
+      }
+
+      .scene::after {
+        background: linear-gradient(
+          90deg,
+          rgb(6 12 18 / 42%),
+          rgb(6 12 18 / 14%)
+        );
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .emerge {
+        animation: emerge 1.45s ease-out both;
+      }
+
+      @keyframes emerge {
+        from { opacity: 0.48; }
+        to   { opacity: 1; }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <canvas id="shore"></canvas>
+  </div>
+
+  <main class="poem">
+    <header class="opening">
+      <h1>潮线</h1>
+      <p>凌晨四点，海退下去了一点。</p>
+    </header>
+
+    <div class="passage">
+      <p>防浪墙上还留着夜里的水印。</p>
+    </div>
+
+    <div class="passage">
+      <p>我坐在第二级台阶上，听见远处有人合上窗。</p>
+    </div>
+
+    <div class="passage ending">
+      <p>天没有亮。</p>
+    </div>
+  </main>
+
+  <script>
+    const canvas = document.querySelector("#shore");
+    const ctx = canvas.getContext("2d");
+
+    function paintShore() {
+      const { width, height } = canvas.getBoundingClientRect();
+      if (!width || !height) return;
+
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(width * ratio);
+      canvas.height = Math.round(height * ratio);
+      ctx.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
+
+      const horizon = height * 0.44;
+      const edgeLeft = height * 0.965;
+      const edgeRight = height * 0.735;
+      const stoneDepth = height * 0.028;
+      let seed = 804;
+
+      function random() {
+        seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+        return seed / 4294967296;
+      }
+
+      function fillGradient(top, bottom, stops) {
+        const gradient = ctx.createLinearGradient(0, top, 0, bottom);
+        for (const [offset, color] of stops) {
+          gradient.addColorStop(offset, color);
+        }
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, top, width, bottom - top);
+      }
+
+      function stoneBand(upperOffset, lowerOffset, color) {
+        ctx.beginPath();
+        ctx.moveTo(0, edgeLeft + upperOffset);
+        ctx.lineTo(width, edgeRight + upperOffset);
+        ctx.lineTo(width, edgeRight + lowerOffset);
+        ctx.lineTo(0, edgeLeft + lowerOffset);
+        ctx.closePath();
+        ctx.fillStyle = color;
+        ctx.fill();
+      }
+
+      fillGradient(0, horizon, [
+        [0, "#0c121a"],
+        [0.72, "#1a2932"],
+        [1, "#293b43"]
+      ]);
+
+      const mist = ctx.createRadialGradient(
+        width * 0.73, horizon, 0,
+        width * 0.73, horizon, Math.max(width * 0.53, height * 0.35)
+      );
+      mist.addColorStop(0, "rgba(151, 174, 180, 0.13)");
+      mist.addColorStop(1, "rgba(151, 174, 180, 0)");
+      ctx.fillStyle = mist;
+      ctx.fillRect(0, 0, width, horizon);
+
+      fillGradient(horizon, height, [
+        [0, "#23363d"],
+        [0.4, "#172930"],
+        [1, "#0b171e"]
+      ]);
+
+      ctx.fillStyle = "rgba(142, 166, 169, 0.17)";
+      ctx.fillRect(0, horizon, width, 1);
+
+      for (let i = 0; i < 390; i++) {
+        const depth = random() ** 1.45;
+        const x = (random() * 1.12 - 0.06) * width;
+        const y = horizon + depth * (height - horizon);
+        const length = (0.006 + random() * 0.085) * width * (0.19 + depth);
+
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.quadraticCurveTo(
+          x + length * 0.53, y - depth * 2.8,
+          x + length, y - depth * 1.3
+        );
+        ctx.lineWidth = 0.55 + depth * 0.9;
+        ctx.strokeStyle = i % 4 === 0
+          ? `rgba(3, 11, 16, ${0.12 + random() * 0.24})`
+          : `rgba(136, 163, 170, ${0.026 + random() * 0.11})`;
+        ctx.stroke();
+      }
+
+      stoneBand(0, height, "#141d24");
+      stoneBand(0, stoneDepth, "#27343a");
+      stoneBand(stoneDepth, stoneDepth * 1.72, "#111b23");
+      stoneBand(stoneDepth * 1.72, stoneDepth * 3.0, "#202c32");
+      stoneBand(stoneDepth * 3.0, stoneDepth * 3.6, "#111a20");
+
+      // A broken water stain along the upper edge of the concrete.
+      for (let i = 0; i < 95; i++) {
+        const x = random() * width;
+        const length = (0.003 + random() * 0.065) * width;
+        const slope = (edgeRight - edgeLeft) / width;
+        const y = edgeLeft + x * slope + stoneDepth * (0.28 + random() * 0.3);
+
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x + length, y + length * slope);
+        ctx.lineWidth = 0.5 + random() * 1.4;
+        ctx.strokeStyle = i % 3 === 0
+          ? "rgba(144, 161, 160, 0.15)"
+          : "rgba(6, 15, 20, 0.36)";
+        ctx.stroke();
+      }
+
+      for (let i = 0; i < 4800; i++) {
+        const x = random() * width;
+        const y = random() * height;
+        ctx.fillStyle = i % 3 === 0
+          ? "rgba(182, 196, 195, 0.085)"
+          : "rgba(3, 8, 12, 0.12)";
+        ctx.fillRect(x, y, 0.9, 0.9);
+      }
+    }
+
+    if (ctx) {
+      paintShore();
+
+      let frame;
+      window.addEventListener("resize", () => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(paintShore);
+      }, { passive: true });
+    }
+
+    if ("IntersectionObserver" in window &&
+        window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("emerge");
+            observer.unobserve(entry.target);
+          }
+        }
+      }, { threshold: 0.35 });
+
+      document.querySelectorAll(".poem p").forEach((line) => observer.observe(line));
+    }
+  </script>
+</body>
+</html>

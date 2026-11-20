@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>画纸上的苹果｜社区图书室</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f5f4f0;
+      --ink: #262521;
+      --muted: #57534c;
+      --rule: #c9c5bc;
+      --accent: #85382e;
+      --focus: #31566a;
+      --serif: "Songti SC", "Noto Serif CJK SC", SimSun, Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 1rem/1.6 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(calc(100% - 2rem), 42rem);
+      margin-inline: auto;
+      padding-block: clamp(1.5rem, 5vw, 4rem) 3rem;
+    }
+
+    header {
+      margin-block-end: 1.25rem;
+    }
+
+    h1, h2 {
+      margin: 0;
+      font-family: var(--serif);
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: clamp(1.85rem, 5vw, 2.5rem);
+    }
+
+    header p {
+      max-width: 33em;
+      margin: .5rem 0 0;
+      color: var(--muted);
+    }
+
+    fieldset {
+      min-inline-size: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    .plates {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(.75rem, 2.5vw, 1.75rem);
+    }
+
+    .plate {
+      display: block;
+      cursor: pointer;
+    }
+
+    .plate img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 960 / 1455;
+      object-fit: contain;
+      object-position: top center;
+    }
+
+    .plate-choice {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      min-height: 44px;
+      margin-top: .5rem;
+      padding: .375rem .125rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .plate:has(input:checked) .plate-choice {
+      border-color: var(--accent);
+    }
+
+    .plate-name {
+      min-width: 0;
+      font: 1.125rem/1.25 Georgia, serif;
+      overflow-wrap: anywhere;
+    }
+
+    .plate-choice input {
+      flex: none;
+      width: 1rem;
+      height: 1rem;
+      margin: 0;
+      accent-color: var(--accent);
+      cursor: inherit;
+    }
+
+    .plate-choice input:checked + .plate-name {
+      color: var(--accent);
+    }
+
+    button {
+      display: block;
+      width: fit-content;
+      min-height: 44px;
+      margin: 1rem 0 0 auto;
+      padding: .375rem .875rem;
+      border: 1px solid var(--accent);
+      border-radius: 0;
+      background: transparent;
+      color: var(--accent);
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    @media (hover: hover) {
+      button:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    #archive {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      font-size: 1.375rem;
+    }
+
+    h2 [lang="en"] {
+      font-family: Georgia, serif;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: .25rem 1rem;
+      margin: .75rem 0;
+    }
+
+    dd {
+      margin: 0;
+    }
+
+    dt, .source {
+      color: var(--muted);
+    }
+
+    .source {
+      margin: 0;
+      font-size: .875rem;
+    }
+
+    @media (min-width: 56rem) {
+      main {
+        display: grid;
+        grid-template-columns: 13rem minmax(0, 1fr);
+        column-gap: clamp(2rem, 4vw, 4rem);
+        width: min(calc(100% - 5rem), 66rem);
+      }
+
+      header {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        margin-top: .875rem;
+      }
+
+      .exhibit {
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>画纸上的苹果</h1>
+      <p>看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。</p>
+    </header>
+
+    <div class="exhibit">
+      <form id="explore">
+        <fieldset>
+          <legend class="sr-only">选择要查看档案的苹果品种</legend>
+
+          <div class="plates">
+            <label class="plate">
+              <img src="../assets/baldwin.jpg" width="960" height="1446"
+                   alt="上下两颗完整的苹果。上方的果皮多为红色，下方的果皮红绿相间。画纸边缘留有手写记录。">
+              <span class="plate-choice">
+                <input type="radio" name="plate" value="Baldwin"
+                       aria-labelledby="baldwin-name" checked>
+                <span class="plate-name" id="baldwin-name" lang="en">Baldwin</span>
+              </span>
+            </label>
+
+            <label class="plate">
+              <img src="../assets/adirondack.jpg" width="960" height="1455"
+                   alt="上方是一颗完整的红苹果，下方的纵切面露出浅色果肉和深色种子。画纸下方留有手写记录。">
+              <span class="plate-choice">
+                <input type="radio" name="plate" value="Adirondack"
+                       aria-labelledby="adirondack-name">
+                <span class="plate-name" id="adirondack-name" lang="en">Adirondack</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" aria-controls="archive">查看档案</button>
+      </form>
+
+      <section id="archive" aria-labelledby="archive-title" hidden>
+        <div aria-live="polite" aria-atomic="true">
+          <h2 id="archive-title" tabindex="-1"><span id="archive-name" lang="en"></span> 档案</h2>
+          <dl>
+            <dt>画家</dt>
+            <dd id="artist" lang="en"></dd>
+            <dt>年份</dt>
+            <dd id="year"></dd>
+            <dt>编号</dt>
+            <dd id="catalog-number"></dd>
+          </dl>
+        </div>
+        <p class="source">图档来源为美国农业部（USDA）公开档案。</p>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const records = {
+      Baldwin: {
+        artist: 'Ellen Isham Schutt',
+        year: '1909',
+        catalogNumber: 'POM00001363'
+      },
+      Adirondack: {
+        artist: 'Deborah Griscom Passmore',
+        year: '1893',
+        catalogNumber: 'POM00001337'
+      }
+    };
+
+    const form = document.getElementById('explore');
+    const archive = document.getElementById('archive');
+    const archiveTitle = document.getElementById('archive-title');
+    const archiveName = document.getElementById('archive-name');
+    const artist = document.getElementById('artist');
+    const year = document.getElementById('year');
+    const catalogNumber = document.getElementById('catalog-number');
+
+    function updateArchive() {
+      const name = form.elements.namedItem('plate').value;
+      const record = records[name];
+
+      archiveName.textContent = name;
+      artist.textContent = record.artist;
+      year.textContent = `${record.year} 年`;
+      catalogNumber.textContent = record.catalogNumber;
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      updateArchive();
+      archive.hidden = false;
+      archiveTitle.focus({ preventScroll: true });
+      archive.scrollIntoView({ block: 'nearest' });
+    });
+
+    form.addEventListener('change', () => {
+      if (!archive.hidden) updateArchive();
+    });
+  </script>
+</body>
+</html>

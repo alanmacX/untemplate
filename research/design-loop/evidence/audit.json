@@ -1,0 +1,1909 @@
+[
+  {
+    "case": "plates",
+    "arm": "A",
+    "view": "desktop",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            192,
+            64,
+            208,
+            40
+          ],
+          "size": "32px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            192,
+            118,
+            208,
+            51
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            458,
+            64,
+            381,
+            578
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            867,
+            64,
+            381,
+            578
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            460,
+            663,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            869,
+            663,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            1154,
+            710,
+            94,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 1000,
+      "background": "rgb(245, 244, 240)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "A",
+    "view": "phone",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            16,
+            24,
+            358,
+            37
+          ],
+          "size": "29.6px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            16,
+            69,
+            358,
+            51
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            16,
+            140,
+            173,
+            262
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            201,
+            140,
+            173,
+            262
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            18,
+            424,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            203,
+            424,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            280,
+            470,
+            94,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 844,
+      "background": "rgb(245, 244, 240)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "A",
+    "view": "narrow",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            16,
+            24,
+            288,
+            37
+          ],
+          "size": "29.6px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            16,
+            69,
+            288,
+            51
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            16,
+            140,
+            138,
+            209
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            166,
+            140,
+            138,
+            209
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            18,
+            371,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            168,
+            371,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            210,
+            417,
+            94,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 760,
+      "background": "rgb(245, 244, 240)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "B",
+    "view": "desktop",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            376,
+            44,
+            688,
+            53
+          ],
+          "size": "44.8px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            376,
+            105,
+            688,
+            25
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            376,
+            154,
+            332,
+            503
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            732,
+            154,
+            332,
+            503
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            376,
+            671,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            732,
+            671,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            968,
+            705,
+            96,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 1000,
+      "background": "rgb(246, 245, 241)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "B",
+    "view": "phone",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            16,
+            24,
+            358,
+            37
+          ],
+          "size": "31.2px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            16,
+            69,
+            358,
+            50
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            16,
+            134,
+            174,
+            264
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            200,
+            134,
+            174,
+            264
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            16,
+            412,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            200,
+            412,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            278,
+            446,
+            96,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 844,
+      "background": "rgb(246, 245, 241)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "B",
+    "view": "narrow",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            16,
+            24,
+            288,
+            37
+          ],
+          "size": "31.2px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            16,
+            69,
+            288,
+            50
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            16,
+            134,
+            139,
+            211
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            165,
+            134,
+            139,
+            211
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            16,
+            359,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            165,
+            359,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            208,
+            393,
+            96,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 760,
+      "background": "rgb(246, 245, 241)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "C",
+    "view": "desktop",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            376,
+            44,
+            688,
+            53
+          ],
+          "size": "44.8px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            376,
+            105,
+            688,
+            25
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            376,
+            154,
+            332,
+            503
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            732,
+            154,
+            332,
+            503
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            376,
+            668,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            732,
+            668,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            985,
+            705,
+            79,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 1000,
+      "background": "rgb(246, 245, 241)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "C",
+    "view": "phone",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            16,
+            24,
+            358,
+            37
+          ],
+          "size": "31.2px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            16,
+            69,
+            358,
+            50
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            16,
+            134,
+            174,
+            264
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            200,
+            134,
+            174,
+            264
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            16,
+            409,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            200,
+            409,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            295,
+            446,
+            79,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 844,
+      "background": "rgb(246, 245, 241)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "C",
+    "view": "narrow",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            16,
+            24,
+            288,
+            37
+          ],
+          "size": "31.2px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            16,
+            69,
+            288,
+            50
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            16,
+            134,
+            139,
+            211
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            165,
+            134,
+            139,
+            211
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            16,
+            356,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            165,
+            356,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            225,
+            393,
+            79,
+            44
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 760,
+      "background": "rgb(246, 245, 241)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "original",
+    "view": "desktop",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            384,
+            65,
+            672,
+            64
+          ],
+          "size": "56px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            384,
+            138,
+            672,
+            26
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            384,
+            184,
+            324,
+            491
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            732,
+            184,
+            324,
+            491
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            390,
+            689,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            738,
+            689,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            944,
+            739,
+            112,
+            46
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 1000,
+      "background": "rgb(247, 242, 232)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "original",
+    "view": "phone",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            18,
+            41,
+            354,
+            40
+          ],
+          "size": "34.4px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            18,
+            90,
+            354,
+            51
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            18,
+            161,
+            171,
+            259
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            201,
+            161,
+            171,
+            259
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            24,
+            434,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            207,
+            434,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            260,
+            484,
+            112,
+            46
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 844,
+      "background": "rgb(247, 242, 232)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "plates",
+    "arm": "original",
+    "view": "narrow",
+    "first": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "rect": [
+            18,
+            41,
+            284,
+            40
+          ],
+          "size": "34.4px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。",
+          "rect": [
+            18,
+            90,
+            284,
+            51
+          ],
+          "size": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "../assets/baldwin.jpg",
+          "rect": [
+            18,
+            161,
+            136,
+            206
+          ],
+          "loaded": true
+        },
+        {
+          "src": "../assets/adirondack.jpg",
+          "rect": [
+            166,
+            161,
+            136,
+            206
+          ],
+          "loaded": true
+        }
+      ],
+      "interactive": [
+        {
+          "text": "",
+          "rect": [
+            24,
+            381,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "",
+          "rect": [
+            172,
+            381,
+            16,
+            16
+          ],
+          "size": "13.3333px"
+        },
+        {
+          "text": "查看档案",
+          "rect": [
+            190,
+            431,
+            112,
+            46
+          ],
+          "size": "16px"
+        }
+      ],
+      "fullHeight": 760,
+      "background": "rgb(247, 242, 232)",
+      "overflow": false
+    },
+    "both_fully_in_first": true,
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "A",
+    "view": "desktop",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            173,
+            120,
+            1094,
+            96
+          ],
+          "size": "80px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            173,
+            490,
+            748,
+            63
+          ],
+          "size": "34px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            173,
+            1190,
+            748,
+            63
+          ],
+          "size": "34px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            173,
+            1790,
+            748,
+            63
+          ],
+          "size": "34px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            173,
+            2530,
+            748,
+            63
+          ],
+          "size": "34px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 3040,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      120,
+      490,
+      1190,
+      1790,
+      2530
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水印。"
+      ],
+      [
+        "我坐在第二级台阶上，听见远处有人合上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "A",
+    "view": "phone",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            31,
+            101,
+            328,
+            48
+          ],
+          "size": "40px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            31,
+            414,
+            328,
+            37
+          ],
+          "size": "20px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            31,
+            1004,
+            328,
+            37
+          ],
+          "size": "20px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            31,
+            1511,
+            328,
+            74
+          ],
+          "size": "20px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            31,
+            2135,
+            328,
+            37
+          ],
+          "size": "20px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 2566,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      101,
+      414,
+      1004,
+      1511,
+      2135
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水印。"
+      ],
+      [
+        "我坐在第二级台阶上，听见远处有",
+        "人合上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "A",
+    "view": "narrow",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            26,
+            91,
+            269,
+            48
+          ],
+          "size": "40px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            26,
+            372,
+            269,
+            74
+          ],
+          "size": "20px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            26,
+            904,
+            269,
+            74
+          ],
+          "size": "20px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            26,
+            1360,
+            269,
+            74
+          ],
+          "size": "20px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            26,
+            1923,
+            269,
+            37
+          ],
+          "size": "20px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 2310,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      91,
+      372,
+      904,
+      1360,
+      1923
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一",
+        "点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水",
+        "印。"
+      ],
+      [
+        "我坐在第二级台阶上，听见",
+        "远处有人合上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "B",
+    "view": "desktop",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            144,
+            130,
+            1272,
+            100
+          ],
+          "size": "89.28px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            144,
+            455,
+            1272,
+            47
+          ],
+          "size": "24px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            144,
+            514,
+            1272,
+            47
+          ],
+          "size": "24px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            144,
+            574,
+            1272,
+            47
+          ],
+          "size": "24px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            144,
+            720,
+            1272,
+            47
+          ],
+          "size": "24px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 1000,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      130,
+      455,
+      514,
+      574,
+      720
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水印。"
+      ],
+      [
+        "我坐在第二级台阶上，听见远处有人合上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "B",
+    "view": "phone",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            31,
+            110,
+            328,
+            54
+          ],
+          "size": "48px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            31,
+            343,
+            328,
+            33
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            31,
+            385,
+            328,
+            33
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            31,
+            427,
+            328,
+            66
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            31,
+            578,
+            328,
+            33
+          ],
+          "size": "17px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 844,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      110,
+      343,
+      385,
+      427,
+      578
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水印。"
+      ],
+      [
+        "我坐在第二级台阶上，听见远处有人合",
+        "上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "B",
+    "view": "narrow",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            26,
+            99,
+            269,
+            54
+          ],
+          "size": "48px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            26,
+            308,
+            269,
+            33
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            26,
+            350,
+            269,
+            33
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            26,
+            392,
+            269,
+            66
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            26,
+            534,
+            269,
+            33
+          ],
+          "size": "17px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 760,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      99,
+      308,
+      350,
+      392,
+      534
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水印。"
+      ],
+      [
+        "我坐在第二级台阶上，听见远处有",
+        "人合上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "C",
+    "view": "desktop",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            144,
+            130,
+            1272,
+            100
+          ],
+          "size": "89.28px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            144,
+            455,
+            1272,
+            47
+          ],
+          "size": "24px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            144,
+            514,
+            1272,
+            47
+          ],
+          "size": "24px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            144,
+            574,
+            1272,
+            47
+          ],
+          "size": "24px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            144,
+            720,
+            1272,
+            47
+          ],
+          "size": "24px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 1000,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      130,
+      455,
+      514,
+      574,
+      720
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水印。"
+      ],
+      [
+        "我坐在第二级台阶上，听见远处有人合上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "C",
+    "view": "phone",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            31,
+            110,
+            328,
+            54
+          ],
+          "size": "48px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            31,
+            343,
+            328,
+            33
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            31,
+            385,
+            328,
+            33
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            31,
+            427,
+            328,
+            66
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            31,
+            578,
+            328,
+            33
+          ],
+          "size": "17px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 844,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      110,
+      343,
+      385,
+      427,
+      578
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水印。"
+      ],
+      [
+        "我坐在第二级台阶上，",
+        "听见远处有人合上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "tide",
+    "arm": "C",
+    "view": "narrow",
+    "first": {
+      "heading": [
+        {
+          "text": "潮线",
+          "rect": [
+            26,
+            99,
+            269,
+            54
+          ],
+          "size": "48px"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "凌晨四点，海退下去了一点。",
+          "rect": [
+            26,
+            308,
+            269,
+            33
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "防浪墙上还留着夜里的水印。",
+          "rect": [
+            26,
+            350,
+            269,
+            33
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "我坐在第二级台阶上，听见远处有人合上窗。",
+          "rect": [
+            26,
+            392,
+            269,
+            66
+          ],
+          "size": "17px"
+        },
+        {
+          "text": "天没有亮。",
+          "rect": [
+            26,
+            534,
+            269,
+            33
+          ],
+          "size": "17px"
+        }
+      ],
+      "images": [],
+      "interactive": [],
+      "fullHeight": 760,
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    "line_y": [
+      99,
+      308,
+      350,
+      392,
+      534
+    ],
+    "rendered_lines": [
+      [
+        "潮线"
+      ],
+      [
+        "凌晨四点，海退下去了一点。"
+      ],
+      [
+        "防浪墙上还留着夜里的水印。"
+      ],
+      [
+        "我坐在第二级台阶上，",
+        "听见远处有人合上窗。"
+      ],
+      [
+        "天没有亮。"
+      ]
+    ],
+    "pass": true
+  }
+]

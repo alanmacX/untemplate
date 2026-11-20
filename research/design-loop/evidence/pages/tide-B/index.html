@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1519">
+  <title>潮线</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      background: #0b1519;
+      color: #c1cac6;
+      font-family: "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+      font-synthesis: none;
+    }
+
+    * { box-sizing: border-box; }
+
+    body { margin: 0; }
+
+    .shore {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      display: grid;
+      align-content: start;
+      min-block-size: 100vh;
+      min-block-size: 100svh;
+      padding: clamp(60px, 13svh, 156px) 0 clamp(48px, 8svh, 96px);
+      background: linear-gradient(
+        #0b1519 0%,
+        #202d30 34%,
+        #172426 49%,
+        #111b1e 50%,
+        #0b1317 100%
+      );
+    }
+
+    .shore canvas,
+    .shore::after {
+      position: absolute;
+      inset: 0;
+      inline-size: 100%;
+      block-size: 100%;
+      pointer-events: none;
+    }
+
+    .shore canvas { z-index: -2; }
+
+    .shore::after {
+      content: "";
+      z-index: -1;
+      background:
+        linear-gradient(90deg, #080f13c4 0%, #080f1370 31%, transparent 72%),
+        linear-gradient(0deg, #080e1266, transparent 42%);
+    }
+
+    .reading {
+      margin-inline: clamp(24px, 10vw, 176px) 24px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #d6ddd6;
+      font-size: clamp(48px, 6.2vw, 91px);
+      font-weight: 400;
+      line-height: 1.12;
+      letter-spacing: .14em;
+    }
+
+    .passage {
+      margin-block-start: clamp(86px, calc(29svh - 65px), 252px);
+      font-size: clamp(17px, 1.75vw, 24px);
+      line-height: 1.95;
+      letter-spacing: .035em;
+      line-break: strict;
+      text-wrap: pretty;
+    }
+
+    p { margin: 0; }
+
+    p + p { margin-block-start: .52em; }
+
+    .first {
+      color: #d6ddd6;
+      animation: emerge 2.4s cubic-bezier(.2, .65, .28, 1) both;
+    }
+
+    .last {
+      margin-block-start: clamp(54px, 10svh, 132px);
+      color: #cbd4ce;
+    }
+
+    @keyframes emerge {
+      0%, 10% { opacity: .36; transform: translateY(5px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .reading { margin-inline: clamp(24px, 8vw, 48px); }
+      .passage { max-inline-size: 20em; }
+      .shore::after {
+        background:
+          linear-gradient(90deg, #080f139c, #080f1350 58%, #080f1322),
+          linear-gradient(0deg, #080e1244, transparent 40%);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .first { animation: none; }
+    }
+
+    @media (forced-colors: active) {
+      .shore canvas,
+      .shore::after { display: none; }
+
+      .first { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shore">
+    <canvas aria-hidden="true"></canvas>
+    <article class="reading">
+      <h1>潮线</h1>
+      <div class="passage">
+        <p class="first">凌晨四点，海退下去了一点。</p>
+        <p>防浪墙上还留着夜里的水印。</p>
+        <p>我坐在第二级台阶上，听见远处有人合上窗。</p>
+        <p class="last">天没有亮。</p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (() => {
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+
+      function randomSource(seed) {
+        return () => {
+          seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+          return seed / 4294967296;
+        };
+      }
+
+      const grain = document.createElement("canvas");
+      grain.width = grain.height = 192;
+      const grainContext = grain.getContext("2d");
+      const pixels = grainContext.createImageData(grain.width, grain.height);
+      const grainRandom = randomSource(49);
+
+      for (let i = 0; i < pixels.data.length; i += 4) {
+        const light = grainRandom() < .5 ? 0 : 208;
+        pixels.data[i] = pixels.data[i + 1] = pixels.data[i + 2] = light;
+        pixels.data[i + 3] = Math.floor(grainRandom() * 16);
+      }
+
+      grainContext.putImageData(pixels, 0, 0);
+      const texture = ctx.createPattern(grain, "repeat");
+
+      function draw() {
+        const { width, height } = canvas.getBoundingClientRect();
+        if (!width || !height) return;
+
+        const scale = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.round(width * scale);
+        canvas.height = Math.round(height * scale);
+        ctx.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
+
+        const random = randomSource(148);
+        const narrow = width < 601;
+        const bend = narrow ? .43 : .49;
+        const horizon = .323;
+
+        function gradient(x0, y0, x1, y1, stops) {
+          const paint = ctx.createLinearGradient(
+            x0 * width, y0 * height, x1 * width, y1 * height
+          );
+          for (const [position, color] of stops) paint.addColorStop(position, color);
+          return paint;
+        }
+
+        function path(points) {
+          ctx.beginPath();
+          points.forEach(([x, y], index) => {
+            if (index === 0) ctx.moveTo(x * width, y * height);
+            else ctx.lineTo(x * width, y * height);
+          });
+        }
+
+        function surface(points, paint) {
+          path(points);
+          ctx.closePath();
+          ctx.fillStyle = paint;
+          ctx.fill();
+        }
+
+        function line(points, color, thickness = 1) {
+          path(points);
+          ctx.strokeStyle = color;
+          ctx.lineWidth = thickness;
+          ctx.stroke();
+        }
+
+        ctx.fillStyle = gradient(0, 0, .16, horizon, [
+          [0, "#0b1519"], [.67, "#182529"], [1, "#263437"]
+        ]);
+        ctx.fillRect(0, 0, width, height);
+
+        const haze = ctx.createRadialGradient(
+          width * .75, height * .33, 0,
+          width * .75, height * .33, Math.max(width * .55, height * .25)
+        );
+        haze.addColorStop(0, "#7a8d8530");
+        haze.addColorStop(1, "#7a8d8500");
+        ctx.fillStyle = haze;
+        ctx.fillRect(0, 0, width, horizon * height);
+
+        ctx.fillStyle = gradient(0, horizon, 0, .62, [
+          [0, "#233337"], [.38, "#263638"], [1, "#18292c"]
+        ]);
+        ctx.fillRect(0, horizon * height, width, height * (1 - horizon));
+
+        for (let i = 0; i < 440; i++) {
+          const depth = random();
+          const x = random();
+          const y = horizon + .265 * depth;
+          const length = (.003 + .045 * depth) * (.25 + random());
+          const alpha = (.025 + random() * .12) * (.42 + x * .58);
+          const shade = i % 3 ? "125, 148, 142" : "4, 14, 18";
+          line([[x, y], [x + length, y + depth * .001]], `rgba(${shade}, ${alpha})`, .55 + depth);
+        }
+
+        const rim = [[-.04, .548], [bend, .437], [1.04, .527]];
+        const lip = [[-.04, .569], [bend, .455], [1.04, .557]];
+        const foot = [[-.04, .635], [bend, .5], [1.04, .642]];
+
+        surface([...rim, ...lip.slice().reverse()], gradient(.28, .43, .78, .58, [
+          [0, "#253135"], [.63, "#364548"], [1, "#2a393c"]
+        ]));
+        line(rim, "#78908b45", 1);
+
+        const wall = [...lip, ...foot.slice().reverse()];
+        surface(wall, gradient(.55, .455, .64, .65, [
+          [0, "#293639"], [.42, "#202e31"], [1, "#101d21"]
+        ]));
+
+        ctx.save();
+        path(wall);
+        ctx.closePath();
+        ctx.clip();
+
+        const stain = [[-.04, .608], [bend, .477], [1.04, .603]];
+        const marks = [];
+        for (let i = 0; i <= 110; i++) {
+          const x = -.04 + i * 1.08 / 110;
+          const [a, b] = x < bend ? stain.slice(0, 2) : stain.slice(1);
+          const y = a[1] + (b[1] - a[1]) * (x - a[0]) / (b[0] - a[0]);
+          marks.push([x, y + (random() - .5) * .006]);
+          const drip = random() * .016;
+          line([[x, y - .004], [x + .0008, y + drip]], "#070f1338", .7 + random() * 2);
+        }
+
+        surface([...marks, ...foot.slice().reverse()], "#0b181d4d");
+        line(marks, "#697e7448", 1.1);
+        ctx.restore();
+
+        let edge = foot;
+        for (let step = 0; step < 3; step++) {
+          const tread = edge.map(([x, y], index) => [
+            x, y + [.055, .025, .066][index] * (1 + step * .32)
+          ]);
+          const riser = tread.map(([x, y], index) => [
+            x, y + [.027, .008, .036][index] * (1 + step * .25)
+          ]);
+          const light = ["#334246", "#2b393c", "#222e32"][step];
+          const dark = ["#172428", "#131f23", "#101b20"][step];
+
+          surface([...edge, ...tread.slice().reverse()], gradient(.28, .45, .89, 1, [
+            [0, dark], [.62, light], [1, dark]
+          ]));
+          surface([...tread, ...riser.slice().reverse()], dark);
+          line(tread, "#6e858043", 1);
+          edge = riser;
+        }
+
+        surface([...edge, [1.04, 1], [-.04, 1]], gradient(0, .66, .16, 1, [
+          [0, "#1b292d"], [1, "#10191d"]
+        ]));
+
+        if (texture) {
+          ctx.fillStyle = texture;
+          ctx.fillRect(0, 0, width, height);
+        }
+      }
+
+      let frame = 0;
+      function scheduleDraw() {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(draw);
+      }
+
+      draw();
+      window.addEventListener("resize", scheduleDraw, { passive: true });
+      if ("ResizeObserver" in window) {
+        const observer = new ResizeObserver(scheduleDraw);
+        observer.observe(canvas.parentElement);
+      }
+    })();
+  </script>
+</body>
+</html>

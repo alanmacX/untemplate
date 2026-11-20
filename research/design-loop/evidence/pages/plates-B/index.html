@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>画纸上的苹果｜社区图书室</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --wall: #f6f5f1;
+      --ink: #292824;
+      --muted: #57544d;
+      --rule: #cbc7bd;
+      --accent: #8b3028;
+      --serif: "Songti SC", "Noto Serif CJK SC", SimSun, serif;
+      --latin: Georgia, "Times New Roman", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--wall);
+      color: var(--ink);
+      font: 1rem/1.55 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(43rem, calc(100% - 32px));
+      margin-inline: auto;
+      padding-block: clamp(24px, 4vw, 44px) 32px;
+    }
+
+    header {
+      margin-block-end: clamp(16px, 3vw, 24px);
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      font-family: var(--serif);
+    }
+
+    h1 {
+      font-size: clamp(1.95rem, 5.2vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.18;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    fieldset {
+      min-inline-size: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    .plates {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(10px, 2.6vw, 24px);
+    }
+
+    .plate {
+      display: grid;
+      align-content: start;
+      min-width: 0;
+      cursor: pointer;
+    }
+
+    .plate img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 960 / 1455;
+      object-fit: contain;
+      object-position: top center;
+    }
+
+    .plate-choice {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 44px;
+      padding-block: 6px;
+    }
+
+    .plate-choice input {
+      flex: none;
+      width: 1rem;
+      height: 1rem;
+      margin: 0;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .plate-name {
+      font: 1.125rem/1.25 var(--latin);
+      overflow-wrap: anywhere;
+    }
+
+    button {
+      display: block;
+      min-height: 44px;
+      margin: 4px 0 0 auto;
+      padding: 7px 15px;
+      border: 1px solid #827c70;
+      border-radius: 0;
+      background: transparent;
+      color: var(--ink);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ebe8e0;
+    }
+
+    :focus-visible {
+      outline: 2px solid #31566a;
+      outline-offset: 4px;
+    }
+
+    #archive {
+      margin-block-start: 24px;
+      padding-block-start: 16px;
+      border-block-start: 1px solid var(--rule);
+      scroll-margin-block: 16px;
+    }
+
+    .archive-record {
+      display: grid;
+      gap: 10px 24px;
+    }
+
+    h2 {
+      font-size: 1.375rem;
+      line-height: 1.3;
+      overflow-wrap: anywhere;
+    }
+
+    h2 span {
+      font-family: var(--latin);
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: 4px 14px;
+      margin: 0;
+    }
+
+    dt,
+    .source {
+      color: var(--muted);
+    }
+
+    dd {
+      min-width: 0;
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .source {
+      margin: 8px 0 0;
+      font-size: .875rem;
+    }
+
+    @media (min-width: 36rem) {
+      .archive-record {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr);
+        align-items: baseline;
+      }
+
+      .source {
+        grid-column: 2;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>画纸上的苹果</h1>
+      <p>看看两幅画里完整果的轮廓，再找找哪一幅露出了果核。</p>
+    </header>
+
+    <form id="explore">
+      <fieldset>
+        <legend class="sr-only">选择要查看档案的苹果品种</legend>
+        <div class="plates">
+          <label class="plate">
+            <img src="../assets/baldwin.jpg" width="960" height="1446"
+                 alt="上下两颗完整的苹果。上方的果皮多为红色，下方的果皮红绿相间。画纸边缘留有手写记录。">
+            <span class="plate-choice">
+              <input type="radio" name="plate" value="Baldwin"
+                     aria-labelledby="baldwin-name" checked>
+              <span class="plate-name" id="baldwin-name" lang="en">Baldwin</span>
+            </span>
+          </label>
+
+          <label class="plate">
+            <img src="../assets/adirondack.jpg" width="960" height="1455"
+                 alt="上方是一颗完整的红苹果，下方的纵切面露出浅色果肉和深色种子。画纸下方留有手写记录。">
+            <span class="plate-choice">
+              <input type="radio" name="plate" value="Adirondack"
+                     aria-labelledby="adirondack-name">
+              <span class="plate-name" id="adirondack-name" lang="en">Adirondack</span>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit" aria-controls="archive">查看档案</button>
+    </form>
+
+    <section id="archive" aria-labelledby="archive-title" hidden>
+      <div class="archive-record" aria-live="polite" aria-atomic="true">
+        <h2 id="archive-title" tabindex="-1"><span id="archive-name" lang="en"></span> 档案</h2>
+        <dl>
+          <dt>画家</dt>
+          <dd id="artist" lang="en"></dd>
+          <dt>年份</dt>
+          <dd id="year"></dd>
+          <dt>编号</dt>
+          <dd id="catalog-number"></dd>
+        </dl>
+        <p class="source">图档来源为美国农业部（USDA）公开档案。</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const records = {
+      Baldwin: {
+        artist: 'Ellen Isham Schutt',
+        year: '1909',
+        catalogNumber: 'POM00001363'
+      },
+      Adirondack: {
+        artist: 'Deborah Griscom Passmore',
+        year: '1893',
+        catalogNumber: 'POM00001337'
+      }
+    };
+
+    const form = document.getElementById('explore');
+    const archive = document.getElementById('archive');
+    const archiveTitle = document.getElementById('archive-title');
+    const archiveName = document.getElementById('archive-name');
+    const artist = document.getElementById('artist');
+    const year = document.getElementById('year');
+    const catalogNumber = document.getElementById('catalog-number');
+
+    function updateArchive() {
+      const name = form.elements.namedItem('plate').value;
+      if (archiveName.textContent === name) return;
+
+      const record = records[name];
+      archiveName.textContent = name;
+      artist.textContent = record.artist;
+      year.textContent = `${record.year} 年`;
+      catalogNumber.textContent = record.catalogNumber;
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      updateArchive();
+      archive.hidden = false;
+      archiveTitle.focus({ preventScroll: true });
+      archive.scrollIntoView({ block: 'nearest' });
+    });
+
+    form.addEventListener('change', () => {
+      if (!archive.hidden) updateArchive();
+    });
+  </script>
+</body>
+</html>
