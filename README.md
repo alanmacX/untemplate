@@ -12,6 +12,6 @@ Turn vague frontend briefs into designs shaped by the project's actual content a
 
 The [skill](skills/anti-aidesign/SKILL.md) is the entry point. Keep the folder together so agents can follow its references. For skill-aware agents, add or link that folder in a supported skills directory. For other agents, ask them to read the entry point and follow its linked references for the current brief.
 
-Current checkpoint: **v15.1**. The design workflow uses ordinary Markdown and no provider-specific controls. The optional browser check uses Python and Playwright.
+Current checkpoint: **v15.2**. The design workflow uses ordinary Markdown and no provider-specific controls. The optional browser check uses Python and Playwright.
 
 See the [material and first-view probe](research/material-gate/RESULTS.md) for the decorative-image failure and its follow-up, the [design loop probe](research/design-loop/RESULTS.md) for a static work and a redesign from actual screenshots, and the [human craft probe](research/human-craft/RESULTS.md) for live reference walks and material-first experiments. Earlier checkpoints include the [creative pilot](research/creative-pilot/RESULTS.md) and the [copy and divergence pilot](research/copy-and-divergence/RESULTS.md).
