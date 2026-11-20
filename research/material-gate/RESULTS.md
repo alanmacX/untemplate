@@ -1,0 +1,9 @@
+# Material and first-view probe (v15.1)
+
+Five matched briefs: coffee shop, clinic booking, auto-parts catalog, a laundry vignette, and an echo poem. We held the model (remote GPT-6.2 Sol), input, asset availability and screenshot review together across versions. Each version saw its own real desktop and phone screenshots before a revision. One coffee trial also withdrew the optional reference photo. The laundry vignette received an additional no-scene rough.
+
+- **The initial rule did not break the decorative slot.** The coffee runs had the same optional reference photo. Both v14 and the first v15 still drew a mountains-and-sunset hero. Flat illustration was a new execution of the same literal brand association.
+- **Treat the slot as the unit of change.** v15.1 replaced that image with a working roast selector both with and without the optional photo. Clinic and parts removed the synthetic building, blueprint and thumbnails from their task surfaces. The phone clinic reached a first slot 29 CSS pixels earlier, while complete slots in the first viewport went from five to three.
+- **Preserve graphics that do the work.** The echo uses floor geometry and decreasing typography to show seven fading replies. In laundry, the rotating and flashing abstraction still draws a strong circle; a separate light-and-text rough showed a different rhythm without a rendered room or prop.
+
+The 34 viewport checks and eight added interaction checks passed. The added checks exercise roast filtering, pausing and leaving the laundry scene, and the order and decreasing size of the echoes. The reference photo was [Australian arabica roasted](https://commons.wikimedia.org/wiki/File:Australian_arabica_roasted.jpg), ZELSC / CC0, provided as generic reference rather than as a named product photo. This probe uses one model and one run per matched condition.

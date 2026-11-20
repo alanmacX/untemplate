@@ -3,7 +3,7 @@ name: anti-aidesign
 description: Develop a visual direction for an open-ended frontend brief or remove a generic AI look from an existing page or UI. Covers expressive and static web work such as portfolios, essays, visual experiments, and atmospheres, as well as functional products. Follow named designer-led directions and required design systems; apply the skill only to choices the user leaves open.
 ---
 
-# Anti-AI Design · v14
+# Anti-AI Design · v15.1
 
 ## 什么时候用
 
@@ -13,10 +13,14 @@ description: Develop a visual direction for an open-ended frontend brief or remo
 
 主标题和分区标题都没有预留的小标签槽。禁止重复眉题、双语复述、通用口号和界面自我解释。每处附加 UI 文案都问：删后会失去哪条事实、状态、辨认线索或操作指引？说不出来就连同 DOM 和空容器删掉，独立信息放回对应对象。保留用户交付的正文、作品里的有意重复和真正的署名。每份实现直接带上这条门槛；交付前检查可见页面及其状态，见[删除检查](references/copy-gate.md)。
 
+## 交付门槛：关键材质有来源或有表达任务
+
+构图之前先定首眼与各处关键材料。要让人相信某个具体实物、人物、场所或感到真实材质，用项目素材、适配的授权图或可交付的原创视觉；概念图按概念使用。禁止用临时 CSS、内联 SVG、Canvas 或噪点拼图假扮实拍、材质、商品、案例、人像；缺图就往真实内容和状态上重排。仅把标题、品牌名或领域画一遍的装饰图，先连同图位从首屏撤掉；换成扁平插画、图库照或生成图不会给它新增任务。图表、示意、艺术构成和表达作品所需的自绘可用，检查它让人看到什么、删后失去什么。标志和头像沿用项目素材；缺素材时由字与信息承担辨认。先读[材料选择与验收](references/material-gate.md)再做依赖图像或材质的设计。
+
 ## 像设计师一样看、试、再看
 
 1. **先想观众遇见作品的那一刻。** 第一眼该被什么抓住，接着想让人读快一点、停一会儿，或发现什么？直接拿实际字、影像、颜色、声音、形状或功能做构图。决定谁占主导，什么退到背景，用尺度、距离、疏密和停顿把感觉做出来。参考看作者选了什么、舍了什么。见[审美回路](references/aesthetic-loop.md)。
-2. **把一个有代价的选择做到画面上。** 比如一眼并看或贴近细读、用大面积材料或只露一个局部、让字主动叙述或在画面里安静下来。方向还开着且材质或布局会明显不同，就起两个独立的粗稿；简单改动可试一个局部对照。先让实际材料承担主画面，按需读[材料开稿](references/working-unit.md)和[路线探索](references/route-exploration.md)。
+2. **把一个有代价的选择做到画面上。** 比如一眼并看或贴近细读、用大面积材料或只露一个局部、让字主动叙述或在画面里安静下来。方向还开着且材质或布局会明显不同，就起两个独立的粗稿；简单改动可试一个局部对照。两稿先换主材料、读序或动作关系；对没有任务的图位，至少试一次撤掉图和占位的画面。先让实际材料承担主画面，按需读[材料开稿](references/working-unit.md)和[路线探索](references/route-exploration.md)。
 3. **渲染之后改一次判断。** 在桌面和手机上先读画面，再核原意。指出一个实际发生的关系：哪个抢眼、哪段读得太快、哪处太满或太空、什么被遮住或被看得更清楚。动一两个具体地方，重看一次再选；如果选的方向已经成立，保住它。判断写在工作笔记里，别变成页面上的说明文字。
 
 **改现有作品时**，先开原版并留前后对照。找出值得留下的视觉特点、内容和功能，再定位最像默认模板的那层。能靠删多余层或重排关系解决就局部改；问题出在整张画面时可以重构。按[已有作品去 AI 味](references/existing-redesign.md)交付。
