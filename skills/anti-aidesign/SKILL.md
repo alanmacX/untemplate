@@ -3,7 +3,7 @@ name: anti-aidesign
 description: Develop a visual direction for an open-ended frontend brief or remove a generic AI look from an existing page or UI. Covers expressive and static web work such as portfolios, essays, visual experiments, and atmospheres, as well as functional products. Follow named designer-led directions and required design systems; apply the skill only to choices the user leaves open.
 ---
 
-# Anti-AI Design · v15.2
+# Anti-AI Design · v15.3
 
 ## 什么时候用
 
@@ -30,4 +30,4 @@ description: Develop a visual direction for an open-ended frontend brief or remo
 ## 落到成品
 
 - **按作品的用法验收。** 有操作就走主流程并看结果；仅观看或阅读的作品看首眼、停顿、阅读路径和收尾，检查画面能否自己成立。看两端的实际截图，保住与视觉重点相关的尺寸、阅读顺序和场景。图像、插画和标识可以表达气质，真实素材、授权和辨认线索照任务取用。见[浏览器验收](references/render-gate.md)。
-- **用实际语言和文案挑字。** 把同一段真文案用两种读法实拍：先换谁是主角，再挑字形、字重、行距和断行。按阅读任务和字形选择字体。中文按实际简繁和地区设置语言，检查实际渲染的汉字、数字和标点。换字库后还是同一套大标题和小标签时，重排主次。见[中文与多语排版](references/typography.md)。
+- **用实际语言和文案挑字。** 字库决定气质、辨认，或上一轮已选得雷同时，让默认字库与两套不同字形的可用字体，用同一段真文案、同字号实际竞争。看浏览器最后用哪套字，再试字重、行距和断行。另用两种排法试谁该先读到。中文按实际简繁和地区设置语言，检查实际渲染的汉字、数字和标点。换字库后还是同一套大标题和小标签时，重排主次。见[中文与多语排版](references/typography.md)。
