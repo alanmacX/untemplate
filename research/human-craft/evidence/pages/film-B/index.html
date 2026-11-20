@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#25263a">
+  <title>胶卷冲扫取片查询</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f3e9;
+      --desk: #e5dfd3;
+      --ink: #282638;
+      --muted: #625d68;
+      --rule: #c7bec3;
+      --dark: #25263a;
+      --amber: #ffd48d;
+      --focus: #7c351d;
+      font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--desk);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+    }
+
+    main {
+      width: min(100%, 520px);
+      min-height: 100vh;
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .arrival {
+      position: relative;
+      overflow: hidden;
+      padding: 32px 24px 36px 44px;
+      color: var(--paper);
+      background: var(--dark);
+    }
+
+    .arrival::before {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 22px;
+      background:
+        repeating-linear-gradient(to bottom, transparent 0 12px, var(--dark) 12px 22px),
+        linear-gradient(to right, var(--dark) 0 6px, #92889b 6px 15px, var(--dark) 15px);
+      content: "";
+    }
+
+    h1, h2, h3, p, dl, dd { margin: 0; }
+
+    h1 {
+      font-size: clamp(2.25rem, 10vw, 3.5rem);
+      font-weight: 740;
+      line-height: 1.15;
+    }
+
+    .arrival a {
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      min-height: 44px;
+      margin-top: 22px;
+      padding-inline: 14px;
+      border-radius: 2px;
+      background: var(--amber);
+      color: var(--dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .arrival a:focus-visible { outline-color: var(--amber); }
+
+    .worktop { padding: 25px 22px 32px; }
+
+    h2 {
+      font-size: 1.3rem;
+      line-height: 1.35;
+    }
+
+    .picker {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .receipt {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: center;
+      gap: 9px;
+      min-height: 70px;
+      padding: 8px 10px;
+      border: 1px solid #827884;
+      border-radius: 2px;
+      background: #fffaf2;
+      cursor: pointer;
+    }
+
+    .receipt:has(input:checked) {
+      border-color: var(--dark);
+      background: var(--dark);
+      color: var(--paper);
+    }
+
+    .receipt:has(input:focus-visible) {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .receipt input {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      accent-color: #853c23;
+    }
+
+    .receipt input:checked { accent-color: var(--amber); }
+
+    .receipt strong, .receipt small { display: block; }
+
+    .receipt strong {
+      font-family: ui-monospace, monospace;
+      font-size: 1.24rem;
+      line-height: 1.15;
+    }
+
+    .receipt small {
+      margin-top: 3px;
+      font-size: .875rem;
+    }
+
+    .result-slot:not(:empty) { margin-top: 12px; }
+
+    .result {
+      padding: 14px 16px 16px;
+      border-left: 4px solid #843d23;
+      background: #fffaf2;
+    }
+
+    .result[data-ready="true"] { border-color: #3b6753; }
+
+    .result h3 {
+      color: #78381f;
+      font-size: 1rem;
+      font-weight: 750;
+    }
+
+    .result[data-ready="true"] h3 { color: #315740; }
+
+    .place {
+      margin-top: 5px;
+      font-size: 1.55rem;
+      font-weight: 740;
+      line-height: 1.25;
+    }
+
+    .when {
+      margin-top: 3px;
+      font-weight: 650;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .detail { margin-top: 8px; }
+
+    .result a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      margin-top: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .directions {
+      margin-top: 23px;
+      border-top: 1px dashed #968b99;
+      padding-top: 16px;
+      scroll-margin-top: 12px;
+    }
+
+    .directions h3 {
+      margin-top: 12px;
+      font-size: 1rem;
+    }
+
+    .directions dl { margin-top: 5px; }
+
+    .directions dl > div {
+      display: grid;
+      grid-template-columns: 6.3em minmax(0, 1fr);
+      gap: 7px;
+      padding-block: 6px;
+    }
+
+    .directions dl > div + div { border-top: 1px solid var(--rule); }
+
+    .directions dt {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .desk-hours {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    @media (min-width: 560px) {
+      main { box-shadow: 0 0 40px #2826381a; }
+      .arrival { padding: 40px 34px 42px 56px; }
+      .worktop { padding: 32px 34px 40px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="arrival">
+      <h1>胶卷冲扫<br>取片查询</h1>
+      <a href="#lookup">查回执 <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <div class="worktop">
+      <section aria-labelledby="lookup">
+        <h2 id="lookup" tabindex="-1">选择演示回执</h2>
+        <div class="picker" role="radiogroup" aria-labelledby="lookup">
+          <label class="receipt">
+            <input type="radio" name="receipt" value="C17" aria-controls="result">
+            <span><strong>C17</strong><small>135 胶卷</small></span>
+          </label>
+          <label class="receipt">
+            <input type="radio" name="receipt" value="C24" aria-controls="result">
+            <span><strong>C24</strong><small>120 胶卷</small></span>
+          </label>
+        </div>
+        <div class="result-slot" id="result" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <section class="directions" aria-labelledby="directions">
+        <h2 id="directions" tabindex="-1">到店怎么走</h2>
+        <h3>自提格在侧门里</h3>
+        <dl>
+          <div>
+            <dt>19:00 前</dt>
+            <dd>到侧门找自提格</dd>
+          </div>
+          <div>
+            <dt>19:00 后</dt>
+            <dd>从巷口走，去侧门</dd>
+          </div>
+        </dl>
+        <p class="desk-hours">前台今天 18:00 关门。</p>
+      </section>
+    </div>
+  </main>
+
+  <template id="receipt-C17">
+    <div class="result" data-ready="true">
+      <h3>C17 已好</h3>
+      <p class="place">三号自提格</p>
+      <p class="when">今天 <time datetime="21:00">21:00</time> 前</p>
+      <a href="#directions">看自提格怎么走</a>
+    </div>
+  </template>
+
+  <template id="receipt-C24">
+    <div class="result">
+      <h3>C24 未好</h3>
+      <p class="place">到前台看样</p>
+      <p class="when">明天 <time datetime="16:00">16:00</time> 后</p>
+      <p class="detail">乳剂边缘有划痕，无法保证能修复。</p>
+    </div>
+  </template>
+
+  <script>
+    const picker = document.querySelector('.picker');
+    const result = document.getElementById('result');
+
+    function showSelectedReceipt() {
+      const selected = picker.querySelector('input:checked');
+      if (!selected) {
+        result.replaceChildren();
+        return;
+      }
+      const receipt = document.getElementById(`receipt-${selected.value}`);
+      result.replaceChildren(receipt.content.cloneNode(true));
+    }
+
+    picker.addEventListener('change', showSelectedReceipt);
+    window.addEventListener('pageshow', showSelectedReceipt);
+  </script>
+</body>
+</html>

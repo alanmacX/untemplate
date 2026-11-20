@@ -3,7 +3,7 @@ name: anti-aidesign
 description: Break template-driven frontend generation when a user has a product idea or vibe but has not chosen a visual direction. Derive the first design from the project's actual content, use, and references. Also applies to explicit requests to de-template an existing AI-generated UI. Skip designer-led work with a chosen visual direction, design files, or a required design system.
 ---
 
-# Anti-AI Design · v12
+# Anti-AI Design · v13
 
 ## 什么时候用
 
@@ -13,11 +13,11 @@ description: Break template-driven frontend generation when a user has a product
 
 主标题和分区标题都没有预留的小标签槽。禁止重复眉题、双语复述、通用口号和界面自我解释。每处标题旁短句都问：删掉后，用户会失去哪条事实、状态、辨认线索或操作指引？说不出来就连同 DOM 和空容器删除；剩下的独立信息放回对应的对象或控件。有用的分区标题不缩成角标。每份实现直接带上这条门槛；交付前从首屏到结果状态做[删除检查](references/copy-gate.md)，命中就修完再走主流程。
 
-## 先排真实内容，两稿都做到能选
+## 让实际材料定方向
 
-1. **先拆发生的事，再定页面。** 记下用户从什么情境进来、要辨认或处理的对象、完成时会看到什么。把真实资料、必要功能、已选视觉方向与可以探索的决定分开。用尺寸、顺序、位置、时间或内容关系决定主区和控件怎么相邻，再选页壳。参考里提取可指出的排法、比例、光线、节奏或图文关系，让本项目的材料承接它。只收到「高级、干净、亲切」等感觉时，先想用户应怎样感到它：什么东西该占画面，什么条件要一眼看完，哪里值得停留。按需读[路线探索](references/route-exploration.md)。
-2. **用同一份内容独立起两稿。** 各从 brief 开工，不把第一稿给第二次探索当默认骨架。第二条路想不出来时，找常规解法默认了什么：访客已经认识对象、带来了某个信息、知道要做哪一步？用项目事实、实际材料或场外做法扰动一个尚未决定的问题，再看它是否改变第一眼读到什么、操作从哪里开始、结果和谁放一起。也可以让材料的尺度、摆法或观看距离改变构图。成熟的操作习惯可以沿用。先做首屏和主要操作后的状态。按需读[路线探索](references/route-exploration.md)和[视觉决策](references/visual-decisions.md)。
-3. **看真实画面和操作后再选。** 两稿用同样的桌面和手机尺寸比较，实际走一遍主要任务。先淘汰丢信息、点不动或找不到结果的稿，再看两种安排各为这个项目带来了什么。选定后留下一个能在截图上指出的画面关系，以及用户操作完仍需同时看到的东西。如果交互变了，画面还像原来那套，再用真实材料推一次首屏的重心、比例和读序。常见导航和领域惯例可以保留。
+1. **先做用户拿来用或看的那一件。** 从实际回执、照片、记录、路线、作品或状态做一个小样，把事实、必要功能、用户选定的方向留住。用真实文案和素材做出辨认、对照或操作前后，让它先承担画面；页面的视觉重点、字体、底和导航围绕它安排。参考看整页和操作后的状态，找作者对实际材料做了哪个取舍。没选定方向时读[从实物和任务开稿](references/working-unit.md)。
+2. **独立做两个有不同取舍的方向。** 可以是并看与细看、现场能辨认与回家慢读，也可以是同一任务下两种由材料带来的构图。候选需要在同样的手机和桌面尺寸看得到差别，用户能实际操作。第一稿不做下一稿的底稿；两稿都落回熟悉布局时，抓一个真实限制或换一段实际材料，专门把那个取舍做到画面上。按需读[路线探索](references/route-exploration.md)与[视觉决策](references/visual-decisions.md)。
+3. **看两种取舍再选。** 先走一次主任务，再判断这页让这组内容怎样更容易被发现、被看清或被记住。别因一份文字提案更稳就提前丢掉另一份；两稿都可用时，至少让被放下的想法经历一次粗排。定稿时保留一条能对照截图的构图决定和一条操作后的关系。换一组相近内容试想：如果第一眼、字号比例与视觉语气都原样可套，回到实际材料重新排，常见操作可以照用。
 
 ## 落到成品
 

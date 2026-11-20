@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>两张苹果水彩图</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f1e5;
+      --ink: #29231d;
+      --muted: #625449;
+      --line: #bcb09e;
+      --red: #812d27;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.5 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(34rem, calc(100% - 2rem));
+      margin-inline: auto;
+      padding-block: clamp(1.75rem, 5vw, 3.75rem) 2rem;
+    }
+
+    h1 {
+      margin: 0 0 1.15rem;
+      font: 700 clamp(2rem, 5vw, 2.85rem)/1.2
+        "Songti SC", "Noto Serif CJK SC", SimSun, serif;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: .25rem .55rem;
+      border-top: 1px solid var(--line);
+      padding-block: .45rem;
+    }
+
+    fieldset {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 .7rem;
+      min-inline-size: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      clip-path: inset(50%);
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    label, button {
+      min-height: 44px;
+      font: inherit;
+      white-space: nowrap;
+    }
+
+    label {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      cursor: pointer;
+    }
+
+    label:has(input:checked) {
+      color: var(--red);
+      text-decoration: underline;
+      text-underline-offset: .25em;
+    }
+
+    input {
+      margin: 0;
+      accent-color: var(--red);
+    }
+
+    button {
+      padding: .35rem .65rem;
+      border: 1px solid var(--red);
+      border-radius: 2px;
+      background: transparent;
+      color: var(--red);
+      cursor: pointer;
+    }
+
+    button[aria-expanded="true"] {
+      background: var(--red);
+      color: white;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: 3px;
+    }
+
+    #archive {
+      margin-bottom: .9rem;
+      padding: .8rem 0 .9rem;
+      border-block: 1px solid var(--line);
+    }
+
+    #archive h2 {
+      margin: 0 0 .35rem;
+      font: 700 1.25rem/1.3 Georgia, serif;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: .15rem 1rem;
+      margin: 0;
+    }
+
+    dt { color: var(--muted); }
+    dd { margin: 0; }
+
+    figure { margin: 0; }
+    figure + figure { margin-top: 1.6rem; }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: .15rem 1rem;
+      padding-block: .45rem .55rem;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9375rem;
+    }
+
+    figcaption span:first-child {
+      color: var(--ink);
+      font: 700 1.125rem/1.3 Georgia, serif;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>两张苹果水彩图</h1>
+
+    <div class="controls">
+      <fieldset>
+        <legend class="sr-only">选择先看的品种</legend>
+        <label>
+          <input type="radio" name="variety" value="baldwin" checked>
+          <span lang="en">Baldwin</span>
+        </label>
+        <label>
+          <input type="radio" name="variety" value="adirondack">
+          <span lang="en">Adirondack</span>
+        </label>
+      </fieldset>
+      <button id="toggle" type="button" aria-expanded="false" aria-controls="archive">查看档案</button>
+    </div>
+
+    <section id="archive" aria-labelledby="archive-name" aria-live="polite" aria-atomic="true" hidden>
+      <h2 id="archive-name" lang="en">Baldwin</h2>
+      <dl>
+        <dt>画家</dt>
+        <dd id="artist" lang="en">Ellen Isham Schutt</dd>
+        <dt>年份</dt>
+        <dd id="year">1909</dd>
+        <dt>编号</dt>
+        <dd id="accession">POM00001363</dd>
+        <dt>来源</dt>
+        <dd lang="en">USDA</dd>
+      </dl>
+    </section>
+
+    <div id="plates">
+      <figure id="baldwin">
+        <img src="../assets/baldwin.jpg" width="960" height="1446"
+             alt="画纸上方是一颗通红的苹果，下方是一颗红绿相间的苹果，两颗都完整，纸边有手写记录。">
+        <figcaption>
+          <span lang="en">Baldwin</span>
+          <span>上下两颗都是完整果</span>
+        </figcaption>
+      </figure>
+      <figure id="adirondack">
+        <img src="../assets/adirondack.jpg" width="960" height="1455"
+             alt="画纸上方是一颗带红色条纹的完整苹果，下方是纵切的半颗苹果，露出浅色果肉和深色的籽，纸边有手写记录。">
+        <figcaption>
+          <span lang="en">Adirondack</span>
+          <span>上方是完整果，下方切面可见籽</span>
+        </figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <script>
+    const records = {
+      baldwin: {
+        name: 'Baldwin',
+        artist: 'Ellen Isham Schutt',
+        year: '1909',
+        accession: 'POM00001363'
+      },
+      adirondack: {
+        name: 'Adirondack',
+        artist: 'Deborah Griscom Passmore',
+        year: '1893',
+        accession: 'POM00001337'
+      }
+    };
+
+    const choices = document.querySelector('fieldset');
+    const plates = document.getElementById('plates');
+    const archive = document.getElementById('archive');
+    const toggle = document.getElementById('toggle');
+    const archiveName = document.getElementById('archive-name');
+    const artist = document.getElementById('artist');
+    const year = document.getElementById('year');
+    const accession = document.getElementById('accession');
+
+    function updateSelection() {
+      const selected = choices.querySelector('input:checked').value;
+      const plate = document.getElementById(selected);
+      const record = records[selected];
+
+      if (plate !== plates.firstElementChild) plates.prepend(plate);
+
+      archiveName.textContent = record.name;
+      artist.textContent = record.artist;
+      year.textContent = record.year;
+      accession.textContent = record.accession;
+    }
+
+    choices.addEventListener('change', updateSelection);
+    window.addEventListener('pageshow', updateSelection);
+    updateSelection();
+
+    toggle.addEventListener('click', () => {
+      const opening = archive.hidden;
+      archive.hidden = !opening;
+      toggle.setAttribute('aria-expanded', String(opening));
+      toggle.textContent = opening ? '收起档案' : '查看档案';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "tci",
+    "name": "The Creative Independent",
+    "url": "https://thecreativeindependent.com/",
+    "viewports": {
+      "desktop": {
+        "status": 200,
+        "capture": true
+      },
+      "phone": {
+        "status": 200,
+        "capture": true
+      }
+    },
+    "navigated": [
+      "https://thecreativeindependent.com/people/composer-isobel-waller-bridge-on-the-powerful-nature-of-doubt/"
+    ]
+  },
+  {
+    "id": "serving",
+    "name": "The Serving Library",
+    "url": "https://www.servinglibrary.org/",
+    "viewports": {
+      "desktop": {
+        "status": 200,
+        "capture": true
+      },
+      "phone": {
+        "status": 200,
+        "capture": true
+      }
+    },
+    "navigated": [
+      "https://www.servinglibrary.org/collection"
+    ]
+  },
+  {
+    "id": "wang",
+    "name": "WANGZHIHONG CO.",
+    "url": "https://wangzhihong.com/",
+    "viewports": {
+      "desktop": {
+        "status": 200,
+        "capture": true
+      },
+      "phone": {
+        "status": 200,
+        "capture": true
+      }
+    },
+    "navigated": [
+      "https://wangzhihong.com/work"
+    ]
+  },
+  {
+    "id": "txt",
+    "name": "TXTbooks",
+    "url": "https://www.txtbooks.us/",
+    "viewports": {
+      "desktop": {
+        "status": 200,
+        "capture": true
+      },
+      "phone": {
+        "status": 200,
+        "capture": true
+      }
+    },
+    "navigated": []
+  },
+  {
+    "id": "bicycle",
+    "name": "Bicycle Box",
+    "url": "https://bicyclebox.co.uk/",
+    "viewports": {
+      "desktop": {
+        "status": null,
+        "capture": false
+      },
+      "phone": {
+        "status": null,
+        "capture": false
+      }
+    },
+    "navigated": []
+  },
+  {
+    "id": "broom",
+    "name": "Broomwagon services",
+    "url": "https://broomwagonbikes.com/services/",
+    "viewports": {
+      "desktop": {
+        "status": 200,
+        "capture": true
+      },
+      "phone": {
+        "status": 200,
+        "capture": true
+      }
+    },
+    "navigated": [
+      "https://broomwagonbikes.com/mobile-bike-repair-review/"
+    ]
+  },
+  {
+    "id": "tool",
+    "name": "Edinburgh Tool Library stock",
+    "url": "https://edinburgh.myturn.com/library/",
+    "viewports": {
+      "desktop": {
+        "status": 200,
+        "capture": true
+      },
+      "phone": {
+        "status": 200,
+        "capture": true
+      }
+    },
+    "navigated": [
+      "https://edinburgh.myturn.com/library/inventory/browse"
+    ]
+  },
+  {
+    "id": "radio",
+    "name": "Radio Garden",
+    "url": "https://radio.garden/",
+    "viewports": {
+      "desktop": {
+        "status": 200,
+        "capture": true
+      },
+      "phone": {
+        "status": 200,
+        "capture": true
+      }
+    },
+    "navigated": []
+  },
+  {
+    "id": "jinxuan",
+    "name": "justfont / 金萱",
+    "url": "https://justfont.com/jinxuan/",
+    "viewports": {
+      "desktop": {
+        "status": null,
+        "capture": true
+      },
+      "phone": {
+        "status": null,
+        "capture": true
+      }
+    },
+    "navigated": []
+  }
+]

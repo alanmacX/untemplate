@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>胶卷冲扫回执</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f5f0e6;
+      --ink: #29251f;
+      --muted: #595147;
+      --rule: #c9beae;
+      --accent: #913a28;
+      --receipt: #fffcf5;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.55 system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    main {
+      width: min(100% - 40px, 960px);
+      margin-inline: auto;
+      padding-block: clamp(32px, 7vw, 88px) 40px;
+    }
+
+    h1, h2, p, dl, dd { margin: 0; }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+    }
+
+    fieldset {
+      min-inline-size: 0;
+      margin: 24px 0 28px;
+      padding: 0;
+      border: 0;
+    }
+
+    legend {
+      padding: 0;
+      margin-block-end: 8px;
+      color: var(--muted);
+      font-size: .875rem;
+      font-weight: 600;
+    }
+
+    .choices {
+      display: flex;
+      gap: 10px;
+    }
+
+    .choice {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 44px;
+      padding: 7px 17px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: var(--receipt);
+      cursor: pointer;
+    }
+
+    .choice:has(input:checked) {
+      border-color: var(--accent);
+      background: #f8e7dc;
+    }
+
+    .choice input {
+      width: 1.05em;
+      height: 1.05em;
+      margin: 0;
+      accent-color: var(--accent);
+    }
+
+    input:focus-visible {
+      outline: 2px solid var(--ink);
+      outline-offset: 3px;
+    }
+
+    .code {
+      font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      font-weight: 700;
+    }
+
+    .locations {
+      display: grid;
+      gap: 26px;
+    }
+
+    .location {
+      min-width: 0;
+      border-top: 2px solid var(--ink);
+    }
+
+    .location-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+      padding-block: 12px;
+    }
+
+    h2 { font-size: 1.375rem; }
+
+    .hours {
+      color: var(--muted);
+      font-size: .875rem;
+    }
+
+    .receipt {
+      padding: 11px 12px 12px;
+      border: 1px solid var(--rule);
+      border-inline-start: 3px solid var(--accent);
+      background: var(--receipt);
+    }
+
+    .receipt-line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 3px 12px;
+      font-size: .875rem;
+    }
+
+    .status { color: var(--accent); }
+
+    .receipt-time {
+      font-size: .9375rem;
+      font-weight: 700;
+    }
+
+    .receipt-note {
+      margin-block-start: 6px;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+
+    .directions { margin-block-start: 6px; }
+
+    .directions > div {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: 12px;
+      padding-block: 10px;
+      border-bottom: 1px solid var(--rule);
+      font-size: .875rem;
+    }
+
+    .directions dt {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    @media (min-width: 720px) {
+      .locations {
+        grid-template-columns: 1.12fr 1fr;
+        gap: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>胶卷冲扫回执</h1>
+
+    <fieldset id="receipt-picker">
+      <legend>选择回执</legend>
+      <div class="choices">
+        <label class="choice">
+          <input type="radio" name="receipt" value="C17" checked>
+          <span class="code">C17</span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="receipt" value="C24">
+          <span class="code">C24</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="locations">
+      <section class="location" aria-labelledby="locker-heading">
+        <header class="location-heading">
+          <h2 id="locker-heading">三号自提格</h2>
+        </header>
+        <div class="receipt" id="C17">
+          <p class="receipt-line">
+            <span><span class="code">C17</span> · 135 胶卷 · <strong class="status">已好</strong></span>
+            <span class="receipt-time">今天 <time datetime="21:00">21:00</time> 前</span>
+          </p>
+        </div>
+        <dl class="directions" aria-label="自提格走法">
+          <div>
+            <dt><time datetime="19:00">19:00</time> 前</dt>
+            <dd>从侧门进，自提格在门里。</dd>
+          </div>
+          <div>
+            <dt><time datetime="19:00">19:00</time> 后</dt>
+            <dd>从巷口走，去侧门里的自提格。</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="location" aria-labelledby="desk-heading">
+        <header class="location-heading">
+          <h2 id="desk-heading">前台</h2>
+          <p class="hours">今天 <time datetime="18:00">18:00</time> 关</p>
+        </header>
+        <div class="receipt" id="C24" hidden>
+          <p class="receipt-line">
+            <span><span class="code">C24</span> · 120 胶卷 · <strong class="status">未好</strong></span>
+            <span class="receipt-time">明天 <time datetime="16:00">16:00</time> 后来看样</span>
+          </p>
+          <p class="receipt-note">乳剂边缘有划痕，不能保证修复成功。</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="sr-only" id="receipt-update" role="status" aria-atomic="true"></div>
+  </main>
+
+  <script>
+    const picker = document.getElementById('receipt-picker');
+    const receipts = document.querySelectorAll('.receipt');
+    const update = document.getElementById('receipt-update');
+
+    function showSelectedReceipt(announce) {
+      const selected = picker.querySelector('input:checked');
+      if (!selected) return;
+
+      for (const receipt of receipts) {
+        receipt.hidden = receipt.id !== selected.value;
+      }
+
+      if (announce) {
+        const receipt = document.getElementById(selected.value);
+        const location = receipt.closest('section').querySelector('h2').textContent;
+        const lines = [...receipt.querySelectorAll('p')].map(
+          (line) => line.innerText.trim().replace(/\s+/g, ' ')
+        );
+        update.textContent = [location, ...lines].join('。');
+      }
+    }
+
+    picker.addEventListener('change', () => showSelectedReceipt(true));
+    window.addEventListener('pageshow', () => showSelectedReceipt(false));
+    showSelectedReceipt(false);
+  </script>
+</body>
+</html>

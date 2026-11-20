@@ -1,0 +1,2450 @@
+[
+  {
+    "case": "film",
+    "arm": "A",
+    "mode": "desktop",
+    "opening": {
+      "heading": [
+        {
+          "text": "胶卷冲扫取片",
+          "box": [
+            440,
+            36,
+            560,
+            62
+          ],
+          "type": [
+            "\"Songti SC\", SimSun, \"Noto Serif CJK SC\", serif",
+            "52px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17\n135 胶卷",
+          "box": [
+            440,
+            170,
+            276,
+            56
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24\n120 胶卷",
+          "box": [
+            724,
+            170,
+            276,
+            56
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(236, 229, 217)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "胶卷冲扫取片",
+          "box": [
+            440,
+            36,
+            560,
+            62
+          ],
+          "type": [
+            "\"Songti SC\", SimSun, \"Noto Serif CJK SC\", serif",
+            "52px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17\n135 胶卷",
+          "box": [
+            440,
+            170,
+            276,
+            56
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24\n120 胶卷",
+          "box": [
+            724,
+            170,
+            276,
+            56
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(236, 229, 217)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "film",
+    "arm": "A",
+    "mode": "phone",
+    "opening": {
+      "heading": [
+        {
+          "text": "胶卷冲扫取片",
+          "box": [
+            20,
+            36,
+            350,
+            43
+          ],
+          "type": [
+            "\"Songti SC\", SimSun, \"Noto Serif CJK SC\", serif",
+            "36px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17\n135 胶卷",
+          "box": [
+            20,
+            151,
+            171,
+            56
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24\n120 胶卷",
+          "box": [
+            199,
+            151,
+            171,
+            56
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(236, 229, 217)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "胶卷冲扫取片",
+          "box": [
+            20,
+            36,
+            350,
+            43
+          ],
+          "type": [
+            "\"Songti SC\", SimSun, \"Noto Serif CJK SC\", serif",
+            "36px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17\n135 胶卷",
+          "box": [
+            20,
+            151,
+            171,
+            56
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24\n120 胶卷",
+          "box": [
+            199,
+            151,
+            171,
+            56
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(236, 229, 217)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "film",
+    "arm": "B",
+    "mode": "desktop",
+    "opening": {
+      "heading": [
+        {
+          "text": "胶卷冲扫\n取片查询",
+          "box": [
+            516,
+            40,
+            430,
+            129
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "56px",
+            "normal",
+            "740"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17\n135 胶卷",
+          "box": [
+            494,
+            349,
+            221,
+            70
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24\n120 胶卷",
+          "box": [
+            725,
+            349,
+            221,
+            70
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(229, 223, 211)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "胶卷冲扫\n取片查询",
+          "box": [
+            516,
+            40,
+            430,
+            129
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "56px",
+            "normal",
+            "740"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17\n135 胶卷",
+          "box": [
+            494,
+            349,
+            221,
+            70
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24\n120 胶卷",
+          "box": [
+            725,
+            349,
+            221,
+            70
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(229, 223, 211)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "film",
+    "arm": "B",
+    "mode": "phone",
+    "opening": {
+      "heading": [
+        {
+          "text": "胶卷冲扫\n取片查询",
+          "box": [
+            44,
+            32,
+            322,
+            90
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "39px",
+            "normal",
+            "740"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17\n135 胶卷",
+          "box": [
+            22,
+            289,
+            168,
+            70
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24\n120 胶卷",
+          "box": [
+            200,
+            289,
+            168,
+            70
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(229, 223, 211)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "胶卷冲扫\n取片查询",
+          "box": [
+            44,
+            32,
+            322,
+            90
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "39px",
+            "normal",
+            "740"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17\n135 胶卷",
+          "box": [
+            22,
+            289,
+            168,
+            70
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24\n120 胶卷",
+          "box": [
+            200,
+            289,
+            168,
+            70
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(229, 223, 211)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "film",
+    "arm": "C",
+    "mode": "desktop",
+    "opening": {
+      "heading": [
+        {
+          "text": "胶卷冲扫回执",
+          "box": [
+            440,
+            76,
+            560,
+            46
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "38.4px",
+            "normal",
+            "750"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17",
+          "box": [
+            440,
+            173,
+            276,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24",
+          "box": [
+            724,
+            173,
+            276,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(243, 238, 228)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "胶卷冲扫回执",
+          "box": [
+            440,
+            76,
+            560,
+            46
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "38.4px",
+            "normal",
+            "750"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17",
+          "box": [
+            440,
+            173,
+            276,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24",
+          "box": [
+            724,
+            173,
+            276,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(243, 238, 228)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "film",
+    "arm": "C",
+    "mode": "phone",
+    "opening": {
+      "heading": [
+        {
+          "text": "胶卷冲扫回执",
+          "box": [
+            20,
+            28,
+            351,
+            32
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "26.4px",
+            "normal",
+            "750"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17",
+          "box": [
+            20,
+            111,
+            172,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24",
+          "box": [
+            199,
+            111,
+            172,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(243, 238, 228)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "胶卷冲扫回执",
+          "box": [
+            20,
+            28,
+            351,
+            32
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "26.4px",
+            "normal",
+            "750"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17",
+          "box": [
+            20,
+            111,
+            172,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24",
+          "box": [
+            199,
+            111,
+            172,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(243, 238, 228)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "film",
+    "arm": "D",
+    "mode": "desktop",
+    "opening": {
+      "heading": [
+        {
+          "text": "胶卷冲扫回执",
+          "box": [
+            240,
+            88,
+            960,
+            58
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "48px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17",
+          "box": [
+            240,
+            199,
+            88,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24",
+          "box": [
+            338,
+            199,
+            88,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(245, 240, 230)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "胶卷冲扫回执",
+          "box": [
+            240,
+            88,
+            960,
+            58
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "48px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17",
+          "box": [
+            240,
+            199,
+            88,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24",
+          "box": [
+            338,
+            199,
+            88,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(245, 240, 230)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "film",
+    "arm": "D",
+    "mode": "phone",
+    "opening": {
+      "heading": [
+        {
+          "text": "胶卷冲扫回执",
+          "box": [
+            20,
+            32,
+            350,
+            38
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "32px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17",
+          "box": [
+            20,
+            124,
+            88,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24",
+          "box": [
+            118,
+            124,
+            88,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(245, 240, 230)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "胶卷冲扫回执",
+          "box": [
+            20,
+            32,
+            350,
+            38
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "32px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "C17",
+          "box": [
+            20,
+            124,
+            88,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "C24",
+          "box": [
+            118,
+            124,
+            88,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [],
+      "bodyBackground": "rgb(245, 240, 230)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "plates",
+    "arm": "A",
+    "mode": "desktop",
+    "opening": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "box": [
+            384,
+            65,
+            672,
+            64
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, Georgia, serif",
+            "56px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            384,
+            184,
+            324,
+            537
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            732,
+            184,
+            324,
+            537
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            944,
+            739,
+            112,
+            46
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            384,
+            184,
+            324,
+            491
+          ],
+          "fit": "contain",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            732,
+            184,
+            324,
+            491
+          ],
+          "fit": "contain",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(247, 242, 232)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "box": [
+            384,
+            65,
+            672,
+            64
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, Georgia, serif",
+            "56px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            384,
+            184,
+            324,
+            537
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            732,
+            184,
+            324,
+            537
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            944,
+            739,
+            112,
+            46
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            384,
+            184,
+            324,
+            491
+          ],
+          "fit": "contain",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            732,
+            184,
+            324,
+            491
+          ],
+          "fit": "contain",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(247, 242, 232)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "plates",
+    "arm": "A",
+    "mode": "phone",
+    "opening": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "box": [
+            18,
+            41,
+            354,
+            40
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, Georgia, serif",
+            "34.4px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            18,
+            161,
+            171,
+            305
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            201,
+            161,
+            171,
+            305
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            260,
+            484,
+            112,
+            46
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            18,
+            161,
+            171,
+            259
+          ],
+          "fit": "contain",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            201,
+            161,
+            171,
+            259
+          ],
+          "fit": "contain",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(247, 242, 232)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "box": [
+            18,
+            41,
+            354,
+            40
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, Georgia, serif",
+            "34.4px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            18,
+            161,
+            171,
+            305
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            201,
+            161,
+            171,
+            305
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            260,
+            484,
+            112,
+            46
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            18,
+            161,
+            171,
+            259
+          ],
+          "fit": "contain",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            201,
+            161,
+            171,
+            259
+          ],
+          "fit": "contain",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(247, 242, 232)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "plates",
+    "arm": "B",
+    "mode": "desktop",
+    "opening": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "box": [
+            244,
+            69,
+            952,
+            92
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+            "80px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            893,
+            264,
+            97,
+            44
+          ],
+          "type": [
+            "Georgia, serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            998,
+            264,
+            121,
+            44
+          ],
+          "type": [
+            "Georgia, serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            893,
+            320,
+            102,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            244,
+            220,
+            286,
+            431
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            562,
+            250,
+            265,
+            401
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(246, 241, 230)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "box": [
+            244,
+            69,
+            952,
+            92
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+            "80px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            893,
+            264,
+            97,
+            44
+          ],
+          "type": [
+            "Georgia, serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            998,
+            264,
+            121,
+            44
+          ],
+          "type": [
+            "Georgia, serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            893,
+            320,
+            102,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            244,
+            220,
+            286,
+            431
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            562,
+            250,
+            265,
+            401
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(246, 241, 230)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "plates",
+    "arm": "B",
+    "mode": "phone",
+    "opening": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "box": [
+            22,
+            43,
+            346,
+            46
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+            "40px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            22,
+            590,
+            97,
+            44
+          ],
+          "type": [
+            "Georgia, serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            127,
+            590,
+            121,
+            44
+          ],
+          "type": [
+            "Georgia, serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            22,
+            646,
+            102,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            22,
+            173,
+            173,
+            261
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            207,
+            190,
+            161,
+            243
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(246, 241, 230)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "画纸上的苹果",
+          "box": [
+            22,
+            43,
+            346,
+            46
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+            "40px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            22,
+            590,
+            97,
+            44
+          ],
+          "type": [
+            "Georgia, serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            127,
+            590,
+            121,
+            44
+          ],
+          "type": [
+            "Georgia, serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            22,
+            646,
+            102,
+            44
+          ],
+          "type": [
+            "system-ui, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            22,
+            173,
+            173,
+            261
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            207,
+            190,
+            161,
+            243
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(246, 241, 230)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "plates",
+    "arm": "C",
+    "mode": "desktop",
+    "opening": {
+      "heading": [
+        {
+          "text": "两张苹果水彩图",
+          "box": [
+            350,
+            75,
+            740,
+            67
+          ],
+          "type": [
+            "\"Songti SC\", STSong, SimSun, Georgia, serif",
+            "56px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            350,
+            170,
+            355,
+            48
+          ],
+          "type": [
+            "Georgia, serif",
+            "24px",
+            "normal",
+            "700"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            735,
+            170,
+            355,
+            48
+          ],
+          "type": [
+            "Georgia, serif",
+            "24px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案\n+",
+          "box": [
+            350,
+            795,
+            144,
+            50
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            350,
+            226,
+            355,
+            535
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            735,
+            226,
+            355,
+            538
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(247, 243, 233)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "两张苹果水彩图",
+          "box": [
+            350,
+            75,
+            740,
+            67
+          ],
+          "type": [
+            "\"Songti SC\", STSong, SimSun, Georgia, serif",
+            "56px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            350,
+            170,
+            355,
+            48
+          ],
+          "type": [
+            "Georgia, serif",
+            "24px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            735,
+            170,
+            355,
+            48
+          ],
+          "type": [
+            "Georgia, serif",
+            "24px",
+            "normal",
+            "700"
+          ]
+        },
+        {
+          "text": "收起档案\n−",
+          "box": [
+            350,
+            795,
+            144,
+            50
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            350,
+            226,
+            355,
+            535
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            735,
+            226,
+            355,
+            538
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(247, 243, 233)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "plates",
+    "arm": "C",
+    "mode": "phone",
+    "opening": {
+      "heading": [
+        {
+          "text": "两张苹果水彩图",
+          "box": [
+            20,
+            43,
+            350,
+            38
+          ],
+          "type": [
+            "\"Songti SC\", STSong, SimSun, Georgia, serif",
+            "32px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            20,
+            97,
+            169,
+            48
+          ],
+          "type": [
+            "Georgia, serif",
+            "18px",
+            "normal",
+            "700"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            201,
+            97,
+            169,
+            48
+          ],
+          "type": [
+            "Georgia, serif",
+            "18px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案\n+",
+          "box": [
+            20,
+            441,
+            144,
+            50
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            20,
+            153,
+            169,
+            255
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            201,
+            153,
+            169,
+            256
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(247, 243, 233)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "两张苹果水彩图",
+          "box": [
+            20,
+            43,
+            350,
+            38
+          ],
+          "type": [
+            "\"Songti SC\", STSong, SimSun, Georgia, serif",
+            "32px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            20,
+            97,
+            169,
+            48
+          ],
+          "type": [
+            "Georgia, serif",
+            "18px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            201,
+            97,
+            169,
+            48
+          ],
+          "type": [
+            "Georgia, serif",
+            "18px",
+            "normal",
+            "700"
+          ]
+        },
+        {
+          "text": "收起档案\n−",
+          "box": [
+            20,
+            441,
+            144,
+            50
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "650"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            20,
+            153,
+            169,
+            255
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            201,
+            153,
+            169,
+            256
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(247, 243, 233)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "plates",
+    "arm": "D",
+    "mode": "desktop",
+    "opening": {
+      "heading": [
+        {
+          "text": "两张苹果水彩图",
+          "box": [
+            448,
+            60,
+            544,
+            55
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+            "45.6px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            448,
+            141,
+            75,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            534,
+            141,
+            100,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            905,
+            141,
+            87,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            448,
+            192,
+            544,
+            819
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            448,
+            1078,
+            544,
+            825
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(246, 241, 229)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "两张苹果水彩图",
+          "box": [
+            448,
+            60,
+            544,
+            55
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+            "45.6px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            448,
+            141,
+            75,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            534,
+            141,
+            100,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "收起档案",
+          "box": [
+            905,
+            141,
+            87,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            448,
+            371,
+            544,
+            825
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            448,
+            1261,
+            544,
+            819
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(246, 241, 229)",
+      "overflow": false
+    }
+  },
+  {
+    "case": "plates",
+    "arm": "D",
+    "mode": "phone",
+    "opening": {
+      "heading": [
+        {
+          "text": "两张苹果水彩图",
+          "box": [
+            16,
+            28,
+            358,
+            38
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+            "32px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            16,
+            93,
+            75,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            102,
+            93,
+            100,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "查看档案",
+          "box": [
+            287,
+            93,
+            87,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            16,
+            144,
+            358,
+            539
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            16,
+            749,
+            358,
+            543
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(246, 241, 229)",
+      "overflow": false
+    },
+    "main_flow": true,
+    "runtime_errors": [],
+    "result": {
+      "heading": [
+        {
+          "text": "两张苹果水彩图",
+          "box": [
+            16,
+            28,
+            358,
+            38
+          ],
+          "type": [
+            "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+            "32px",
+            "normal",
+            "700"
+          ]
+        }
+      ],
+      "firstAction": [
+        {
+          "text": "Baldwin",
+          "box": [
+            16,
+            93,
+            75,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "Adirondack",
+          "box": [
+            102,
+            93,
+            100,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        },
+        {
+          "text": "收起档案",
+          "box": [
+            287,
+            93,
+            87,
+            44
+          ],
+          "type": [
+            "system-ui, sans-serif",
+            "16px",
+            "normal",
+            "400"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "box": [
+            16,
+            323,
+            358,
+            543
+          ],
+          "fit": "fill",
+          "src": "../assets/adirondack.jpg",
+          "ok": true
+        },
+        {
+          "box": [
+            16,
+            931,
+            358,
+            539
+          ],
+          "fit": "fill",
+          "src": "../assets/baldwin.jpg",
+          "ok": true
+        }
+      ],
+      "bodyBackground": "rgb(246, 241, 229)",
+      "overflow": false
+    }
+  }
+]

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eee4">
+  <title>胶卷冲扫回执</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f3eee4;
+      --paper: #fffaf0;
+      --ink: #28231e;
+      --muted: #5d5549;
+      --line: #baad98;
+      --accent: #8a352a;
+      --green: #31583b;
+      --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(100%, 39rem);
+      margin-inline: auto;
+      padding: clamp(1.75rem, 7vw, 4.75rem) clamp(1rem, 5vw, 2rem) 2rem;
+    }
+
+    h1, h2, p, dl, dd { margin: 0; }
+
+    h1 {
+      font-size: clamp(1.65rem, 5.2vw, 2.4rem);
+      line-height: 1.2;
+      font-weight: 750;
+      margin-block-end: 1.4rem;
+    }
+
+    fieldset {
+      min-inline-size: 0;
+      margin: 0 0 .75rem;
+      padding: 0;
+      border: 0;
+    }
+
+    legend {
+      padding: 0;
+      margin-block-end: .45rem;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+
+    .choices {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .5rem;
+    }
+
+    .choice {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      min-height: 2.75rem;
+      padding: .45rem .8rem;
+      cursor: pointer;
+    }
+
+    .choice::before {
+      position: absolute;
+      inset: 0;
+      border: 1px solid var(--line);
+      border-radius: .2rem;
+      pointer-events: none;
+      content: "";
+    }
+
+    .choice:has(input:checked) {
+      background: var(--paper);
+    }
+
+    .choice:has(input:checked)::before {
+      border: 2px solid var(--accent);
+    }
+
+    .choice:focus-within {
+      outline: 2px solid var(--ink);
+      outline-offset: 3px;
+    }
+
+    .choice input {
+      width: 1.1rem;
+      height: 1.1rem;
+      flex: none;
+      margin: 0;
+      accent-color: var(--accent);
+    }
+
+    .code, time {
+      font-family: var(--mono);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .choice .code { font-weight: 700; }
+
+    .ticket {
+      position: relative;
+      min-height: 10.25rem;
+      padding: 1rem clamp(.85rem, 4vw, 1.6rem) 1.5rem;
+      background: var(--paper);
+      border-top: 3px solid var(--accent);
+      border-inline: 1px solid var(--line);
+    }
+
+    .ticket::after {
+      position: absolute;
+      inset: auto -1px 0;
+      height: 7px;
+      background: linear-gradient(135deg, transparent 50%, var(--background) 51%) 0 0 / 12px 7px repeat-x,
+                  linear-gradient(225deg, transparent 50%, var(--background) 51%) 0 0 / 12px 7px repeat-x;
+      pointer-events: none;
+      content: "";
+    }
+
+    .identity, .pickup {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      column-gap: .55em;
+      row-gap: .15em;
+    }
+
+    .identity {
+      font-size: 1rem;
+      font-weight: 650;
+    }
+
+    .identity .code { font-size: 1.3em; }
+    .film { color: var(--muted); }
+    .ready { color: var(--green); }
+    .pending { color: var(--accent); }
+    .dot { color: var(--muted); }
+
+    .pickup {
+      margin-block-start: .4rem;
+      font-size: clamp(1.1rem, 4.8vw, 1.55rem);
+      font-weight: 750;
+    }
+
+    .pickup span { white-space: nowrap; }
+
+    .note {
+      margin-block-start: .55rem;
+      color: var(--muted);
+      font-size: .9375rem;
+    }
+
+    .directions { margin-block-start: 1.35rem; }
+
+    .directions h2 {
+      margin-block-end: .35rem;
+      font-size: 1.05rem;
+    }
+
+    .directions dl { border-top: 1px solid var(--line); }
+
+    .directions dl > div {
+      display: grid;
+      grid-template-columns: 5.35em minmax(0, 1fr);
+      align-items: baseline;
+      gap: .65rem;
+      padding-block: .55rem;
+      border-bottom: 1px solid var(--line);
+      font-size: .9375rem;
+    }
+
+    .directions dt { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>胶卷冲扫回执</h1>
+
+    <fieldset>
+      <legend>选择回执号</legend>
+      <div class="choices">
+        <label class="choice">
+          <input type="radio" name="receipt" value="C17" checked>
+          <span class="code">C17</span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="receipt" value="C24">
+          <span class="code">C24</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="ticket" aria-live="polite" aria-atomic="true">
+      <div data-receipt="C17">
+        <p class="identity">
+          <span class="code">C17</span><span class="dot" aria-hidden="true">·</span>
+          <span class="film">135 胶卷</span><span class="dot" aria-hidden="true">·</span>
+          <span class="ready">已好</span>
+        </p>
+        <p class="pickup">
+          <span>三号自提格</span><span class="dot" aria-hidden="true">·</span>
+          <span>今天 <time datetime="21:00">21:00</time> 前</span>
+        </p>
+      </div>
+      <div data-receipt="C24" hidden>
+        <p class="identity">
+          <span class="code">C24</span><span class="dot" aria-hidden="true">·</span>
+          <span class="film">120 胶卷</span><span class="dot" aria-hidden="true">·</span>
+          <span class="pending">未好</span>
+        </p>
+        <p class="pickup">
+          <span>前台看样</span><span class="dot" aria-hidden="true">·</span>
+          <span>明天 <time datetime="16:00">16:00</time> 后</span>
+        </p>
+        <p class="note">乳剂边缘有划痕，不能保证修复成功。</p>
+      </div>
+    </div>
+
+    <section class="directions" aria-labelledby="directions-heading">
+      <h2 id="directions-heading">到店走法</h2>
+      <dl>
+        <div>
+          <dt><time datetime="19:00">19:00</time> 前</dt>
+          <dd>从侧门进，自提格在门里。</dd>
+        </div>
+        <div>
+          <dt><time datetime="19:00">19:00</time> 后</dt>
+          <dd>从巷口走，去侧门里的自提格。</dd>
+        </div>
+        <div>
+          <dt>前台</dt>
+          <dd>今天 <time datetime="18:00">18:00</time> 关。</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <script>
+    const selector = document.querySelector('fieldset');
+    const receipts = document.querySelectorAll('[data-receipt]');
+
+    function showSelectedReceipt() {
+      const selected = selector.querySelector('input[name="receipt"]:checked');
+      for (const receipt of receipts) {
+        receipt.hidden = receipt.dataset.receipt !== selected.value;
+      }
+    }
+
+    selector.addEventListener('change', showSelectedReceipt);
+    window.addEventListener('pageshow', showSelectedReceipt);
+    showSelectedReceipt();
+  </script>
+</body>
+</html>

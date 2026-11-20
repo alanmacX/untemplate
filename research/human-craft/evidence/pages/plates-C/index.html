@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>两张苹果水彩图</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f3e9;
+      --ink: #2b241d;
+      --muted: #64584b;
+      --rule: #b9aa96;
+      --red: #812d25;
+      --serif: "Songti SC", "STSong", "SimSun", Georgia, serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.6 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(100% - 40px, 740px);
+      margin: clamp(24px, 5vw, 56px) auto 48px;
+    }
+
+    header {
+      border-top: 3px solid var(--red);
+      padding: 16px 0 clamp(16px, 3vw, 28px);
+    }
+
+    h1, h2 {
+      margin: 0;
+      font-family: var(--serif);
+      line-height: 1.2;
+    }
+
+    h1 { font-size: clamp(2rem, 5.5vw, 3.5rem); }
+
+    .pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(12px, 3vw, 30px);
+      align-items: start;
+    }
+
+    fieldset {
+      min-inline-size: 0;
+      margin: 0 0 8px;
+      padding: 0;
+      border: 0;
+    }
+
+    .choice {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 4px 2px;
+      border-bottom: 2px solid var(--rule);
+      cursor: pointer;
+      font: clamp(1.125rem, 3vw, 1.5rem)/1.2 Georgia, serif;
+    }
+
+    .choice:has(input:checked) {
+      color: var(--red);
+      border-color: var(--red);
+      font-weight: 700;
+    }
+
+    input[type="radio"] {
+      flex: none;
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      accent-color: var(--red);
+    }
+
+    figure { margin: 0; }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .archive {
+      margin-top: 18px;
+      border-top: 1px solid var(--rule);
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-width: 9rem;
+      min-height: 48px;
+      margin-top: 12px;
+      padding: 8px 14px;
+      border: 1px solid var(--red);
+      background: var(--red);
+      color: #fffaf3;
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    button:hover { background: #69221c; }
+
+    :focus-visible {
+      outline: 2px solid var(--ink);
+      outline-offset: 3px;
+    }
+
+    .mark { font-size: 1.25rem; }
+
+    .record {
+      margin-top: 14px;
+      padding: 18px 0 4px;
+      border-top: 1px solid var(--rule);
+    }
+
+    h2 {
+      font-size: 1.65rem;
+      color: var(--red);
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: 5px 20px;
+      margin: 12px 0 0;
+    }
+
+    dt { color: var(--muted); }
+    dd { margin: 0; }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>两张苹果水彩图</h1>
+    </header>
+
+    <fieldset>
+      <legend class="visually-hidden">选择要查看档案的苹果品种</legend>
+      <div class="pair">
+        <label class="choice">
+          <input type="radio" name="variety" value="baldwin" checked>
+          <span lang="en">Baldwin</span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="variety" value="adirondack">
+          <span lang="en">Adirondack</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="pair">
+      <figure>
+        <img src="../assets/baldwin.jpg" width="960" height="1446"
+          alt="Baldwin 水彩图。纸上画着两颗完整的苹果，上面一颗偏红，下面一颗红绿相间。">
+      </figure>
+      <figure>
+        <img src="../assets/adirondack.jpg" width="960" height="1455"
+          alt="Adirondack 水彩图。上面是一颗完整的苹果，下面是切开的苹果，可以看到果肉和籽。">
+      </figure>
+    </div>
+
+    <div class="archive">
+      <button type="button" id="archive-toggle" aria-expanded="false" aria-controls="archive-record">
+        <span id="toggle-label">查看档案</span>
+        <span class="mark" id="toggle-mark" aria-hidden="true">+</span>
+      </button>
+
+      <div aria-live="polite" aria-atomic="true">
+        <section class="record" id="archive-record" aria-labelledby="record-name" hidden>
+          <h2 id="record-name" lang="en">Baldwin</h2>
+          <dl>
+            <dt>画家</dt>
+            <dd id="record-artist" lang="en">Ellen Isham Schutt</dd>
+            <dt>年份</dt>
+            <dd id="record-year">1909</dd>
+            <dt>编号</dt>
+            <dd id="record-id">POM00001363</dd>
+            <dt>来源</dt>
+            <dd lang="en">USDA</dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const records = {
+      baldwin: {
+        name: "Baldwin",
+        artist: "Ellen Isham Schutt",
+        year: "1909",
+        id: "POM00001363"
+      },
+      adirondack: {
+        name: "Adirondack",
+        artist: "Deborah Griscom Passmore",
+        year: "1893",
+        id: "POM00001337"
+      }
+    };
+
+    const choices = document.querySelector("fieldset");
+    const toggle = document.getElementById("archive-toggle");
+    const label = document.getElementById("toggle-label");
+    const mark = document.getElementById("toggle-mark");
+    const archive = document.getElementById("archive-record");
+
+    function showSelectedRecord() {
+      const selected = choices.querySelector("input:checked");
+      const record = records[selected.value];
+
+      for (const [field, value] of Object.entries(record)) {
+        const element = document.getElementById(`record-${field}`);
+        if (element.textContent !== value) element.textContent = value;
+      }
+    }
+
+    toggle.addEventListener("click", () => {
+      const opening = archive.hidden;
+      if (opening) showSelectedRecord();
+      archive.hidden = !opening;
+      toggle.setAttribute("aria-expanded", String(opening));
+      label.textContent = opening ? "收起档案" : "查看档案";
+      mark.textContent = opening ? "−" : "+";
+    });
+
+    choices.addEventListener("change", () => {
+      if (!archive.hidden) showSelectedRecord();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>胶卷冲扫取片</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --wall: #ece5d9;
+      --paper: #fffbf1;
+      --ink: #28251f;
+      --muted: #65594c;
+      --wine: #782c38;
+      --line: #bdb09e;
+      font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--wall);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    main {
+      width: min(100% - 40px, 560px);
+      margin-inline: auto;
+      padding: 36px 0 32px;
+    }
+
+    h1, h2, p, dl, dd { margin: 0; }
+
+    h1 {
+      font-family: "Songti SC", SimSun, "Noto Serif CJK SC", serif;
+      font-size: clamp(2.25rem, 8.5vw, 3.25rem);
+      line-height: 1.2;
+    }
+
+    header {
+      padding-bottom: 18px;
+      border-bottom: 3px solid var(--ink);
+      margin-bottom: 20px;
+    }
+
+    fieldset { margin: 0 0 14px; padding: 0; border: 0; min-width: 0; }
+    legend { margin-bottom: 8px; padding: 0; font-size: .9375rem; font-weight: 700; }
+    .choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .choice { position: relative; cursor: pointer; }
+
+    .choice-body {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      row-gap: 2px;
+      min-height: 56px;
+      padding: 8px 11px 8px 32px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--paper);
+    }
+
+    .choice input {
+      position: absolute;
+      inset-inline-start: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      accent-color: var(--wine);
+      cursor: pointer;
+    }
+
+    .choice input:checked + .choice-body {
+      border-color: var(--wine);
+      box-shadow: inset 0 0 0 1px var(--wine);
+      background: #f5e7e3;
+    }
+
+    .choice input:focus-visible + .choice-body {
+      outline: 2px solid var(--ink);
+      outline-offset: 3px;
+    }
+
+    .code {
+      font-family: ui-monospace, "Courier New", monospace;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .stock { color: var(--muted); font-size: .8125rem; }
+
+    .receipt {
+      position: relative;
+      padding: 18px 18px 20px 24px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-inline-start: 4px solid var(--wine);
+      box-shadow: 0 3px 0 #28251f0d;
+    }
+
+    .receipt h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed var(--line);
+      font-size: 1.125rem;
+    }
+
+    .status {
+      color: var(--wine);
+      font-size: .9375rem;
+      white-space: nowrap;
+    }
+
+    .destination {
+      margin-top: 12px;
+      font-size: 1.875rem;
+      font-weight: 750;
+      line-height: 1.25;
+    }
+
+    .deadline { margin-top: 4px; font-size: 1.05rem; font-weight: 650; }
+    .deadline time, .arrival time { font-variant-numeric: tabular-nums; }
+    .note { margin-top: 10px; color: var(--muted); font-size: .9375rem; }
+
+    .arrival { margin-top: 22px; }
+    .arrival h2 { margin-bottom: 5px; font-size: 1.125rem; }
+
+    .arrival dl > div {
+      display: grid;
+      grid-template-columns: minmax(5.8rem, 29%) 1fr;
+      gap: 6px 12px;
+      padding: 9px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .arrival dt { font-weight: 700; }
+    .arrival dd { overflow-wrap: anywhere; }
+
+    [hidden] { display: none !important; }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 340px) {
+      main { width: calc(100% - 28px); }
+      .arrival dl > div { grid-template-columns: 1fr; gap: 1px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>胶卷冲扫取片</h1>
+    </header>
+
+    <fieldset id="receipt-picker">
+      <legend>选演示回执</legend>
+      <div class="choices">
+        <label class="choice">
+          <input type="radio" name="receipt" value="C17" aria-controls="receipt-c17" checked>
+          <span class="choice-body">
+            <span class="code">C17</span>
+            <span class="stock">135 胶卷</span>
+          </span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="receipt" value="C24" aria-controls="receipt-c24">
+          <span class="choice-body">
+            <span class="code">C24</span>
+            <span class="stock">120 胶卷</span>
+          </span>
+        </label>
+      </div>
+    </fieldset>
+
+    <section class="receipt" id="receipt-c17" aria-labelledby="result-c17">
+      <h2 id="result-c17"><span>回执 C17</span><span class="status">已好</span></h2>
+      <p class="destination">三号自提格</p>
+      <p class="deadline">今天 <time datetime="21:00">21:00</time> 前取片</p>
+    </section>
+
+    <section class="receipt" id="receipt-c24" aria-labelledby="result-c24" hidden>
+      <h2 id="result-c24"><span>回执 C24</span><span class="status">未好</span></h2>
+      <p class="destination">前台</p>
+      <p class="deadline">明天 <time datetime="16:00">16:00</time> 后到前台看样</p>
+      <p class="note">乳剂边缘有划痕，不能保证修复成功。</p>
+    </section>
+
+    <div id="receipt-announcement" class="visually-hidden" role="status" aria-atomic="true"></div>
+
+    <section class="arrival" aria-labelledby="arrival-title">
+      <h2 id="arrival-title">到店怎么走</h2>
+      <dl>
+        <div>
+          <dt><time datetime="19:00">19:00</time> 前</dt>
+          <dd>自提格在侧门里。</dd>
+        </div>
+        <div>
+          <dt><time datetime="19:00">19:00</time> 后</dt>
+          <dd>从巷口走，到侧门里的自提格。</dd>
+        </div>
+        <div>
+          <dt>前台</dt>
+          <dd>今天 <time datetime="18:00">18:00</time> 关。</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <script>
+    const picker = document.querySelector('#receipt-picker');
+    const receipts = {
+      C17: document.querySelector('#receipt-c17'),
+      C24: document.querySelector('#receipt-c24')
+    };
+    const announcement = document.querySelector('#receipt-announcement');
+
+    function showReceipt(code, announce) {
+      for (const [receiptCode, receipt] of Object.entries(receipts)) {
+        receipt.hidden = receiptCode !== code;
+      }
+
+      if (announce) {
+        const result = receipts[code];
+        const lines = Array.from(result.querySelectorAll('h2 span, p'), node => node.textContent);
+        announcement.textContent = lines.join('。');
+      }
+    }
+
+    picker.addEventListener('change', event => {
+      showReceipt(event.target.value, true);
+    });
+
+    function restoreReceipt() {
+      showReceipt(picker.querySelector('input:checked').value, false);
+    }
+
+    restoreReceipt();
+    window.addEventListener('pageshow', restoreReceipt);
+  </script>
+</body>
+</html>
