@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>周末散步 · 河边怎么走</title>
+<style>
+:root {
+  --paper: #f7f3e9;
+  --ink: #252d23;
+  --muted: #50594b;
+  --green: #274b39;
+  --light-green: #e8eee0;
+  --line: #d9d9ca;
+  --rust: #8b3829;
+  --light-rust: #f5e5dc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.65;
+}
+main {
+  width: min(1120px, calc(100% - 80px));
+  margin-inline: auto;
+  padding: 48px 0 56px;
+}
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #bfc4b4;
+  color: var(--green);
+  font-size: .9rem;
+  font-weight: 750;
+  letter-spacing: .12em;
+}
+.masthead::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 3px solid var(--paper);
+  border-radius: 50%;
+  background: var(--green);
+  outline: 1px solid var(--green);
+}
+.hero { padding: clamp(23px, 4vw, 46px) 0 28px; }
+h1, h2, p, figure { margin: 0; }
+h1 {
+  font-size: clamp(2.05rem, 5.6vw, 4.4rem);
+  line-height: 1.15;
+  letter-spacing: -.065em;
+  font-weight: 850;
+}
+.hero p {
+  margin-top: 17px;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.14rem);
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+}
+.map {
+  overflow: hidden;
+  border: 1px solid #c9d2bf;
+  border-radius: 20px;
+  background-color: var(--light-green);
+}
+.map figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 3px 12px;
+  padding: 19px 21px;
+  border-bottom: 1px solid #c9d2bf;
+  color: var(--green);
+  font-weight: 750;
+}
+.map figcaption small {
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 500;
+}
+.sketch {
+  position: relative;
+  isolation: isolate;
+  min-height: 328px;
+  overflow: hidden;
+  background-image: radial-gradient(#7c8d7445 1px, transparent 1px);
+  background-size: 17px 17px;
+}
+.river {
+  position: absolute;
+  z-index: -1;
+  right: -44%;
+  bottom: -89%;
+  width: 119%;
+  height: 123%;
+  border: 2px solid #a0bdbc;
+  border-radius: 48%;
+  background: repeating-linear-gradient(0deg, #cadcda 0 15px, #bdd4d1 16px 17px, #cadcda 18px 28px);
+  transform: rotate(-26deg);
+}
+.route-line {
+  position: absolute;
+  left: 16%;
+  top: 26%;
+  width: 66%;
+  height: 48%;
+  border-left: 5px solid var(--green);
+  border-top: 5px solid var(--green);
+  border-radius: 38px 0 0 0;
+}
+.pin {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px;
+  border: 1px solid #b3c3ad;
+  border-radius: 8px;
+  color: var(--green);
+  background: #fbfaf3;
+  font-size: .94rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+.pin::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.west { left: 16%; top: 74%; transform: translate(-17%, -50%); }
+.slope { left: 45%; top: 26%; transform: translate(-50%, -50%); }
+.north { left: 82%; top: 26%; transform: translate(-76%, -50%); }
+.closed {
+  right: 7%;
+  bottom: 23%;
+  flex-wrap: wrap;
+  border-color: #d8a99b;
+  color: var(--rust);
+  background: var(--light-rust);
+}
+.closed::before {
+  content: "×";
+  width: auto;
+  height: auto;
+  background: none;
+  font-size: 1.1em;
+  line-height: 1;
+}
+.closed small { font-size: .75rem; }
+.panel {
+  padding: clamp(17px, 2.5vw, 27px);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fffdf7;
+}
+h2 { font-size: 1.36rem; line-height: 1.3; }
+.choice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 11px;
+  margin: 15px 0 12px;
+  padding: 12px 13px;
+  border: 1px solid #bdcbb8;
+  border-radius: 11px;
+  background: #f1f4eb;
+  cursor: pointer;
+}
+.choice:focus-within { outline: 2px solid var(--green); outline-offset: 3px; }
+.choice:has(input:checked) { border-color: var(--green); background: var(--light-green); }
+.choice input {
+  width: 19px;
+  height: 19px;
+  margin: 0;
+  accent-color: var(--green);
+  cursor: pointer;
+}
+.choice strong, .choice small { display: block; }
+.choice small { color: var(--muted); font-size: .84rem; }
+button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 46px;
+  padding: 9px 14px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: var(--green);
+  color: #fff;
+  font: inherit;
+  font-weight: 750;
+  text-align: left;
+  cursor: pointer;
+}
+button:hover { background: #1e3c2d; }
+button:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.result:empty { display: none; }
+.result {
+  margin-top: 14px;
+  padding: 11px 13px;
+  border-left: 4px solid var(--green);
+  border-radius: 0 8px 8px 0;
+  background: var(--light-green);
+  color: var(--green);
+  overflow-wrap: anywhere;
+}
+.result strong { display: block; }
+.notes {
+  display: grid;
+  gap: 6px;
+  margin: 17px 0 0;
+  padding: 13px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+  color: var(--muted);
+  font-size: .88rem;
+}
+.notes strong { color: var(--ink); }
+@media (max-width: 760px) {
+  main { width: min(580px, calc(100% - 32px)); padding-top: 25px; }
+  .layout { grid-template-columns: 1fr; gap: 12px; }
+  .sketch { min-height: 245px; }
+  .map figcaption { padding: 12px 15px; }
+}
+@media (max-width: 360px) {
+  .pin { padding-inline: 6px; font-size: .82rem; }
+  .closed { right: 4%; }
+}
+</style>
+</head>
+<body>
+<main>
+  <header class="masthead">周末散步 · 河边路况</header>
+  <div class="hero">
+    <h1>去桥北，走斜坡</h1>
+    <p>昨晚下了雨，临河台阶还滑，暂时封了。往桥北去的话，从西口绕一下就能过去。</p>
+  </div>
+
+  <div class="layout">
+    <figure class="map" aria-describedby="map-description">
+      <figcaption>河边绕行示意 <small>只画位置关系</small></figcaption>
+      <div class="sketch" aria-hidden="true">
+        <div class="river"></div>
+        <div class="route-line"></div>
+        <span class="pin west">西口</span>
+        <span class="pin slope">斜坡</span>
+        <span class="pin north">桥北</span>
+        <span class="pin closed">临河台阶 <small>暂时封闭</small></span>
+      </div>
+      <p id="map-description" hidden>从西口沿斜坡可以到桥北。临河台阶暂时封闭。</p>
+    </figure>
+
+    <section class="panel" aria-labelledby="route-title">
+      <h2 id="route-title">你打算怎么走？</h2>
+      <form id="route-form">
+        <label class="choice">
+          <input type="radio" name="route" value="slope" required aria-labelledby="slope-label" aria-describedby="slope-detail">
+          <span>
+            <strong id="slope-label">走斜坡</strong>
+            <small id="slope-detail">从西口进，沿斜坡去桥北</small>
+          </span>
+        </label>
+        <button type="submit">走斜坡 <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="result" id="route-result" role="status" aria-atomic="true"></div>
+
+      <ul class="notes">
+        <li><strong>推手推车</strong>的话，现在只能走斜坡。</li>
+        <li><strong>想看桥洞</strong>，可以在斜坡尽头停下来看看，那里禁止机动车通行。</li>
+      </ul>
+    </section>
+  </div>
+</main>
+<script>
+const routeForm = document.getElementById('route-form');
+const routeResult = document.getElementById('route-result');
+
+routeForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const outcome = document.createElement('strong');
+  outcome.textContent = '可达 · 能到桥北';
+  const directions = document.createElement('span');
+  directions.textContent = '从西口进，沿斜坡一直走到桥北。';
+  routeResult.replaceChildren(outcome, directions);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>周末散步路况｜西口到桥北</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f5e9;
+      --ink: #233730;
+      --muted: #4e6156;
+      --green: #254d3a;
+      --line: #c8ceba;
+      --lime: #e4edb2;
+      --rust: #8a402c;
+      font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    button, input { font: inherit; }
+    .page { width: min(1184px, calc(100% - 96px)); margin-inline: auto; }
+    .masthead {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .masthead-name { display: flex; align-items: center; gap: 10px; font-size: .94rem; font-weight: 750; }
+    .masthead-icon { width: 32px; height: 32px; flex: none; }
+    .demo { color: var(--muted); font-size: .8rem; white-space: nowrap; }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+      grid-template-areas: "intro map" "form map";
+      grid-template-rows: auto 1fr;
+      column-gap: clamp(30px, 5vw, 76px);
+      row-gap: 26px;
+      padding-block: clamp(32px, 5vw, 69px) 36px;
+    }
+    .intro { grid-area: intro; }
+    .closure {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 17px;
+      padding: 6px 11px;
+      border: 1px solid #dfbbac;
+      border-radius: 4px;
+      background: #f5e6db;
+      color: var(--rust);
+      font-size: .82rem;
+      font-weight: 750;
+    }
+    .closure-symbol {
+      width: 15px;
+      height: 15px;
+      display: grid;
+      place-items: center;
+      border: 1.5px solid currentColor;
+      border-radius: 50%;
+      font-size: 11px;
+      line-height: 1;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 5.1vw, 4.7rem);
+      line-height: 1.12;
+      letter-spacing: -.055em;
+      font-weight: 850;
+    }
+    h1 span { display: block; }
+    .intro-copy {
+      max-width: 29em;
+      margin: 19px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+    .route-form { grid-area: form; align-self: start; }
+    fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+    legend { margin: 0 0 9px; padding: 0; font-size: .87rem; font-weight: 750; }
+    .route-controls { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+    .choice {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 53px;
+      padding: 8px 13px;
+      border: 1px solid #9ca995;
+      border-radius: 6px;
+      background: #fffdf4;
+      cursor: pointer;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .choice:has(input:checked) { background: var(--lime); border-color: var(--green); }
+    .choice input { width: 18px; height: 18px; margin: 0; flex: none; accent-color: var(--green); }
+    button {
+      min-height: 53px;
+      padding: 8px 15px;
+      border: 1px solid var(--green);
+      border-radius: 6px;
+      background: var(--green);
+      color: #fffdf4;
+      cursor: pointer;
+      font-size: .94rem;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    button:hover { background: #183b2a; }
+    button:focus-visible, input:focus-visible, .result:focus-visible {
+      outline: 3px solid #396e53;
+      outline-offset: 4px;
+    }
+    .result {
+      margin-top: 12px;
+      padding: 12px 15px;
+      border: 1px solid #aab98c;
+      border-left: 4px solid var(--green);
+      border-radius: 5px;
+      background: #edf1d7;
+      scroll-margin-block: 20px;
+    }
+    .result h2 { margin: 0; font-size: 1rem; }
+    .result p { margin: 5px 0 0; color: var(--muted); font-size: .92rem; line-height: 1.55; }
+    .map {
+      grid-area: map;
+      align-self: start;
+      overflow: hidden;
+      margin: 0;
+      border: 1px solid #aeb9a3;
+      border-radius: 12px;
+      background: #eef0dc;
+    }
+    .map-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 4px 12px;
+      padding: 13px 19px;
+      border-bottom: 1px solid #bfc9af;
+      background: #e7ebd4;
+    }
+    .map-head strong { font-size: .95rem; }
+    .map-head span { font-size: .78rem; color: var(--muted); }
+    .map svg { display: block; width: 100%; height: auto; }
+    .route-halo { opacity: 0; }
+    .route-confirmed .route-halo { opacity: 1; }
+    .map-key {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 21px;
+      padding: 11px 19px;
+      border-top: 1px solid #bfc9af;
+      background: #f6f7e9;
+      color: var(--muted);
+      font-size: .8rem;
+    }
+    .map-key span { display: inline-flex; align-items: center; gap: 7px; }
+    .key-line { display: inline-block; width: 19px; border-top: 3px solid var(--green); border-radius: 2px; }
+    .key-closed { border-top-style: dashed; border-color: var(--rust); }
+    .notes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-block: 1px solid var(--line);
+      margin-bottom: 38px;
+    }
+    .note { display: flex; align-items: flex-start; gap: 13px; padding: 20px 20px 20px 0; }
+    .note + .note { border-left: 1px solid var(--line); padding-left: 24px; }
+    .note svg { width: 36px; height: 36px; flex: none; color: var(--green); }
+    .note h2 { margin: 0 0 4px; font-size: .96rem; }
+    .note p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+    @media (max-width: 850px) {
+      .page { width: calc(100% - 48px); }
+      .layout { column-gap: 24px; }
+    }
+    @media (max-width: 670px) {
+      .page { width: calc(100% - 32px); }
+      .masthead { min-height: 60px; }
+      .layout {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "intro" "form" "map";
+        grid-template-rows: auto;
+        row-gap: 22px;
+        padding-block: 27px 24px;
+      }
+      h1 { font-size: clamp(2.3rem, 9vw, 3.5rem); }
+      .intro-copy { margin-top: 13px; }
+      .closure { margin-bottom: 12px; }
+      .map-head, .map-key { padding-inline: 13px; }
+      .notes { grid-template-columns: 1fr; margin-bottom: 24px; }
+      .note { padding: 15px 0; }
+      .note + .note { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
+    }
+    @media (max-width: 300px) {
+      .route-controls { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <div class="masthead-name">
+        <svg class="masthead-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#254d3a"/>
+          <path d="M7 23c4 0 6-3 8-7s5-7 10-7" fill="none" stroke="#e4edb2" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="7.5" cy="23" r="2" fill="#e4edb2"/>
+          <circle cx="24.5" cy="9" r="2" fill="#e4edb2"/>
+        </svg>
+        周末散步路况
+      </div>
+      <span class="demo">演示资料</span>
+    </header>
+
+    <main>
+      <div class="layout">
+        <section class="intro" aria-labelledby="page-title">
+          <p class="closure"><span class="closure-symbol" aria-hidden="true">−</span>临河台阶暂时封闭</p>
+          <h1 id="page-title"><span>去桥北，</span><span>从西口绕一下</span></h1>
+          <p class="intro-copy">昨晚下了雨，临河台阶还滑着，先别往台阶那边走。到西口上斜坡，顺着走就能到桥北。</p>
+        </section>
+
+        <form class="route-form" id="route-form">
+          <fieldset>
+            <legend>看看这条路能不能走通</legend>
+            <div class="route-controls">
+              <label class="choice">
+                <input type="radio" name="route" value="ramp" required>
+                <span>走斜坡</span>
+              </label>
+              <button type="submit">查看可达结果</button>
+            </div>
+          </fieldset>
+          <section class="result" id="route-result" aria-labelledby="result-title" tabindex="-1" hidden>
+            <h2 id="result-title">可达 · 西口 → 斜坡 → 桥北</h2>
+            <p>从西口上斜坡，沿坡走到头就到桥北。</p>
+          </section>
+        </form>
+
+        <figure class="map" id="route-map">
+          <figcaption class="map-head">
+            <strong>绕行示意</strong>
+            <span>仅示位置关系</span>
+          </figcaption>
+          <svg viewBox="0 0 560 370" role="img" aria-labelledby="map-title map-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="map-title">西口到桥北的斜坡路线</title>
+            <desc id="map-desc">绿线从西口沿斜坡通到桥北。靠河的台阶单独标出，目前封闭。图中不表示实际远近。</desc>
+            <defs>
+              <pattern id="land-dots" width="17" height="17" patternUnits="userSpaceOnUse">
+                <circle cx="3" cy="3" r="1" fill="#738568" opacity=".22"/>
+              </pattern>
+              <pattern id="water-lines" width="61" height="35" patternUnits="userSpaceOnUse">
+                <path d="M4 17h20m8 0h7" fill="none" stroke="#739b9b" stroke-width="1.4" stroke-linecap="round" opacity=".48"/>
+              </pattern>
+            </defs>
+            <rect width="560" height="370" fill="#eef0dc"/>
+            <rect width="560" height="370" fill="url(#land-dots)"/>
+            <path d="M458 0H560V370H452C417 329 428 293 461 245C494 197 498 147 477 102C461 68 439 39 458 0Z" fill="#c8ded9"/>
+            <path d="M458 0H560V370H452C417 329 428 293 461 245C494 197 498 147 477 102C461 68 439 39 458 0Z" fill="url(#water-lines)" stroke="#a5c6bd" stroke-width="2"/>
+            <text x="513" y="169" fill="#365e60" text-anchor="middle" font-size="21" font-weight="700">河</text>
+
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M84 296C145 296 181 273 213 238S268 161 306 122C322 105 338 91 359 77" stroke="#d5dfbd" stroke-width="28"/>
+              <path class="route-halo" d="M84 296C145 296 181 273 213 238S268 161 306 122C322 105 338 91 359 77" stroke="#cadf88" stroke-width="32"/>
+              <path d="M84 296C145 296 181 273 213 238S268 161 306 122C322 105 338 91 359 77" stroke="#28543c" stroke-width="8"/>
+              <path d="m275 157 15-2-1 15" stroke="#28543c" stroke-width="4"/>
+            </g>
+            <g fill="#fffdf3" stroke="#28543c" stroke-width="4">
+              <circle cx="84" cy="296" r="10"/>
+              <circle cx="359" cy="77" r="10"/>
+            </g>
+            <g fill="#233730" font-size="24" font-weight="800">
+              <text x="61" y="337">西口</text>
+              <text x="335" y="52">桥北</text>
+            </g>
+            <g>
+              <rect x="129" y="177" width="87" height="39" rx="7" fill="#f8faed" stroke="#a3b492"/>
+              <path d="m216 197 17 14" stroke="#687e62" stroke-width="2" stroke-linecap="round"/>
+              <text x="172.5" y="204" text-anchor="middle" fill="#254d3a" font-size="22" font-weight="750">斜坡</text>
+            </g>
+            <g>
+              <rect x="299" y="231" width="125" height="69" rx="8" fill="#faf0e5" stroke="#bc8a76" stroke-width="1.5" stroke-dasharray="5 4"/>
+              <circle cx="320" cy="253" r="8" fill="none" stroke="#8a402c" stroke-width="2"/>
+              <path d="M316 253h8" stroke="#8a402c" stroke-width="2" stroke-linecap="round"/>
+              <text x="336" y="260" fill="#8a402c" font-size="20" font-weight="800">台阶</text>
+              <text x="361.5" y="285" text-anchor="middle" fill="#8a402c" font-size="18">暂时封闭</text>
+            </g>
+          </svg>
+          <div class="map-key">
+            <span><i class="key-line" aria-hidden="true"></i>斜坡可通行</span>
+            <span><i class="key-line key-closed" aria-hidden="true"></i>台阶封闭</span>
+          </div>
+        </figure>
+      </div>
+
+      <div class="notes">
+        <section class="note" aria-labelledby="cart-note">
+          <svg viewBox="0 0 36 36" aria-hidden="true">
+            <rect x="1" y="1" width="34" height="34" rx="9" fill="#e7ebd4"/>
+            <path d="M8 10h3l3 12h12m-13.7-3h12l2-6H12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="26" r="1.5" fill="currentColor"/>
+            <circle cx="24" cy="26" r="1.5" fill="currentColor"/>
+          </svg>
+          <div>
+            <h2 id="cart-note">推着手推车</h2>
+            <p>现在只能走斜坡，从西口上去。</p>
+          </div>
+        </section>
+        <section class="note" aria-labelledby="bridge-note">
+          <svg viewBox="0 0 36 36" aria-hidden="true">
+            <rect x="1" y="1" width="34" height="34" rx="9" fill="#e7ebd4"/>
+            <path d="M8 13h20M9 13v12m18-12v12M13 25v-2a5 5 0 0 1 10 0v2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <h2 id="bridge-note">想看看桥洞</h2>
+            <p>可以在斜坡尽头停一停，那里禁止机动车。</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const routeForm = document.getElementById("route-form");
+    const routeResult = document.getElementById("route-result");
+    const routeMap = document.getElementById("route-map");
+
+    routeForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      routeResult.hidden = false;
+      routeMap.classList.add("route-confirmed");
+      routeResult.focus();
+    });
+  </script>
+</body>
+</html>

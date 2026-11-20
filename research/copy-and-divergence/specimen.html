@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中文字体同文对照</title>
+<style>
+  *{box-sizing:border-box} body{margin:0;padding:20px;background:#fafaf7;color:#222}
+  article{max-width:38rem;margin:auto;font-family:system-ui,sans-serif;font-size:16px;line-height:1.55}
+  h1{font-size:2rem;line-height:1.23;margin:0 0 .7em;font-weight:600}
+  .legacy h1{font-family:Georgia,"Times New Roman",serif}
+  .hei h1{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+  .song h1{font-family:"Songti SC","SimSun","Noto Serif CJK SC",serif}
+  p{margin:0 0 .75em} time,.price{white-space:nowrap}
+  button{font:inherit;padding:6px 12px}
+</style>
+<article>
+  <h1>到哪取《西街十二扇门》？</h1>
+  <p>周六 <time>13:30–16:00</time>　服务台领取。推童车可经过中庭（北门无台阶）。</p>
+  <p>另可查看 USB 收音机配件，价格 <span class="price">¥128</span>。</p>
+  <button>记入取书单</button>
+</article>
+<script>document.querySelector("article").className=["legacy","hei","song"].includes(location.hash.slice(1))?location.hash.slice(1):"legacy"</script>
+</html>

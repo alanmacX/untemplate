@@ -1,0 +1,58 @@
+[
+  {
+    "page": "radio-C",
+    "view": "desktop",
+    "removed": "先选收音机的现象，看看需要怎么检查。",
+    "retained": "完全没声音",
+    "flow": "pass"
+  },
+  {
+    "page": "radio-C",
+    "view": "phone",
+    "removed": "先选收音机的现象，看看需要怎么检查。",
+    "retained": "完全没声音",
+    "flow": "pass"
+  },
+  {
+    "page": "books-C",
+    "view": "desktop",
+    "removed": "点书名，查看领取时间、地点和走法。",
+    "retained": "选一本绘本",
+    "flow": "pass"
+  },
+  {
+    "page": "books-C",
+    "view": "phone",
+    "removed": "点书名，查看领取时间、地点和走法。",
+    "retained": "选一本绘本",
+    "flow": "pass"
+  },
+  {
+    "page": "lab-loan-B",
+    "view": "desktop",
+    "removed": "Choose a task",
+    "retained": "Three-day loans",
+    "flow": "pass"
+  },
+  {
+    "page": "lab-loan-B",
+    "view": "phone",
+    "removed": "Choose a task",
+    "retained": "Three-day loans",
+    "flow": "pass"
+  },
+  {
+    "page": "orchard-V",
+    "view": "desktop",
+    "removed": "Orchard map",
+    "retained": "Friday’s harvest note: Still too muddy after rain.",
+    "flow": "pass"
+  },
+  {
+    "page": "orchard-V",
+    "view": "phone",
+    "removed": "Orchard map",
+    "retained": "Friday’s harvest note: Still too muddy after rain.",
+    "flow": "pass"
+  }
+]

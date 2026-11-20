@@ -1,0 +1,9 @@
+# Copy invariants and independent exploration
+
+Synthetic holdout briefs, in Chinese. No session text is an input. Read the final status as experiments, not a taste panel.
+
+**Implementation A/B/C:** one independent page per brief per condition with exact same workflow and HTML-only output, model and endpoint fixed. A receives no skill. B receives the full v11 entrypoint. C receives the full v11 entrypoint plus the candidate copy invariant stated in the runner. The common brief fixes the required behavior but does not prescribe a layout or theme. Evaluate rendered desktop/phone with the same action in each variant, audit visible redundant slots, and distinguish scoring from post-build repair. Keep user-facing status labels, useful headings and required information. Scores are descriptive.
+
+**Concept allocation:** same 3 briefs and syntax per condition; 3 independent requests per condition, reusing the same seed labels. Paired variants receive either a bare numeric tag or one drawn fact from their own brief, fixed by a seeded, without-replacement permutation. Facts already appear in both prompts. No route designs, format categories or references are provided. Inspect concrete opening, action and result differences using natural language, not free-assigned category counts or wording changes. Compare usefulness and retention of core functions separately. This tests relocating the point of attention, not decoder sampling or model weights.
+
+**Exploratory extension:** after viewing the fact-only responses, allocate one of three ordinary source-situation cues in addition to the same fact, without replacement. Try to transfer how the source groups information or an action. Report it separately from the initial contrast. The deletion pass applies exact audited changes to two C pages and two previously generated English fixtures; it neither relabels the original full pages nor changes their scores.

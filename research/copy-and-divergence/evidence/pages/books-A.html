@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>周末取绘本</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f7f3e9;
+    --white: #fffcf5;
+    --ink: #203b32;
+    --muted: #52625b;
+    --line: #deded0;
+    --green: #215744;
+    --soft-green: #e6eee1;
+    --serif: "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+    --sans: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.6; }
+  button { font: inherit; }
+  button:focus-visible { outline: 3px solid #96531b; outline-offset: 4px; }
+  [hidden] { display: none !important; }
+  .wrap { width: min(1060px, calc(100% - 64px)); margin-inline: auto; }
+
+  .masthead { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 21px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-size: .91rem; font-weight: 750; letter-spacing: .08em; }
+  .book-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--green); color: #fff9e6; }
+  .demo { border: 1px solid #cecec0; border-radius: 999px; padding: 3px 11px; color: var(--muted); font-size: .76rem; white-space: nowrap; }
+
+  .hero { position: relative; isolation: isolate; overflow: hidden; min-height: 228px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 36px clamp(25px, 5vw, 58px); border-radius: 22px; background: #dfebdb; }
+  .hero h1 { margin: 0; font: 800 clamp(2.4rem, 6.2vw, 4.35rem)/1.12 var(--serif); letter-spacing: .055em; }
+  .hero p { margin: 16px 0 0; color: #39534a; font-size: clamp(.95rem, 2vw, 1.08rem); }
+  .landscape { position: absolute; z-index: -1; inset: 0 0 0 auto; width: 40%; overflow: hidden; pointer-events: none; }
+  .sun { position: absolute; width: 68px; aspect-ratio: 1; right: 17%; top: 21%; border-radius: 50%; background: #f2cf85; }
+  .hill { position: absolute; width: 114%; height: 74%; border-radius: 50% 50% 0 0; transform: rotate(-15deg); bottom: -36%; right: -17%; background: #a9c9a8; }
+  .hill + .hill { width: 92%; height: 72%; bottom: -44%; right: -3%; transform: rotate(18deg); background: #7eaa8b; }
+  .path { position: absolute; width: 70%; height: 100%; right: -25%; bottom: -66%; transform: rotate(-25deg); border: 10px solid #f4e8bc; border-radius: 50%; }
+
+  .content { display: grid; grid-template-columns: minmax(0, 1.23fr) minmax(0, 1fr); gap: 28px; align-items: start; margin-block: 31px 48px; }
+  .section-title { margin: 0 0 13px; font-size: 1.16rem; letter-spacing: .035em; }
+  .choices { display: grid; gap: 12px; }
+  .choice { width: 100%; display: grid; grid-template-columns: 77px minmax(0, 1fr) auto; gap: 16px; align-items: center; text-align: left; padding: 12px 15px 12px 12px; border: 1px solid var(--line); border-radius: 15px; background: var(--white); color: var(--ink); cursor: pointer; }
+  .choice:hover { border-color: #7d9b89; background: #fcfbf2; }
+  .choice[aria-pressed="true"] { border-color: #42735b; background: #eff4e9; box-shadow: inset 0 0 0 1px #42735b; }
+  .choice strong { display: block; font-size: clamp(1rem, 2.1vw, 1.14rem); line-height: 1.4; }
+  .choice small { display: block; margin-top: 5px; color: var(--muted); font-size: .81rem; }
+  .arrow { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #f0f1e7; font-size: 1.15rem; }
+  .choice[aria-pressed="true"] .arrow { background: var(--green); color: white; }
+  .cover { position: relative; display: block; height: 77px; overflow: hidden; border-radius: 5px 9px 9px 5px; box-shadow: inset 4px 0 #0002; }
+  .river { background: #bcd8d0; }
+  .river::before { content: ""; position: absolute; width: 16px; aspect-ratio: 1; top: 11px; right: 12px; border-radius: 50%; background: #ffdf8d; }
+  .river::after { content: ""; position: absolute; inset: 36px -13px -11px 4px; border-radius: 65% 35% 0 0; background: #477a63; transform: rotate(-12deg); }
+  .river i { position: absolute; z-index: 1; width: 80px; height: 22px; bottom: 5px; left: -5px; border-radius: 50%; border-top: 8px solid #dfeddd; transform: rotate(-19deg); }
+  .street { background: #e8b382; }
+  .street::before { content: ""; position: absolute; inset: 18px 11px -2px 13px; border: 4px solid #f7ddb5; border-bottom: 0; border-radius: 28px 28px 0 0; background: #a8533b; }
+  .street::after { content: ""; position: absolute; inset: 28px 23px -2px 25px; border: 2px solid #f2c398; border-radius: 20px 20px 0 0; }
+  .street i { position: absolute; z-index: 1; top: 50px; right: 28px; width: 4px; aspect-ratio: 1; border-radius: 50%; background: #f7ddb5; }
+
+  .panel { border: 1px solid var(--line); border-radius: 15px; background: var(--white); padding: clamp(18px, 3vw, 25px); }
+  .panel p { margin: 0; }
+  .placeholder { min-height: 114px; display: flex; align-items: center; gap: 14px; color: var(--muted); font-size: .93rem; }
+  .pin { display: grid; place-items: center; flex: 0 0 42px; height: 42px; border-radius: 50%; background: var(--soft-green); color: var(--green); }
+  .detail-title { margin: 0 0 11px; font-size: 1.13rem; }
+  dl { margin: 0; }
+  .facts { display: grid; grid-template-columns: 4.2em minmax(0, 1fr); gap: 8px; padding-block: 9px; border-top: 1px solid #ebe9dd; font-size: .92rem; }
+  dt { color: var(--muted); }
+  dd { margin: 0; overflow-wrap: anywhere; }
+  .route { margin-top: 9px !important; padding: 10px 12px; border-radius: 9px; background: #edf1e7; font-size: .88rem; }
+  .save { width: 100%; min-height: 45px; margin-top: 15px; border: 0; border-radius: 9px; background: var(--green); color: #fff; font-weight: 750; cursor: pointer; }
+  .save:hover { background: #174534; }
+  .receipt { margin-top: 12px; border: 1px solid #bacdb9; border-radius: 12px; padding: 11px 14px; background: #e6eee1; font-size: .9rem; }
+  .receipt:empty { margin: 0; padding: 0; border: 0; }
+  .receipt strong { display: block; }
+  .receipt span { display: block; margin-top: 2px; }
+
+  @media (max-width: 700px) {
+    .wrap { width: calc(100% - 32px); }
+    .masthead { padding-block: 14px; }
+    .hero { min-height: 175px; border-radius: 16px; }
+    .hero p { max-width: 22ch; }
+    .landscape { width: 36%; opacity: .62; }
+    .sun { width: 40px; }
+    .content { grid-template-columns: 1fr; gap: 22px; margin-block: 22px 32px; }
+  }
+
+  @media (max-width: 360px) {
+    .choice { grid-template-columns: 60px minmax(0, 1fr) auto; gap: 10px; }
+    .cover { height: 65px; }
+  }
+</style>
+</head>
+<body>
+  <header class="masthead wrap">
+    <div class="brand">
+      <span class="book-mark" aria-hidden="true">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+          <path d="M12 6c-2.5-2-5.3-2.4-9-1v13c3.7-1.4 6.5-1 9 1 2.5-2 5.3-2.4 9-1V5c-3.7-1.4-6.5-1-9 1Zm0 0v13"/>
+        </svg>
+      </span>
+      绘本取书指引
+    </div>
+    <span class="demo">演示</span>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div class="landscape" aria-hidden="true"><i class="sun"></i><i class="hill"></i><i class="hill"></i><i class="path"></i></div>
+      <h1>周末取绘本</h1>
+      <p>点开书名，出门前看一眼去哪儿、几点到。</p>
+    </div>
+
+    <div class="content">
+      <section aria-labelledby="books-heading">
+        <h2 class="section-title" id="books-heading">选一本绘本</h2>
+        <div class="choices">
+          <button class="choice" type="button" data-book="river" aria-label="去河边的那天" aria-pressed="false" aria-controls="pickup">
+            <span class="cover river" aria-hidden="true"><i></i></span>
+            <span><strong>去河边的那天</strong><small>北门自提架</small></span>
+            <span class="arrow" aria-hidden="true">›</span>
+          </button>
+          <button class="choice" type="button" data-book="street" aria-label="西街十二扇门" aria-pressed="false" aria-controls="pickup">
+            <span class="cover street" aria-hidden="true"><i></i></span>
+            <span><strong>西街十二扇门</strong><small>服务台领取</small></span>
+            <span class="arrow" aria-hidden="true">›</span>
+          </button>
+        </div>
+      </section>
+
+      <section aria-labelledby="pickup-heading">
+        <h2 class="section-title" id="pickup-heading">领取指引</h2>
+        <div class="panel">
+          <div class="placeholder" id="placeholder">
+            <span class="pin" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round">
+                <path d="M19 10c0 5-7 10-7 10S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/>
+              </svg>
+            </span>
+            <p>选好绘本后，这里会显示领取时间和怎么走。</p>
+          </div>
+          <div id="pickup" hidden>
+            <div aria-live="polite" aria-atomic="true">
+              <h3 class="detail-title" id="selected-title"></h3>
+              <dl>
+                <div class="facts"><dt>领取位置</dt><dd id="place"></dd></div>
+                <div class="facts"><dt>领取时段</dt><dd id="hours"></dd></div>
+              </dl>
+              <p class="route" id="route"></p>
+            </div>
+            <button class="save" id="save" type="button">记入取书单</button>
+          </div>
+        </div>
+        <div class="receipt" id="receipt" role="status" aria-atomic="true"></div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const books = {
+      river: {
+        title: '去河边的那天',
+        place: '北门自提架',
+        hours: '周六 10:00–12:00',
+        route: '认准北门小门前的灰色柱子。小门没有台阶。'
+      },
+      street: {
+        title: '西街十二扇门',
+        place: '服务台',
+        hours: '周六 13:30–16:00',
+        route: '去服务台会经过中庭，推童车也能过。'
+      }
+    };
+
+    const choices = document.querySelectorAll('.choice');
+    const pickup = document.getElementById('pickup');
+    const placeholder = document.getElementById('placeholder');
+    const selectedTitle = document.getElementById('selected-title');
+    const place = document.getElementById('place');
+    const hours = document.getElementById('hours');
+    const route = document.getElementById('route');
+    const receipt = document.getElementById('receipt');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const narrowScreen = window.matchMedia('(max-width: 700px)');
+    let selectedBook;
+
+    function reveal(element) {
+      if (narrowScreen.matches && element.getBoundingClientRect().bottom > window.innerHeight) {
+        element.scrollIntoView({ block: 'nearest', behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+      }
+    }
+
+    choices.forEach((choice) => {
+      choice.addEventListener('click', () => {
+        selectedBook = books[choice.dataset.book];
+        choices.forEach((button) => button.setAttribute('aria-pressed', String(button === choice)));
+        placeholder.hidden = true;
+        pickup.hidden = false;
+        selectedTitle.textContent = `《${selectedBook.title}》`;
+        place.textContent = selectedBook.place;
+        hours.textContent = selectedBook.hours;
+        route.textContent = selectedBook.route;
+        reveal(pickup);
+      });
+    });
+
+    document.getElementById('save').addEventListener('click', () => {
+      if (!selectedBook) return;
+      const confirmation = document.createElement('strong');
+      const savedTitle = document.createElement('span');
+      confirmation.textContent = '已加入取书单';
+      savedTitle.textContent = `《${selectedBook.title}》`;
+      receipt.replaceChildren(confirmation, savedTitle);
+      reveal(receipt);
+    });
+  </script>
+</body>
+</html>

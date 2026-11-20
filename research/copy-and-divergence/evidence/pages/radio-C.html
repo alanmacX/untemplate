@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>老收音机维修点</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f4efe4;
+      --sheet: #fffdf6;
+      --ink: #252c24;
+      --muted: #53594d;
+      --green: #254539;
+      --green-dark: #19352b;
+      --line: #d7cebc;
+      --rust: #85451f;
+      font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; }
+    button { font: inherit; }
+    h1, h2, p, dl, dd { margin: 0; }
+
+    .page {
+      width: min(100% - 64px, 1060px);
+      margin-inline: auto;
+      padding-block: clamp(24px, 5vw, 64px);
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      align-items: center;
+      gap: 32px;
+      min-height: 294px;
+      padding: clamp(28px, 5vw, 60px);
+      border: 1px solid #1b382e;
+      border-radius: 8px 8px 0 0;
+      background: radial-gradient(ellipse at 85% 24%, #38594a, var(--green-dark) 76%);
+      color: #fcf4df;
+    }
+
+    h1, h2 {
+      font-family: "Songti SC", "Noto Serif CJK SC", SimSun, serif;
+      font-weight: 800;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.65vw, 3.65rem);
+      line-height: 1.18;
+      letter-spacing: .025em;
+    }
+
+    .intro p {
+      max-width: 24em;
+      margin-top: 16px;
+      color: #e5e4d2;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .radio {
+      position: relative;
+      width: min(100%, 320px);
+      aspect-ratio: 2.15;
+      margin: 24px auto 2px;
+      padding: 12px;
+      border: 2px solid #563a25;
+      border-radius: 15px;
+      background:
+        repeating-linear-gradient(2deg, #43281016 0 1px, transparent 1px 5px),
+        linear-gradient(160deg, #bd8a50, #77502f 80%);
+      box-shadow: inset 0 2px 2px #ffdf9c80, 0 5px 0 #382b20, 0 15px 24px #13241cb0;
+    }
+
+    .radio::before {
+      content: "";
+      position: absolute;
+      left: 11%;
+      top: -6px;
+      width: 72%;
+      height: 4px;
+      border-radius: 6px;
+      background: linear-gradient(#e4d8b6, #8b8c7e);
+      transform: rotate(-9deg);
+      transform-origin: left center;
+      box-shadow: 0 1px 1px #162920;
+    }
+
+    .radio-face {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 9%;
+      height: 100%;
+      padding: 5%;
+      border-radius: 8px;
+      border: 1px solid #302c22;
+      background: linear-gradient(145deg, #45473a, #252b24);
+      box-shadow: inset 0 0 0 2px #d2b4815e;
+    }
+
+    .speaker {
+      border: 1px solid #25251d;
+      border-radius: 4px;
+      background:
+        radial-gradient(circle, #302c21 33%, transparent 41%) 0 0 / 5px 5px,
+        linear-gradient(130deg, #beab7e, #7a6e51);
+      box-shadow: inset 0 0 10px #312a20a0;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-rows: 1fr 1.1fr;
+      align-items: center;
+      gap: 10%;
+    }
+
+    .dial {
+      position: relative;
+      height: 80%;
+      border: 2px solid #26251e;
+      border-radius: 4px;
+      background: linear-gradient(#ece0b8, #caba85);
+      box-shadow: 0 0 0 1px #9b8960;
+    }
+
+    .dial::before, .dial::after {
+      content: "";
+      position: absolute;
+    }
+
+    .dial::before {
+      inset: 29% 8%;
+      border-bottom: 1px solid #7b7151;
+      background: repeating-linear-gradient(90deg, #7b7151 0 1px, transparent 1px 8%);
+    }
+
+    .dial::after {
+      top: 10%;
+      bottom: 10%;
+      left: 57%;
+      width: 2px;
+      background: #9a4b30;
+    }
+
+    .knobs {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .knob {
+      width: 28%;
+      aspect-ratio: 1;
+      border: 2px solid #b0a17a;
+      border-radius: 50%;
+      background: linear-gradient(115deg, #9e9376, #3e4036 54%, #66634f);
+      box-shadow: 1px 3px 3px #171b16;
+    }
+
+    .knob + .knob { width: 21%; }
+
+    .counter {
+      display: grid;
+      grid-template-columns: 1.55fr 1fr;
+      border: 1px solid var(--line);
+      border-top: 4px solid #bd965b;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 8px 26px #4e3b2110;
+      overflow: hidden;
+    }
+
+    .check, .visit { padding: clamp(22px, 3.7vw, 42px); }
+    .check { background: var(--sheet); }
+    .visit {
+      border-left: 1px solid var(--line);
+      background: #eee6d5;
+    }
+
+    h2 {
+      font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+      line-height: 1.35;
+    }
+
+    .choices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-block: 17px 19px;
+    }
+
+    .choice {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 54px;
+      padding: 10px 12px;
+      border: 1px solid #a49c89;
+      border-radius: 5px;
+      background: #f9f6ed;
+      color: var(--ink);
+      text-align: left;
+      line-height: 1.4;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    .choice::before {
+      content: "";
+      flex: 0 0 15px;
+      height: 15px;
+      border: 1px solid #756e5e;
+      border-radius: 50%;
+      background: var(--sheet);
+    }
+
+    .choice:hover { background: #f1ecdd; }
+    .choice[aria-pressed="true"] {
+      border-color: var(--green);
+      background: #e8eee4;
+      box-shadow: inset 0 0 0 1px var(--green);
+    }
+
+    .choice[aria-pressed="true"]::before {
+      border-color: var(--green);
+      background: radial-gradient(circle, var(--green) 0 4px, var(--sheet) 4.5px);
+    }
+
+    button:focus-visible, .result:focus-visible {
+      outline: 3px solid var(--rust);
+      outline-offset: 4px;
+    }
+
+    .condition, .result {
+      padding: 12px 14px;
+      border-left: 3px solid var(--green);
+      background: #edf0e6;
+      line-height: 1.65;
+    }
+
+    .condition { margin-bottom: 12px; }
+    .policy, .demo { color: var(--muted); line-height: 1.65; }
+    .policy { font-size: .95rem; }
+
+    .submit-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 14px;
+      margin-top: 20px;
+    }
+
+    .submit {
+      min-height: 48px;
+      padding: 10px 22px;
+      border: 1px solid var(--green-dark);
+      border-radius: 5px;
+      background: var(--green);
+      color: #fffdf6;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .submit:hover:not(:disabled) { background: var(--green-dark); }
+    .submit:disabled {
+      border-color: #bdbfb2;
+      background: #e3e5dc;
+      color: #53594d;
+      cursor: default;
+    }
+
+    .demo { font-size: .875rem; }
+    .result { margin-top: 16px; }
+    .result strong { display: block; color: var(--green-dark); }
+
+    .visit h2 { margin-bottom: 13px; }
+    .visit dl > div { padding-block: 12px; }
+    .visit dl > div + div { border-top: 1px solid #d4c7af; }
+    .visit dl > div:last-child { padding-bottom: 0; }
+    .visit dt {
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: .875rem;
+      font-weight: 650;
+    }
+
+    .visit dd { line-height: 1.65; }
+    .deadline {
+      color: var(--rust);
+      font-size: 1.38rem;
+      font-weight: 780;
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 720px) {
+      .page { width: calc(100% - 32px); }
+      .intro { gap: 18px; padding: 26px; min-height: 0; }
+      .counter { grid-template-columns: 1fr; }
+      .visit { border-left: 0; border-top: 1px solid var(--line); }
+    }
+
+    @media (max-width: 520px) {
+      .intro { grid-template-columns: 1fr; }
+      .intro p { margin-top: 10px; }
+      .radio { width: min(74%, 240px); margin: 13px auto 5px; }
+    }
+
+    @media (max-width: 350px) {
+      .choices { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <div>
+        <h1>老收音机维修点</h1>
+        <p>先选收音机的现象，看看需要怎么检查。</p>
+      </div>
+      <div class="radio" aria-hidden="true">
+        <div class="radio-face">
+          <div class="speaker"></div>
+          <div class="controls">
+            <div class="dial"></div>
+            <div class="knobs">
+              <div class="knob"></div>
+              <div class="knob"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="counter">
+      <section class="check" aria-labelledby="check-title">
+        <h2 id="check-title">收音机是什么情况？</h2>
+        <form id="check-form">
+          <div class="choices" role="group" aria-labelledby="check-title">
+            <button class="choice" type="button" aria-pressed="false" data-condition="完全没声音需要先做检测，价格要等检测后才能确认。">完全没声音</button>
+            <button class="choice" type="button" aria-pressed="false" data-condition="只有杂音，可以先检查旋钮。">只有杂音</button>
+          </div>
+          <div aria-live="polite" aria-atomic="true">
+            <p class="condition" id="condition" hidden></p>
+          </div>
+          <p class="policy">外观检查免费。需要拆机检测时，会先征得你同意。</p>
+          <div class="submit-row">
+            <button class="submit" type="submit" aria-describedby="demo" disabled>申请检查</button>
+            <p class="demo" id="demo">本页仅记录演示请求。</p>
+          </div>
+          <div class="result" id="result" role="group" tabindex="-1" aria-labelledby="result-title" aria-describedby="result-detail" hidden>
+            <strong id="result-title">已记录检查请求</strong>
+            <p id="result-detail"></p>
+          </div>
+        </form>
+      </section>
+
+      <aside class="visit" aria-labelledby="visit-title">
+        <h2 id="visit-title">到店信息</h2>
+        <dl>
+          <div>
+            <dt>登记截止</dt>
+            <dd class="deadline">周六 15:30</dd>
+          </div>
+          <div>
+            <dt>位置</dt>
+            <dd>菜场东门内，走过两级台阶。</dd>
+          </div>
+          <div>
+            <dt>走不了台阶</dt>
+            <dd>按门铃，有人来接。</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    const form = document.querySelector('#check-form');
+    const choices = form.querySelectorAll('.choice');
+    const condition = document.querySelector('#condition');
+    const submit = form.querySelector('.submit');
+    const result = document.querySelector('#result');
+    const resultDetail = document.querySelector('#result-detail');
+    let selected = null;
+
+    choices.forEach((choice) => {
+      choice.addEventListener('click', () => {
+        if (selected === choice) return;
+
+        if (selected) selected.setAttribute('aria-pressed', 'false');
+        selected = choice;
+        selected.setAttribute('aria-pressed', 'true');
+        condition.textContent = selected.dataset.condition;
+        condition.hidden = false;
+        result.hidden = true;
+        submit.disabled = false;
+      });
+    });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!selected) return;
+
+      resultDetail.textContent = `所选现象：${selected.textContent.trim()}`;
+      result.hidden = false;
+      result.focus();
+    });
+  </script>
+</body>
+</html>

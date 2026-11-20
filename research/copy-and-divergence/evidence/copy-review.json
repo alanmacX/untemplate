@@ -1,0 +1,14 @@
+{
+  "rule":"At least one visible title-adjacent or empty-state phrase whose work is already done by a nearby heading or obvious control. Keep useful time, location, operational status, route/source qualification, task headings and form labels. Counts are manual page-level judgments; do not grade by class or font size.",
+  "pages":{
+    "radio-A":{"reject":["先说说收音机出了什么问题。"],"keep":["在菜场东门内。"]},
+    "books-A":{"reject":["选好绘本后，这里会显示领取时间和怎么走。"],"keep":["领取指引","北门自提架"]},
+    "trail-A":{"reject":[],"keep":["临河台阶 暂时封闭","只画位置关系"]},
+    "radio-B":{"reject":["家里的老收音机听不清了？先看看要怎么检查。"],"keep":["收音机有什么现象？","仅能发送演示检查请求"]},
+    "books-B":{"reject":["选一本，看看周六几点去、怎么走。","点击左侧或上方的书名，查看领取时段和走法。"],"keep":["按书名查找","取书单为演示记录。"]},
+    "trail-B":{"reject":["临河台阶暂时封闭"],"keep":["湿滑的封闭原因","从西口绕行","图内标记和路线图例"],"note":"Only the isolated badge above the introduction is rejected; the real closure information remains in the adjacent introduction and map."},
+    "radio-C":{"reject":["先选收音机的现象，看看需要怎么检查。"],"keep":["收音机是什么情况？","本页仅记录演示请求。"]},
+    "books-C":{"reject":["点书名，查看领取时间、地点和走法。"],"keep":["选一本绘本","取书动线示意"]},
+    "trail-C":{"reject":[],"keep":["暂时封闭","位置关系示意"]}
+  }
+}

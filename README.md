@@ -11,6 +11,6 @@ Turn vague frontend briefs into designs shaped by the project's actual content a
 
 The [skill](skills/anti-aidesign/SKILL.md) is the entry point. Keep the folder together so agents can follow its references. For skill-aware agents, add or link that folder in a supported skills directory. For other agents, ask them to read the entry point and follow its linked references for the current brief.
 
-Current checkpoint: **v11**. The design workflow uses ordinary Markdown and no provider-specific controls. The optional browser check uses Python and Playwright.
+Current checkpoint: **v12**. The design workflow uses ordinary Markdown and no provider-specific controls. The optional browser check uses Python and Playwright.
 
-See the [creative pilot](research/creative-pilot/RESULTS.md) for the version-by-version results, runnable prompts, paired screenshots and typography audit.
+See the [creative pilot](research/creative-pilot/RESULTS.md) for version-by-version results and the [copy and divergence pilot](research/copy-and-divergence/RESULTS.md) for the no-skill control, removal checks, seeded exploration, Chinese type audit and screenshots.

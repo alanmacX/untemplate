@@ -1,0 +1,6506 @@
+[
+  {
+    "page": "books-A",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "div",
+        "class": "brand",
+        "id": null,
+        "text": "绘本取书指引",
+        "pseudo": [],
+        "x": 190,
+        "y": 21,
+        "size": 14.56
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示",
+        "pseudo": [],
+        "x": 1202,
+        "y": 24,
+        "size": 12.16
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周末取绘本",
+        "pseudo": [],
+        "x": 248,
+        "y": 129,
+        "size": 69.6
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "点开书名，出门前看一眼去哪儿、几点到。",
+        "pseudo": [],
+        "x": 248,
+        "y": 223,
+        "size": 17.28
+      },
+      {
+        "tag": "h2",
+        "class": "section-title",
+        "id": "books-heading",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 190,
+        "y": 335,
+        "size": 18.56
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 296,
+        "y": 404,
+        "size": 18.24
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "北门自提架",
+        "pseudo": [],
+        "x": 296,
+        "y": 434,
+        "size": 12.96
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 296,
+        "y": 519,
+        "size": 18.24
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "服务台领取",
+        "pseudo": [],
+        "x": 296,
+        "y": 549,
+        "size": 12.96
+      },
+      {
+        "tag": "h2",
+        "class": "section-title",
+        "id": "pickup-heading",
+        "text": "领取指引",
+        "pseudo": [],
+        "x": 787,
+        "y": 335,
+        "size": 18.56
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "选好绘本后，这里会显示领取时间和怎么走。",
+        "pseudo": [],
+        "x": 869,
+        "y": 449,
+        "size": 14.88
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+      "size": "69.6px",
+      "weight": "800",
+      "spacing": "3.828px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "div",
+        "class": "brand",
+        "id": null,
+        "text": "绘本取书指引",
+        "pseudo": [],
+        "x": 190,
+        "y": 21,
+        "size": 14.56
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示",
+        "pseudo": [],
+        "x": 1202,
+        "y": 24,
+        "size": 12.16
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周末取绘本",
+        "pseudo": [],
+        "x": 248,
+        "y": 129,
+        "size": 69.6
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "点开书名，出门前看一眼去哪儿、几点到。",
+        "pseudo": [],
+        "x": 248,
+        "y": 223,
+        "size": 17.28
+      },
+      {
+        "tag": "h2",
+        "class": "section-title",
+        "id": "books-heading",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 190,
+        "y": 335,
+        "size": 18.56
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 296,
+        "y": 404,
+        "size": 18.24
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "北门自提架",
+        "pseudo": [],
+        "x": 296,
+        "y": 434,
+        "size": 12.96
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 296,
+        "y": 519,
+        "size": 18.24
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "服务台领取",
+        "pseudo": [],
+        "x": 296,
+        "y": 549,
+        "size": 12.96
+      },
+      {
+        "tag": "h2",
+        "class": "section-title",
+        "id": "pickup-heading",
+        "text": "领取指引",
+        "pseudo": [],
+        "x": 787,
+        "y": 335,
+        "size": 18.56
+      },
+      {
+        "tag": "h3",
+        "class": "detail-title",
+        "id": "selected-title",
+        "text": "《去河边的那天》",
+        "pseudo": [],
+        "x": 813,
+        "y": 404,
+        "size": 18.08
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "领取位置",
+        "pseudo": [],
+        "x": 813,
+        "y": 454,
+        "size": 14.72
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": "place",
+        "text": "北门自提架",
+        "pseudo": [],
+        "x": 883,
+        "y": 454,
+        "size": 14.72
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "领取时段",
+        "pseudo": [],
+        "x": 813,
+        "y": 496,
+        "size": 14.72
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": "hours",
+        "text": "周六 10:00–12:00",
+        "pseudo": [],
+        "x": 883,
+        "y": 496,
+        "size": 14.72
+      },
+      {
+        "tag": "p",
+        "class": "route",
+        "id": "route",
+        "text": "认准北门小门前的灰色柱子。小门没有台阶。",
+        "pseudo": [],
+        "x": 813,
+        "y": 538,
+        "size": 14.08
+      },
+      {
+        "tag": "button",
+        "class": "save",
+        "id": "save",
+        "text": "记入取书单",
+        "pseudo": [],
+        "x": 813,
+        "y": 595,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "已加入取书单",
+        "pseudo": [],
+        "x": 802,
+        "y": 690,
+        "size": 14.4
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "《去河边的那天》",
+        "pseudo": [],
+        "x": 802,
+        "y": 715,
+        "size": 14.4
+      }
+    ]
+  },
+  {
+    "page": "books-A",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "div",
+        "class": "brand",
+        "id": null,
+        "text": "绘本取书指引",
+        "pseudo": [],
+        "x": 16,
+        "y": 14,
+        "size": 14.56
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示",
+        "pseudo": [],
+        "x": 326,
+        "y": 17,
+        "size": 12.16
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周末取绘本",
+        "pseudo": [],
+        "x": 41,
+        "y": 98,
+        "size": 38.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "点开书名，出门前看一眼去哪儿、几点到。",
+        "pseudo": [],
+        "x": 41,
+        "y": 157,
+        "size": 15.2
+      },
+      {
+        "tag": "h2",
+        "class": "section-title",
+        "id": "books-heading",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 16,
+        "y": 264,
+        "size": 18.56
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 122,
+        "y": 334,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "北门自提架",
+        "pseudo": [],
+        "x": 122,
+        "y": 361,
+        "size": 12.96
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 122,
+        "y": 449,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "服务台领取",
+        "pseudo": [],
+        "x": 122,
+        "y": 476,
+        "size": 12.96
+      },
+      {
+        "tag": "h2",
+        "class": "section-title",
+        "id": "pickup-heading",
+        "text": "领取指引",
+        "pseudo": [],
+        "x": 16,
+        "y": 546,
+        "size": 18.56
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "选好绘本后，这里会显示领取时间和怎么走。",
+        "pseudo": [],
+        "x": 91,
+        "y": 641,
+        "size": 14.88
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+      "size": "38.4px",
+      "weight": "800",
+      "spacing": "2.112px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "div",
+        "class": "brand",
+        "id": null,
+        "text": "绘本取书指引",
+        "pseudo": [],
+        "x": 16,
+        "y": 14,
+        "size": 14.56
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示",
+        "pseudo": [],
+        "x": 326,
+        "y": 17,
+        "size": 12.16
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周末取绘本",
+        "pseudo": [],
+        "x": 41,
+        "y": 98,
+        "size": 38.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "点开书名，出门前看一眼去哪儿、几点到。",
+        "pseudo": [],
+        "x": 41,
+        "y": 157,
+        "size": 15.2
+      },
+      {
+        "tag": "h2",
+        "class": "section-title",
+        "id": "books-heading",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 16,
+        "y": 264,
+        "size": 18.56
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 122,
+        "y": 334,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "北门自提架",
+        "pseudo": [],
+        "x": 122,
+        "y": 361,
+        "size": 12.96
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 122,
+        "y": 449,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "服务台领取",
+        "pseudo": [],
+        "x": 122,
+        "y": 476,
+        "size": 12.96
+      },
+      {
+        "tag": "h2",
+        "class": "section-title",
+        "id": "pickup-heading",
+        "text": "领取指引",
+        "pseudo": [],
+        "x": 16,
+        "y": 546,
+        "size": 18.56
+      },
+      {
+        "tag": "h3",
+        "class": "detail-title",
+        "id": "selected-title",
+        "text": "《去河边的那天》",
+        "pseudo": [],
+        "x": 35,
+        "y": 608,
+        "size": 18.08
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "领取位置",
+        "pseudo": [],
+        "x": 35,
+        "y": 658,
+        "size": 14.72
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": "place",
+        "text": "北门自提架",
+        "pseudo": [],
+        "x": 105,
+        "y": 658,
+        "size": 14.72
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "领取时段",
+        "pseudo": [],
+        "x": 35,
+        "y": 700,
+        "size": 14.72
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": "hours",
+        "text": "周六 10:00–12:00",
+        "pseudo": [],
+        "x": 105,
+        "y": 700,
+        "size": 14.72
+      },
+      {
+        "tag": "p",
+        "class": "route",
+        "id": "route",
+        "text": "认准北门小门前的灰色柱子。小门没有台阶。",
+        "pseudo": [],
+        "x": 35,
+        "y": 742,
+        "size": 14.08
+      },
+      {
+        "tag": "button",
+        "class": "save",
+        "id": "save",
+        "text": "记入取书单",
+        "pseudo": [],
+        "x": 35,
+        "y": 800,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "已加入取书单",
+        "pseudo": [],
+        "x": 31,
+        "y": 888,
+        "size": 14.4
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "《去河边的那天》",
+        "pseudo": [],
+        "x": 31,
+        "y": 913,
+        "size": 14.4
+      }
+    ]
+  },
+  {
+    "page": "books-B",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "span",
+        "class": "top-label",
+        "id": null,
+        "text": "绘本领取指南",
+        "pseudo": [],
+        "x": 160,
+        "y": 43,
+        "size": 14
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示页面",
+        "pseudo": [],
+        "x": 1228,
+        "y": 44,
+        "size": 13.12
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周末取绘本",
+        "pseudo": [],
+        "x": 160,
+        "y": 118,
+        "size": 80
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "选一本，看看周六几点去、怎么走。",
+        "pseudo": [],
+        "x": 160,
+        "y": 224,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "shelf-title",
+        "text": "按书名查找",
+        "pseudo": [],
+        "x": 160,
+        "y": 282,
+        "size": 14.08
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": "river-title",
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 240,
+        "y": 342,
+        "size": 24
+      },
+      {
+        "tag": "span",
+        "class": "book-place",
+        "id": null,
+        "text": "北门 · 自提架",
+        "pseudo": [],
+        "x": 240,
+        "y": 379,
+        "size": 13.28
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": "street-title",
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 240,
+        "y": 450,
+        "size": 24
+      },
+      {
+        "tag": "span",
+        "class": "book-place",
+        "id": null,
+        "text": "服务台",
+        "pseudo": [],
+        "x": 240,
+        "y": 487,
+        "size": 13.28
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "动线示意",
+        "pseudo": [],
+        "x": 1199,
+        "y": 522,
+        "size": 11.52
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "pickup-title",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 675,
+        "y": 573,
+        "size": 32
+      },
+      {
+        "tag": "p",
+        "class": "hint",
+        "id": "hint",
+        "text": "点击左侧或上方的书名，查看领取时段和走法。",
+        "pseudo": [],
+        "x": 675,
+        "y": 621,
+        "size": 15.04
+      },
+      {
+        "tag": "footer",
+        "class": "foot",
+        "id": null,
+        "text": "取书单为演示记录。",
+        "pseudo": [],
+        "x": 160,
+        "y": 700,
+        "size": 12.8
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+      "size": "80px",
+      "weight": "700",
+      "spacing": "2.8px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "span",
+        "class": "top-label",
+        "id": null,
+        "text": "绘本领取指南",
+        "pseudo": [],
+        "x": 160,
+        "y": 43,
+        "size": 14
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示页面",
+        "pseudo": [],
+        "x": 1228,
+        "y": 44,
+        "size": 13.12
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周末取绘本",
+        "pseudo": [],
+        "x": 160,
+        "y": 118,
+        "size": 80
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "选一本，看看周六几点去、怎么走。",
+        "pseudo": [],
+        "x": 160,
+        "y": 224,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "shelf-title",
+        "text": "按书名查找",
+        "pseudo": [],
+        "x": 160,
+        "y": 282,
+        "size": 14.08
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": "river-title",
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 240,
+        "y": 342,
+        "size": 24
+      },
+      {
+        "tag": "span",
+        "class": "book-place",
+        "id": null,
+        "text": "北门 · 自提架",
+        "pseudo": [],
+        "x": 240,
+        "y": 379,
+        "size": 13.28
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": "street-title",
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 240,
+        "y": 450,
+        "size": 24
+      },
+      {
+        "tag": "span",
+        "class": "book-place",
+        "id": null,
+        "text": "服务台",
+        "pseudo": [],
+        "x": 240,
+        "y": 487,
+        "size": 13.28
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "动线示意",
+        "pseudo": [],
+        "x": 1199,
+        "y": 522,
+        "size": 11.52
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "pickup-title",
+        "text": "北门 · 自提架",
+        "pseudo": [],
+        "x": 675,
+        "y": 573,
+        "size": 32
+      },
+      {
+        "tag": "p",
+        "class": "pickup-time",
+        "id": "pickup-time",
+        "text": "周六 10:00–12:00",
+        "pseudo": [],
+        "x": 675,
+        "y": 624,
+        "size": 14.4
+      },
+      {
+        "tag": "p",
+        "class": "route",
+        "id": "route",
+        "text": "找前面有灰色柱子的北门小门。小门没有台阶，从这里去自提架。",
+        "pseudo": [],
+        "x": 675,
+        "y": 666,
+        "size": 15.04
+      },
+      {
+        "tag": "button",
+        "class": "save",
+        "id": "save",
+        "text": "记入取书单",
+        "pseudo": [],
+        "x": 675,
+        "y": 707,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "已加入取书单",
+        "pseudo": [],
+        "x": 727,
+        "y": 791,
+        "size": 14.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": "saved-title",
+        "text": "《去河边的那天》",
+        "pseudo": [],
+        "x": 727,
+        "y": 811,
+        "size": 14.4
+      },
+      {
+        "tag": "footer",
+        "class": "foot",
+        "id": null,
+        "text": "取书单为演示记录。",
+        "pseudo": [],
+        "x": 160,
+        "y": 899,
+        "size": 12.8
+      }
+    ]
+  },
+  {
+    "page": "books-B",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "span",
+        "class": "top-label",
+        "id": null,
+        "text": "绘本领取指南",
+        "pseudo": [],
+        "x": 18,
+        "y": 21,
+        "size": 14
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示页面",
+        "pseudo": [],
+        "x": 320,
+        "y": 22,
+        "size": 13.12
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周末取绘本",
+        "pseudo": [],
+        "x": 18,
+        "y": 81,
+        "size": 46.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "选一本，看看周六几点去、怎么走。",
+        "pseudo": [],
+        "x": 18,
+        "y": 144,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "shelf-title",
+        "text": "按书名查找",
+        "pseudo": [],
+        "x": 18,
+        "y": 193,
+        "size": 14.08
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": "river-title",
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 82,
+        "y": 243,
+        "size": 18.72
+      },
+      {
+        "tag": "span",
+        "class": "book-place",
+        "id": null,
+        "text": "北门 · 自提架",
+        "pseudo": [],
+        "x": 82,
+        "y": 273,
+        "size": 13.28
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": "street-title",
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 82,
+        "y": 324,
+        "size": 18.72
+      },
+      {
+        "tag": "span",
+        "class": "book-place",
+        "id": null,
+        "text": "服务台",
+        "pseudo": [],
+        "x": 82,
+        "y": 354,
+        "size": 13.28
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "动线示意",
+        "pseudo": [],
+        "x": 291,
+        "y": 536,
+        "size": 11.52
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "pickup-title",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 35,
+        "y": 581,
+        "size": 22.72
+      },
+      {
+        "tag": "p",
+        "class": "hint",
+        "id": "hint",
+        "text": "点击左侧或上方的书名，查看领取时段和走法。",
+        "pseudo": [],
+        "x": 35,
+        "y": 617,
+        "size": 15.04
+      },
+      {
+        "tag": "footer",
+        "class": "foot",
+        "id": null,
+        "text": "取书单为演示记录。",
+        "pseudo": [],
+        "x": 18,
+        "y": 685,
+        "size": 12.8
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+      "size": "46.4px",
+      "weight": "700",
+      "spacing": "1.624px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "span",
+        "class": "top-label",
+        "id": null,
+        "text": "绘本领取指南",
+        "pseudo": [],
+        "x": 18,
+        "y": 21,
+        "size": 14
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示页面",
+        "pseudo": [],
+        "x": 320,
+        "y": 22,
+        "size": 13.12
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周末取绘本",
+        "pseudo": [],
+        "x": 18,
+        "y": 81,
+        "size": 46.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "选一本，看看周六几点去、怎么走。",
+        "pseudo": [],
+        "x": 18,
+        "y": 144,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "shelf-title",
+        "text": "按书名查找",
+        "pseudo": [],
+        "x": 18,
+        "y": 193,
+        "size": 14.08
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": "river-title",
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 82,
+        "y": 243,
+        "size": 18.72
+      },
+      {
+        "tag": "span",
+        "class": "book-place",
+        "id": null,
+        "text": "北门 · 自提架",
+        "pseudo": [],
+        "x": 82,
+        "y": 273,
+        "size": 13.28
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": "street-title",
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 82,
+        "y": 324,
+        "size": 18.72
+      },
+      {
+        "tag": "span",
+        "class": "book-place",
+        "id": null,
+        "text": "服务台",
+        "pseudo": [],
+        "x": 82,
+        "y": 354,
+        "size": 13.28
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "动线示意",
+        "pseudo": [],
+        "x": 291,
+        "y": 536,
+        "size": 11.52
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "pickup-title",
+        "text": "北门 · 自提架",
+        "pseudo": [],
+        "x": 35,
+        "y": 581,
+        "size": 22.72
+      },
+      {
+        "tag": "p",
+        "class": "pickup-time",
+        "id": "pickup-time",
+        "text": "周六 10:00–12:00",
+        "pseudo": [],
+        "x": 35,
+        "y": 620,
+        "size": 14.4
+      },
+      {
+        "tag": "p",
+        "class": "route",
+        "id": "route",
+        "text": "找前面有灰色柱子的北门小门。小门没有台阶，从这里去自提架。",
+        "pseudo": [],
+        "x": 35,
+        "y": 662,
+        "size": 15.04
+      },
+      {
+        "tag": "button",
+        "class": "save",
+        "id": "save",
+        "text": "记入取书单",
+        "pseudo": [],
+        "x": 35,
+        "y": 727,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "已加入取书单",
+        "pseudo": [],
+        "x": 87,
+        "y": 806,
+        "size": 14.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": "saved-title",
+        "text": "《去河边的那天》",
+        "pseudo": [],
+        "x": 87,
+        "y": 826,
+        "size": 14.4
+      },
+      {
+        "tag": "footer",
+        "class": "foot",
+        "id": null,
+        "text": "取书单为演示记录。",
+        "pseudo": [],
+        "x": 18,
+        "y": 903,
+        "size": 12.8
+      }
+    ]
+  },
+  {
+    "page": "books-C",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周六取绘本",
+        "pseudo": [],
+        "x": 160,
+        "y": 104,
+        "size": 86.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "点书名，查看领取时间、地点和走法。",
+        "pseudo": [],
+        "x": 1008,
+        "y": 164,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "books-heading",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 160,
+        "y": 260,
+        "size": 18.08
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": null,
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 249,
+        "y": 335,
+        "size": 20.8
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": null,
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 249,
+        "y": 437,
+        "size": 20.8
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "route-heading",
+        "text": "取书动线示意",
+        "pseudo": [],
+        "x": 769,
+        "y": 297,
+        "size": 18.08
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "北门小门",
+        "pseudo": [],
+        "x": 833,
+        "y": 417,
+        "size": 16
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "自提架",
+        "pseudo": [],
+        "x": 1122,
+        "y": 417,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "route-note",
+        "id": null,
+        "text": "小门前有灰色柱子，入口没有台阶。",
+        "pseudo": [],
+        "x": 778,
+        "y": 446,
+        "size": 14.08
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "中庭",
+        "pseudo": [],
+        "x": 849,
+        "y": 555,
+        "size": 16
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "服务台",
+        "pseudo": [],
+        "x": 1122,
+        "y": 555,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "route-note",
+        "id": null,
+        "text": "经过中庭去服务台，推童车也能过。",
+        "pseudo": [],
+        "x": 778,
+        "y": 584,
+        "size": 14.08
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", SimSun, serif",
+      "size": "86.4px",
+      "weight": "800",
+      "spacing": "-4.752px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周六取绘本",
+        "pseudo": [],
+        "x": 160,
+        "y": 104,
+        "size": 86.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "点书名，查看领取时间、地点和走法。",
+        "pseudo": [],
+        "x": 1008,
+        "y": 164,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "books-heading",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 160,
+        "y": 260,
+        "size": 18.08
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": null,
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 249,
+        "y": 335,
+        "size": 20.8
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": null,
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 249,
+        "y": 437,
+        "size": 20.8
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "pickup-place",
+        "text": "北门自提架",
+        "pseudo": [],
+        "x": 183,
+        "y": 540,
+        "size": 19.2
+      },
+      {
+        "tag": "p",
+        "class": "pickup-time",
+        "id": "pickup-time",
+        "text": "周六 10:00–12:00",
+        "pseudo": [],
+        "x": 295,
+        "y": 543,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "directions",
+        "id": "pickup-directions",
+        "text": "认准灰色柱子，从没有台阶的北门小门进去。",
+        "pseudo": [],
+        "x": 183,
+        "y": 589,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "add",
+        "id": "add-book",
+        "text": "记入取书单",
+        "pseudo": [],
+        "x": 183,
+        "y": 631,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "已加入取书单",
+        "pseudo": [],
+        "x": 177,
+        "y": 727,
+        "size": 16
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": "saved-title",
+        "text": "《去河边的那天》",
+        "pseudo": [],
+        "x": 177,
+        "y": 753,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "route-heading",
+        "text": "取书动线示意",
+        "pseudo": [],
+        "x": 769,
+        "y": 297,
+        "size": 18.08
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "北门小门",
+        "pseudo": [],
+        "x": 833,
+        "y": 417,
+        "size": 16
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "自提架",
+        "pseudo": [],
+        "x": 1122,
+        "y": 417,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "route-note",
+        "id": null,
+        "text": "小门前有灰色柱子，入口没有台阶。",
+        "pseudo": [],
+        "x": 778,
+        "y": 446,
+        "size": 14.08
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "中庭",
+        "pseudo": [],
+        "x": 849,
+        "y": 555,
+        "size": 16
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "服务台",
+        "pseudo": [],
+        "x": 1122,
+        "y": 555,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "route-note",
+        "id": null,
+        "text": "经过中庭去服务台，推童车也能过。",
+        "pseudo": [],
+        "x": 778,
+        "y": 584,
+        "size": 14.08
+      }
+    ]
+  },
+  {
+    "page": "books-C",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周六取绘本",
+        "pseudo": [],
+        "x": 18,
+        "y": 34,
+        "size": 40.8
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "点书名，查看领取时间、地点和走法。",
+        "pseudo": [],
+        "x": 18,
+        "y": 92,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "books-heading",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 18,
+        "y": 160,
+        "size": 18.08
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": null,
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 99,
+        "y": 236,
+        "size": 16.32
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": null,
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 99,
+        "y": 333,
+        "size": 16.32
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "route-heading",
+        "text": "取书动线示意",
+        "pseudo": [],
+        "x": 39,
+        "y": 439,
+        "size": 18.08
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "北门小门",
+        "pseudo": [],
+        "x": 72,
+        "y": 559,
+        "size": 16
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "自提架",
+        "pseudo": [],
+        "x": 262,
+        "y": 559,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "route-note",
+        "id": null,
+        "text": "小门前有灰色柱子，入口没有台阶。",
+        "pseudo": [],
+        "x": 48,
+        "y": 589,
+        "size": 14.08
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "中庭",
+        "pseudo": [],
+        "x": 88,
+        "y": 697,
+        "size": 16
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "服务台",
+        "pseudo": [],
+        "x": 262,
+        "y": 697,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "route-note",
+        "id": null,
+        "text": "经过中庭去服务台，推童车也能过。",
+        "pseudo": [],
+        "x": 48,
+        "y": 727,
+        "size": 14.08
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", SimSun, serif",
+      "size": "40.8px",
+      "weight": "800",
+      "spacing": "-2.244px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "周六取绘本",
+        "pseudo": [],
+        "x": 18,
+        "y": 34,
+        "size": 40.8
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "点书名，查看领取时间、地点和走法。",
+        "pseudo": [],
+        "x": 18,
+        "y": 92,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "books-heading",
+        "text": "选一本绘本",
+        "pseudo": [],
+        "x": 18,
+        "y": 160,
+        "size": 18.08
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": null,
+        "text": "去河边的那天",
+        "pseudo": [],
+        "x": 99,
+        "y": 236,
+        "size": 16.32
+      },
+      {
+        "tag": "span",
+        "class": "book-title",
+        "id": null,
+        "text": "西街十二扇门",
+        "pseudo": [],
+        "x": 99,
+        "y": 333,
+        "size": 16.32
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "pickup-place",
+        "text": "北门自提架",
+        "pseudo": [],
+        "x": 41,
+        "y": 430,
+        "size": 19.2
+      },
+      {
+        "tag": "p",
+        "class": "pickup-time",
+        "id": "pickup-time",
+        "text": "周六 10:00–12:00",
+        "pseudo": [],
+        "x": 153,
+        "y": 433,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "directions",
+        "id": "pickup-directions",
+        "text": "认准灰色柱子，从没有台阶的北门小门进去。",
+        "pseudo": [],
+        "x": 41,
+        "y": 479,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "add",
+        "id": "add-book",
+        "text": "记入取书单",
+        "pseudo": [],
+        "x": 41,
+        "y": 548,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "已加入取书单",
+        "pseudo": [],
+        "x": 35,
+        "y": 644,
+        "size": 16
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": "saved-title",
+        "text": "《去河边的那天》",
+        "pseudo": [],
+        "x": 35,
+        "y": 669,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "route-heading",
+        "text": "取书动线示意",
+        "pseudo": [],
+        "x": 39,
+        "y": 754,
+        "size": 18.08
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "北门小门",
+        "pseudo": [],
+        "x": 72,
+        "y": 874,
+        "size": 16
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "自提架",
+        "pseudo": [],
+        "x": 262,
+        "y": 874,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "route-note",
+        "id": null,
+        "text": "小门前有灰色柱子，入口没有台阶。",
+        "pseudo": [],
+        "x": 48,
+        "y": 903,
+        "size": 14.08
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "中庭",
+        "pseudo": [],
+        "x": 88,
+        "y": 1012,
+        "size": 16
+      },
+      {
+        "tag": "b",
+        "class": null,
+        "id": null,
+        "text": "服务台",
+        "pseudo": [],
+        "x": 262,
+        "y": 1012,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "route-note",
+        "id": null,
+        "text": "经过中庭去服务台，推童车也能过。",
+        "pseudo": [],
+        "x": 48,
+        "y": 1041,
+        "size": 14.08
+      }
+    ]
+  },
+  {
+    "page": "radio-A",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "老收音机维修点",
+        "pseudo": [],
+        "x": 248,
+        "y": 116,
+        "size": 68
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "在菜场东门内。先说说收音机出了什么问题。",
+        "pseudo": [],
+        "x": 248,
+        "y": 211,
+        "size": 16.48
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "check-heading",
+        "text": "收音机怎么了？",
+        "pseudo": [],
+        "x": 223,
+        "y": 371,
+        "size": 22.4
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "免费检查外观。拆机检测前要征得你的同意。",
+        "pseudo": [],
+        "x": 223,
+        "y": 408,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 223,
+        "y": 453,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 511,
+        "y": 453,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-heading",
+        "text": "到店怎么走",
+        "pseudo": [],
+        "x": 875,
+        "y": 371,
+        "size": 22.4
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 875,
+        "y": 417,
+        "size": 14.4
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "周六",
+        "pseudo": [],
+        "x": 875,
+        "y": 444,
+        "size": 16
+      },
+      {
+        "tag": "time",
+        "class": "time",
+        "id": null,
+        "text": "15:30",
+        "pseudo": [],
+        "x": 912,
+        "y": 446,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "位置",
+        "pseudo": [],
+        "x": 875,
+        "y": 497,
+        "size": 14.4
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内，走过两级台阶。",
+        "pseudo": [],
+        "x": 875,
+        "y": 524,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "bell",
+        "id": null,
+        "text": "不能走台阶，可以按门铃，有人来接。",
+        "pseudo": [],
+        "x": 875,
+        "y": 567,
+        "size": 16
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", SimSun, serif",
+      "size": "68px",
+      "weight": "700",
+      "spacing": "normal",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "老收音机维修点",
+        "pseudo": [],
+        "x": 248,
+        "y": 116,
+        "size": 68
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "在菜场东门内。先说说收音机出了什么问题。",
+        "pseudo": [],
+        "x": 248,
+        "y": 211,
+        "size": 16.48
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "check-heading",
+        "text": "收音机怎么了？",
+        "pseudo": [],
+        "x": 223,
+        "y": 371,
+        "size": 22.4
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "免费检查外观。拆机检测前要征得你的同意。",
+        "pseudo": [],
+        "x": 223,
+        "y": 408,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 223,
+        "y": 453,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 511,
+        "y": 453,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "condition",
+        "text": "需要先做检测。",
+        "pseudo": [],
+        "x": 242,
+        "y": 538,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": "condition-note",
+        "text": "检测前无法承诺价格。",
+        "pseudo": [],
+        "x": 242,
+        "y": 567,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": null,
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 223,
+        "y": 624,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo",
+        "id": "demo-note",
+        "text": "本页仅记录演示检查请求。",
+        "pseudo": [],
+        "x": 339,
+        "y": 636,
+        "size": 14.4
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "已记录检查请求",
+        "pseudo": [],
+        "x": 239,
+        "y": 700,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "所选现象：",
+        "pseudo": [],
+        "x": 239,
+        "y": 727,
+        "size": 16
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": "recorded-symptom",
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 319,
+        "y": 729,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-heading",
+        "text": "到店怎么走",
+        "pseudo": [],
+        "x": 875,
+        "y": 371,
+        "size": 22.4
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 875,
+        "y": 417,
+        "size": 14.4
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "周六",
+        "pseudo": [],
+        "x": 875,
+        "y": 444,
+        "size": 16
+      },
+      {
+        "tag": "time",
+        "class": "time",
+        "id": null,
+        "text": "15:30",
+        "pseudo": [],
+        "x": 912,
+        "y": 446,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "位置",
+        "pseudo": [],
+        "x": 875,
+        "y": 497,
+        "size": 14.4
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内，走过两级台阶。",
+        "pseudo": [],
+        "x": 875,
+        "y": 524,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "bell",
+        "id": null,
+        "text": "不能走台阶，可以按门铃，有人来接。",
+        "pseudo": [],
+        "x": 875,
+        "y": 567,
+        "size": 16
+      }
+    ]
+  },
+  {
+    "page": "radio-A",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "老收音机维修点",
+        "pseudo": [],
+        "x": 38,
+        "y": 42,
+        "size": 37.6
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "在菜场东门内。先说说收音机出了什么问题。",
+        "pseudo": [],
+        "x": 38,
+        "y": 94,
+        "size": 16.48
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "check-heading",
+        "text": "收音机怎么了？",
+        "pseudo": [],
+        "x": 35,
+        "y": 354,
+        "size": 22.4
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "免费检查外观。拆机检测前要征得你的同意。",
+        "pseudo": [],
+        "x": 35,
+        "y": 391,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 35,
+        "y": 435,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 200,
+        "y": 435,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-heading",
+        "text": "到店怎么走",
+        "pseudo": [],
+        "x": 35,
+        "y": 541,
+        "size": 22.4
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 35,
+        "y": 588,
+        "size": 14.4
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "周六",
+        "pseudo": [],
+        "x": 35,
+        "y": 614,
+        "size": 16
+      },
+      {
+        "tag": "time",
+        "class": "time",
+        "id": null,
+        "text": "15:30",
+        "pseudo": [],
+        "x": 72,
+        "y": 616,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "位置",
+        "pseudo": [],
+        "x": 35,
+        "y": 668,
+        "size": 14.4
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内，走过两级台阶。",
+        "pseudo": [],
+        "x": 35,
+        "y": 695,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "bell",
+        "id": null,
+        "text": "不能走台阶，可以按门铃，有人来接。",
+        "pseudo": [],
+        "x": 35,
+        "y": 737,
+        "size": 16
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", SimSun, serif",
+      "size": "37.6px",
+      "weight": "700",
+      "spacing": "normal",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "老收音机维修点",
+        "pseudo": [],
+        "x": 38,
+        "y": 42,
+        "size": 37.6
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "在菜场东门内。先说说收音机出了什么问题。",
+        "pseudo": [],
+        "x": 38,
+        "y": 94,
+        "size": 16.48
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "check-heading",
+        "text": "收音机怎么了？",
+        "pseudo": [],
+        "x": 35,
+        "y": 354,
+        "size": 22.4
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "免费检查外观。拆机检测前要征得你的同意。",
+        "pseudo": [],
+        "x": 35,
+        "y": 391,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 35,
+        "y": 435,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 200,
+        "y": 435,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "condition",
+        "text": "需要先做检测。",
+        "pseudo": [],
+        "x": 54,
+        "y": 520,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": "condition-note",
+        "text": "检测前无法承诺价格。",
+        "pseudo": [],
+        "x": 54,
+        "y": 550,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": null,
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 35,
+        "y": 607,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo",
+        "id": "demo-note",
+        "text": "本页仅记录演示检查请求。",
+        "pseudo": [],
+        "x": 151,
+        "y": 618,
+        "size": 14.4
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "已记录检查请求",
+        "pseudo": [],
+        "x": 51,
+        "y": 683,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "所选现象：",
+        "pseudo": [],
+        "x": 51,
+        "y": 710,
+        "size": 16
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": "recorded-symptom",
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 131,
+        "y": 712,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-heading",
+        "text": "到店怎么走",
+        "pseudo": [],
+        "x": 35,
+        "y": 804,
+        "size": 22.4
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 35,
+        "y": 850,
+        "size": 14.4
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "周六",
+        "pseudo": [],
+        "x": 35,
+        "y": 877,
+        "size": 16
+      },
+      {
+        "tag": "time",
+        "class": "time",
+        "id": null,
+        "text": "15:30",
+        "pseudo": [],
+        "x": 72,
+        "y": 879,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "位置",
+        "pseudo": [],
+        "x": 35,
+        "y": 930,
+        "size": 14.4
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内，走过两级台阶。",
+        "pseudo": [],
+        "x": 35,
+        "y": 957,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "bell",
+        "id": null,
+        "text": "不能走台阶，可以按门铃，有人来接。",
+        "pseudo": [],
+        "x": 35,
+        "y": 1000,
+        "size": 16
+      }
+    ]
+  },
+  {
+    "page": "radio-B",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "街坊收音机",
+        "pseudo": [],
+        "x": 200,
+        "y": 114,
+        "size": 77.6
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "维修点",
+        "pseudo": [],
+        "x": 200,
+        "y": 198,
+        "size": 77.6
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "家里的老收音机听不清了？先看看要怎么检查。",
+        "pseudo": [],
+        "x": 200,
+        "y": 300,
+        "size": 17.6
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "symptom-title",
+        "text": "收音机有什么现象？",
+        "pseudo": [],
+        "x": 200,
+        "y": 415,
+        "size": 32
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 200,
+        "y": 471,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 200,
+        "y": 535,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "terms",
+        "id": null,
+        "text": "外观免费检查。需要拆机检测时，会先征得你的同意。",
+        "pseudo": [],
+        "x": 200,
+        "y": 607,
+        "size": 15.04
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": "apply",
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 200,
+        "y": 648,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo-note",
+        "id": "demo-note",
+        "text": "这里仅能发送演示检查请求。",
+        "pseudo": [],
+        "x": 320,
+        "y": 660,
+        "size": 14
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-title",
+        "text": "到店怎么走",
+        "pseudo": [],
+        "x": 952,
+        "y": 439,
+        "size": 24.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 952,
+        "y": 484,
+        "size": 14
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "周六 15:30",
+        "pseudo": [],
+        "x": 952,
+        "y": 514,
+        "size": 24
+      },
+      {
+        "tag": "p",
+        "class": "directions",
+        "id": null,
+        "text": "店在 ，进门后走过两级台阶。",
+        "pseudo": [],
+        "x": 952,
+        "y": 578,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内",
+        "pseudo": [],
+        "x": 984,
+        "y": 582,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "bell",
+        "id": null,
+        "text": "不能走台阶，可以 ，有人来接。",
+        "pseudo": [],
+        "x": 952,
+        "y": 642,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "按门铃",
+        "pseudo": [],
+        "x": 1080,
+        "y": 646,
+        "size": 16
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", STSong, \"Noto Serif CJK SC\", SimSun, serif",
+      "size": "77.6px",
+      "weight": "800",
+      "spacing": "-3.492px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "街坊收音机",
+        "pseudo": [],
+        "x": 200,
+        "y": 114,
+        "size": 77.6
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "维修点",
+        "pseudo": [],
+        "x": 200,
+        "y": 198,
+        "size": 77.6
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "家里的老收音机听不清了？先看看要怎么检查。",
+        "pseudo": [],
+        "x": 200,
+        "y": 300,
+        "size": 17.6
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "symptom-title",
+        "text": "收音机有什么现象？",
+        "pseudo": [],
+        "x": 200,
+        "y": 415,
+        "size": 32
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 200,
+        "y": 471,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 200,
+        "y": 535,
+        "size": 16
+      },
+      {
+        "tag": "h3",
+        "class": null,
+        "id": null,
+        "text": "检查条件",
+        "pseudo": [],
+        "x": 219,
+        "y": 619,
+        "size": 16.8
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": "check-condition",
+        "text": "完全没声音要先做检测，检测前不能承诺价格。",
+        "pseudo": [],
+        "x": 219,
+        "y": 651,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "terms",
+        "id": null,
+        "text": "外观免费检查。需要拆机检测时，会先征得你的同意。",
+        "pseudo": [],
+        "x": 200,
+        "y": 709,
+        "size": 15.04
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": "apply",
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 200,
+        "y": 750,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo-note",
+        "id": "demo-note",
+        "text": "这里仅能发送演示检查请求。",
+        "pseudo": [],
+        "x": 320,
+        "y": 762,
+        "size": 14
+      },
+      {
+        "tag": "h3",
+        "class": null,
+        "id": "receipt-title",
+        "text": "已记录检查请求",
+        "pseudo": [],
+        "x": 219,
+        "y": 826,
+        "size": 16.8
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "所选现象：",
+        "pseudo": [],
+        "x": 219,
+        "y": 858,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "recorded-symptom",
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 299,
+        "y": 862,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-title",
+        "text": "到店怎么走",
+        "pseudo": [],
+        "x": 952,
+        "y": 439,
+        "size": 24.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 952,
+        "y": 484,
+        "size": 14
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "周六 15:30",
+        "pseudo": [],
+        "x": 952,
+        "y": 514,
+        "size": 24
+      },
+      {
+        "tag": "p",
+        "class": "directions",
+        "id": null,
+        "text": "店在 ，进门后走过两级台阶。",
+        "pseudo": [],
+        "x": 952,
+        "y": 578,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内",
+        "pseudo": [],
+        "x": 984,
+        "y": 582,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "bell",
+        "id": null,
+        "text": "不能走台阶，可以 ，有人来接。",
+        "pseudo": [],
+        "x": 952,
+        "y": 642,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "按门铃",
+        "pseudo": [],
+        "x": 1080,
+        "y": 646,
+        "size": 16
+      }
+    ]
+  },
+  {
+    "page": "radio-B",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "街坊收音机",
+        "pseudo": [],
+        "x": 16,
+        "y": 45,
+        "size": 40
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "维修点",
+        "pseudo": [],
+        "x": 16,
+        "y": 88,
+        "size": 40
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "家里的老收音机听不清了？先看看要怎么检查。",
+        "pseudo": [],
+        "x": 16,
+        "y": 144,
+        "size": 15.68
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "symptom-title",
+        "text": "收音机有什么现象？",
+        "pseudo": [],
+        "x": 16,
+        "y": 408,
+        "size": 25.6
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 16,
+        "y": 456,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 16,
+        "y": 520,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "terms",
+        "id": null,
+        "text": "外观免费检查。需要拆机检测时，会先征得你的同意。",
+        "pseudo": [],
+        "x": 16,
+        "y": 591,
+        "size": 15.04
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": "apply",
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 16,
+        "y": 658,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo-note",
+        "id": "demo-note",
+        "text": "这里仅能发送演示检查请求。",
+        "pseudo": [],
+        "x": 136,
+        "y": 669,
+        "size": 14
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-title",
+        "text": "到店怎么走",
+        "pseudo": [],
+        "x": 34,
+        "y": 756,
+        "size": 24.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 34,
+        "y": 802,
+        "size": 14
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "周六 15:30",
+        "pseudo": [],
+        "x": 34,
+        "y": 831,
+        "size": 24
+      },
+      {
+        "tag": "p",
+        "class": "directions",
+        "id": null,
+        "text": "店在 ，进门后走过两级台阶。",
+        "pseudo": [],
+        "x": 34,
+        "y": 896,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内",
+        "pseudo": [],
+        "x": 66,
+        "y": 900,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "bell",
+        "id": null,
+        "text": "不能走台阶，可以 ，有人来接。",
+        "pseudo": [],
+        "x": 34,
+        "y": 932,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "按门铃",
+        "pseudo": [],
+        "x": 162,
+        "y": 936,
+        "size": 16
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", STSong, \"Noto Serif CJK SC\", SimSun, serif",
+      "size": "40px",
+      "weight": "800",
+      "spacing": "-1.8px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "街坊收音机",
+        "pseudo": [],
+        "x": 16,
+        "y": 45,
+        "size": 40
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "维修点",
+        "pseudo": [],
+        "x": 16,
+        "y": 88,
+        "size": 40
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "家里的老收音机听不清了？先看看要怎么检查。",
+        "pseudo": [],
+        "x": 16,
+        "y": 144,
+        "size": 15.68
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "symptom-title",
+        "text": "收音机有什么现象？",
+        "pseudo": [],
+        "x": 16,
+        "y": 408,
+        "size": 25.6
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 16,
+        "y": 456,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 16,
+        "y": 520,
+        "size": 16
+      },
+      {
+        "tag": "h3",
+        "class": null,
+        "id": null,
+        "text": "检查条件",
+        "pseudo": [],
+        "x": 35,
+        "y": 604,
+        "size": 16.8
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": "check-condition",
+        "text": "完全没声音要先做检测，检测前不能承诺价格。",
+        "pseudo": [],
+        "x": 35,
+        "y": 635,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "terms",
+        "id": null,
+        "text": "外观免费检查。需要拆机检测时，会先征得你的同意。",
+        "pseudo": [],
+        "x": 16,
+        "y": 720,
+        "size": 15.04
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": "apply",
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 16,
+        "y": 787,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo-note",
+        "id": "demo-note",
+        "text": "这里仅能发送演示检查请求。",
+        "pseudo": [],
+        "x": 136,
+        "y": 798,
+        "size": 14
+      },
+      {
+        "tag": "h3",
+        "class": null,
+        "id": "receipt-title",
+        "text": "已记录检查请求",
+        "pseudo": [],
+        "x": 35,
+        "y": 863,
+        "size": 16.8
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "所选现象：",
+        "pseudo": [],
+        "x": 35,
+        "y": 895,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "recorded-symptom",
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 115,
+        "y": 899,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-title",
+        "text": "到店怎么走",
+        "pseudo": [],
+        "x": 34,
+        "y": 988,
+        "size": 24.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 34,
+        "y": 1033,
+        "size": 14
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "周六 15:30",
+        "pseudo": [],
+        "x": 34,
+        "y": 1063,
+        "size": 24
+      },
+      {
+        "tag": "p",
+        "class": "directions",
+        "id": null,
+        "text": "店在 ，进门后走过两级台阶。",
+        "pseudo": [],
+        "x": 34,
+        "y": 1127,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内",
+        "pseudo": [],
+        "x": 66,
+        "y": 1131,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "bell",
+        "id": null,
+        "text": "不能走台阶，可以 ，有人来接。",
+        "pseudo": [],
+        "x": 34,
+        "y": 1163,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "按门铃",
+        "pseudo": [],
+        "x": 162,
+        "y": 1167,
+        "size": 16
+      }
+    ]
+  },
+  {
+    "page": "radio-C",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "老收音机维修点",
+        "pseudo": [],
+        "x": 251,
+        "y": 156,
+        "size": 58.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "先选收音机的现象，看看需要怎么检查。",
+        "pseudo": [],
+        "x": 251,
+        "y": 241,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "check-title",
+        "text": "收音机是什么情况？",
+        "pseudo": [],
+        "x": 233,
+        "y": 407,
+        "size": 28.8
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 233,
+        "y": 463,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 518,
+        "y": 463,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "policy",
+        "id": null,
+        "text": "外观检查免费。需要拆机检测时，会先征得你同意。",
+        "pseudo": [],
+        "x": 233,
+        "y": 536,
+        "size": 15.2
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": null,
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 233,
+        "y": 581,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo",
+        "id": "demo",
+        "text": "本页仅记录演示请求。",
+        "pseudo": [],
+        "x": 357,
+        "y": 593,
+        "size": 14
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-title",
+        "text": "到店信息",
+        "pseudo": [],
+        "x": 877,
+        "y": 407,
+        "size": 28.8
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 877,
+        "y": 471,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": "deadline",
+        "id": null,
+        "text": "周六 15:30",
+        "pseudo": [],
+        "x": 877,
+        "y": 495,
+        "size": 22.08
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "位置",
+        "pseudo": [],
+        "x": 877,
+        "y": 556,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内，走过两级台阶。",
+        "pseudo": [],
+        "x": 877,
+        "y": 580,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "走不了台阶",
+        "pseudo": [],
+        "x": 877,
+        "y": 632,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "按门铃，有人来接。",
+        "pseudo": [],
+        "x": 877,
+        "y": 656,
+        "size": 16
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+      "size": "58.4px",
+      "weight": "800",
+      "spacing": "1.46px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "老收音机维修点",
+        "pseudo": [],
+        "x": 251,
+        "y": 156,
+        "size": 58.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "先选收音机的现象，看看需要怎么检查。",
+        "pseudo": [],
+        "x": 251,
+        "y": 241,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "check-title",
+        "text": "收音机是什么情况？",
+        "pseudo": [],
+        "x": 233,
+        "y": 407,
+        "size": 28.8
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 233,
+        "y": 463,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 518,
+        "y": 463,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "condition",
+        "id": "condition",
+        "text": "完全没声音需要先做检测，价格要等检测后才能确认。",
+        "pseudo": [],
+        "x": 233,
+        "y": 536,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "policy",
+        "id": null,
+        "text": "外观检查免费。需要拆机检测时，会先征得你同意。",
+        "pseudo": [],
+        "x": 233,
+        "y": 598,
+        "size": 15.2
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": null,
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 233,
+        "y": 643,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo",
+        "id": "demo",
+        "text": "本页仅记录演示请求。",
+        "pseudo": [],
+        "x": 357,
+        "y": 656,
+        "size": 14
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "result-title",
+        "text": "已记录检查请求",
+        "pseudo": [],
+        "x": 250,
+        "y": 719,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": "result-detail",
+        "text": "所选现象：完全没声音",
+        "pseudo": [],
+        "x": 250,
+        "y": 746,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-title",
+        "text": "到店信息",
+        "pseudo": [],
+        "x": 877,
+        "y": 407,
+        "size": 28.8
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 877,
+        "y": 471,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": "deadline",
+        "id": null,
+        "text": "周六 15:30",
+        "pseudo": [],
+        "x": 877,
+        "y": 495,
+        "size": 22.08
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "位置",
+        "pseudo": [],
+        "x": 877,
+        "y": 556,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内，走过两级台阶。",
+        "pseudo": [],
+        "x": 877,
+        "y": 580,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "走不了台阶",
+        "pseudo": [],
+        "x": 877,
+        "y": 632,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "按门铃，有人来接。",
+        "pseudo": [],
+        "x": 877,
+        "y": 656,
+        "size": 16
+      }
+    ]
+  },
+  {
+    "page": "radio-C",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "老收音机维修点",
+        "pseudo": [],
+        "x": 43,
+        "y": 51,
+        "size": 32
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "先选收音机的现象，看看需要怎么检查。",
+        "pseudo": [],
+        "x": 43,
+        "y": 99,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "check-title",
+        "text": "收音机是什么情况？",
+        "pseudo": [],
+        "x": 39,
+        "y": 320,
+        "size": 22.4
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 39,
+        "y": 368,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 200,
+        "y": 368,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "policy",
+        "id": null,
+        "text": "外观检查免费。需要拆机检测时，会先征得你同意。",
+        "pseudo": [],
+        "x": 39,
+        "y": 441,
+        "size": 15.2
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": null,
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 39,
+        "y": 511,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo",
+        "id": "demo",
+        "text": "本页仅记录演示请求。",
+        "pseudo": [],
+        "x": 163,
+        "y": 523,
+        "size": 14
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-title",
+        "text": "到店信息",
+        "pseudo": [],
+        "x": 39,
+        "y": 604,
+        "size": 22.4
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 39,
+        "y": 659,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": "deadline",
+        "id": null,
+        "text": "周六 15:30",
+        "pseudo": [],
+        "x": 39,
+        "y": 683,
+        "size": 22.08
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "位置",
+        "pseudo": [],
+        "x": 39,
+        "y": 744,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内，走过两级台阶。",
+        "pseudo": [],
+        "x": 39,
+        "y": 768,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "走不了台阶",
+        "pseudo": [],
+        "x": 39,
+        "y": 820,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "按门铃，有人来接。",
+        "pseudo": [],
+        "x": 39,
+        "y": 844,
+        "size": 16
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", \"Noto Serif CJK SC\", SimSun, serif",
+      "size": "32px",
+      "weight": "800",
+      "spacing": "0.8px",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "老收音机维修点",
+        "pseudo": [],
+        "x": 43,
+        "y": 51,
+        "size": 32
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "先选收音机的现象，看看需要怎么检查。",
+        "pseudo": [],
+        "x": 43,
+        "y": 99,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "check-title",
+        "text": "收音机是什么情况？",
+        "pseudo": [],
+        "x": 39,
+        "y": 320,
+        "size": 22.4
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "完全没声音",
+        "pseudo": [],
+        "x": 39,
+        "y": 368,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "choice",
+        "id": null,
+        "text": "只有杂音",
+        "pseudo": [],
+        "x": 200,
+        "y": 368,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "condition",
+        "id": "condition",
+        "text": "完全没声音需要先做检测，价格要等检测后才能确认。",
+        "pseudo": [],
+        "x": 39,
+        "y": 441,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "policy",
+        "id": null,
+        "text": "外观检查免费。需要拆机检测时，会先征得你同意。",
+        "pseudo": [],
+        "x": 39,
+        "y": 529,
+        "size": 15.2
+      },
+      {
+        "tag": "button",
+        "class": "submit",
+        "id": null,
+        "text": "申请检查",
+        "pseudo": [],
+        "x": 39,
+        "y": 600,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": "demo",
+        "id": "demo",
+        "text": "本页仅记录演示请求。",
+        "pseudo": [],
+        "x": 163,
+        "y": 612,
+        "size": 14
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "result-title",
+        "text": "已记录检查请求",
+        "pseudo": [],
+        "x": 56,
+        "y": 676,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": "result-detail",
+        "text": "所选现象：完全没声音",
+        "pseudo": [],
+        "x": 56,
+        "y": 702,
+        "size": 16
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "visit-title",
+        "text": "到店信息",
+        "pseudo": [],
+        "x": 39,
+        "y": 785,
+        "size": 22.4
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "登记截止",
+        "pseudo": [],
+        "x": 39,
+        "y": 841,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": "deadline",
+        "id": null,
+        "text": "周六 15:30",
+        "pseudo": [],
+        "x": 39,
+        "y": 865,
+        "size": 22.08
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "位置",
+        "pseudo": [],
+        "x": 39,
+        "y": 926,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "菜场东门内，走过两级台阶。",
+        "pseudo": [],
+        "x": 39,
+        "y": 950,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "走不了台阶",
+        "pseudo": [],
+        "x": 39,
+        "y": 1001,
+        "size": 14
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "按门铃，有人来接。",
+        "pseudo": [],
+        "x": 39,
+        "y": 1025,
+        "size": 16
+      }
+    ]
+  },
+  {
+    "page": "trail-A",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "header",
+        "class": "masthead",
+        "id": null,
+        "text": "周末散步 · 河边路况",
+        "pseudo": [],
+        "x": 160,
+        "y": 48,
+        "size": 14.4
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "去桥北，走斜坡",
+        "pseudo": [],
+        "x": 160,
+        "y": 134,
+        "size": 70.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "昨晚下了雨，临河台阶还滑，暂时封了。往桥北去的话，从西口绕一下就能过去。",
+        "pseudo": [],
+        "x": 160,
+        "y": 232,
+        "size": 18.24
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "河边绕行示意",
+        "pseudo": [],
+        "x": 161,
+        "y": 291,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "只画位置关系",
+        "pseudo": [],
+        "x": 715,
+        "y": 315,
+        "size": 12.48
+      },
+      {
+        "tag": "span",
+        "class": "pin west",
+        "id": null,
+        "text": "西口",
+        "pseudo": [],
+        "x": 254,
+        "y": 582,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin slope",
+        "id": null,
+        "text": "斜坡",
+        "pseudo": [],
+        "x": 420,
+        "y": 424,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin north",
+        "id": null,
+        "text": "桥北",
+        "pseudo": [],
+        "x": 643,
+        "y": 424,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin closed",
+        "id": null,
+        "text": "临河台阶",
+        "pseudo": [
+          "\"×\""
+        ],
+        "x": 611,
+        "y": 574,
+        "size": 15.04
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 707,
+        "y": 581,
+        "size": 12
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "route-title",
+        "text": "你打算怎么走？",
+        "pseudo": [],
+        "x": 858,
+        "y": 318,
+        "size": 21.76
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "slope-label",
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 902,
+        "y": 374,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": "slope-detail",
+        "text": "从西口进，沿斜坡去桥北",
+        "pseudo": [],
+        "x": 902,
+        "y": 400,
+        "size": 13.44
+      },
+      {
+        "tag": "button",
+        "class": null,
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 858,
+        "y": 448,
+        "size": 16
+      },
+      {
+        "tag": "li",
+        "class": null,
+        "id": null,
+        "text": "的话，现在只能走斜坡。",
+        "pseudo": [],
+        "x": 858,
+        "y": 525,
+        "size": 14.08
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "推手推车",
+        "pseudo": [],
+        "x": 858,
+        "y": 528,
+        "size": 14.08
+      },
+      {
+        "tag": "li",
+        "class": null,
+        "id": null,
+        "text": "，可以在斜坡尽头停下来看看，那里禁止机动车通行。",
+        "pseudo": [],
+        "x": 858,
+        "y": 554,
+        "size": 14.08
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "想看桥洞",
+        "pseudo": [],
+        "x": 858,
+        "y": 557,
+        "size": 14.08
+      }
+    ],
+    "type": {
+      "family": "system-ui, -apple-system, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "size": "70.4px",
+      "weight": "850",
+      "spacing": "-4.576px",
+      "actual": [
+        "PingFang SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "header",
+        "class": "masthead",
+        "id": null,
+        "text": "周末散步 · 河边路况",
+        "pseudo": [],
+        "x": 160,
+        "y": 48,
+        "size": 14.4
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "去桥北，走斜坡",
+        "pseudo": [],
+        "x": 160,
+        "y": 134,
+        "size": 70.4
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "昨晚下了雨，临河台阶还滑，暂时封了。往桥北去的话，从西口绕一下就能过去。",
+        "pseudo": [],
+        "x": 160,
+        "y": 232,
+        "size": 18.24
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "河边绕行示意",
+        "pseudo": [],
+        "x": 161,
+        "y": 291,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "只画位置关系",
+        "pseudo": [],
+        "x": 715,
+        "y": 315,
+        "size": 12.48
+      },
+      {
+        "tag": "span",
+        "class": "pin west",
+        "id": null,
+        "text": "西口",
+        "pseudo": [],
+        "x": 254,
+        "y": 582,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin slope",
+        "id": null,
+        "text": "斜坡",
+        "pseudo": [],
+        "x": 420,
+        "y": 424,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin north",
+        "id": null,
+        "text": "桥北",
+        "pseudo": [],
+        "x": 643,
+        "y": 424,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin closed",
+        "id": null,
+        "text": "临河台阶",
+        "pseudo": [
+          "\"×\""
+        ],
+        "x": 611,
+        "y": 574,
+        "size": 15.04
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 707,
+        "y": 581,
+        "size": 12
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "route-title",
+        "text": "你打算怎么走？",
+        "pseudo": [],
+        "x": 858,
+        "y": 318,
+        "size": 21.76
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "slope-label",
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 902,
+        "y": 374,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": "slope-detail",
+        "text": "从西口进，沿斜坡去桥北",
+        "pseudo": [],
+        "x": 902,
+        "y": 400,
+        "size": 13.44
+      },
+      {
+        "tag": "button",
+        "class": null,
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 858,
+        "y": 448,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "可达 · 能到桥北",
+        "pseudo": [],
+        "x": 875,
+        "y": 519,
+        "size": 16
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "从西口进，沿斜坡一直走到桥北。",
+        "pseudo": [],
+        "x": 875,
+        "y": 549,
+        "size": 16
+      },
+      {
+        "tag": "li",
+        "class": null,
+        "id": null,
+        "text": "的话，现在只能走斜坡。",
+        "pseudo": [],
+        "x": 858,
+        "y": 614,
+        "size": 14.08
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "推手推车",
+        "pseudo": [],
+        "x": 858,
+        "y": 617,
+        "size": 14.08
+      },
+      {
+        "tag": "li",
+        "class": null,
+        "id": null,
+        "text": "，可以在斜坡尽头停下来看看，那里禁止机动车通行。",
+        "pseudo": [],
+        "x": 858,
+        "y": 643,
+        "size": 14.08
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "想看桥洞",
+        "pseudo": [],
+        "x": 858,
+        "y": 646,
+        "size": 14.08
+      }
+    ]
+  },
+  {
+    "page": "trail-A",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "header",
+        "class": "masthead",
+        "id": null,
+        "text": "周末散步 · 河边路况",
+        "pseudo": [],
+        "x": 16,
+        "y": 25,
+        "size": 14.4
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "去桥北，走斜坡",
+        "pseudo": [],
+        "x": 16,
+        "y": 88,
+        "size": 32.8
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "昨晚下了雨，临河台阶还滑，暂时封了。往桥北去的话，从西口绕一下就能过去。",
+        "pseudo": [],
+        "x": 16,
+        "y": 142,
+        "size": 16
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "河边绕行示意",
+        "pseudo": [],
+        "x": 17,
+        "y": 224,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "只画位置关系",
+        "pseudo": [],
+        "x": 283,
+        "y": 241,
+        "size": 12.48
+      },
+      {
+        "tag": "span",
+        "class": "pin west",
+        "id": null,
+        "text": "西口",
+        "pseudo": [],
+        "x": 63,
+        "y": 440,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin slope",
+        "id": null,
+        "text": "斜坡",
+        "pseudo": [],
+        "x": 144,
+        "y": 322,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin north",
+        "id": null,
+        "text": "桥北",
+        "pseudo": [],
+        "x": 258,
+        "y": 322,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin closed",
+        "id": null,
+        "text": "临河台阶",
+        "pseudo": [
+          "\"×\""
+        ],
+        "x": 193,
+        "y": 429,
+        "size": 15.04
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 289,
+        "y": 437,
+        "size": 12
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "route-title",
+        "text": "你打算怎么走？",
+        "pseudo": [],
+        "x": 34,
+        "y": 552,
+        "size": 21.76
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "slope-label",
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 78,
+        "y": 608,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": "slope-detail",
+        "text": "从西口进，沿斜坡去桥北",
+        "pseudo": [],
+        "x": 78,
+        "y": 634,
+        "size": 13.44
+      },
+      {
+        "tag": "button",
+        "class": null,
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 34,
+        "y": 681,
+        "size": 16
+      },
+      {
+        "tag": "li",
+        "class": null,
+        "id": null,
+        "text": "的话，现在只能走斜坡。",
+        "pseudo": [],
+        "x": 34,
+        "y": 759,
+        "size": 14.08
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "推手推车",
+        "pseudo": [],
+        "x": 34,
+        "y": 762,
+        "size": 14.08
+      },
+      {
+        "tag": "li",
+        "class": null,
+        "id": null,
+        "text": "，可以在斜坡尽头停下来看看，那里禁止机动车通行。",
+        "pseudo": [],
+        "x": 34,
+        "y": 788,
+        "size": 14.08
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "想看桥洞",
+        "pseudo": [],
+        "x": 34,
+        "y": 791,
+        "size": 14.08
+      }
+    ],
+    "type": {
+      "family": "system-ui, -apple-system, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "size": "32.8px",
+      "weight": "850",
+      "spacing": "-2.132px",
+      "actual": [
+        "PingFang SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "header",
+        "class": "masthead",
+        "id": null,
+        "text": "周末散步 · 河边路况",
+        "pseudo": [],
+        "x": 16,
+        "y": 25,
+        "size": 14.4
+      },
+      {
+        "tag": "h1",
+        "class": null,
+        "id": null,
+        "text": "去桥北，走斜坡",
+        "pseudo": [],
+        "x": 16,
+        "y": 88,
+        "size": 32.8
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "昨晚下了雨，临河台阶还滑，暂时封了。往桥北去的话，从西口绕一下就能过去。",
+        "pseudo": [],
+        "x": 16,
+        "y": 142,
+        "size": 16
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "河边绕行示意",
+        "pseudo": [],
+        "x": 17,
+        "y": 224,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "只画位置关系",
+        "pseudo": [],
+        "x": 283,
+        "y": 241,
+        "size": 12.48
+      },
+      {
+        "tag": "span",
+        "class": "pin west",
+        "id": null,
+        "text": "西口",
+        "pseudo": [],
+        "x": 63,
+        "y": 440,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin slope",
+        "id": null,
+        "text": "斜坡",
+        "pseudo": [],
+        "x": 144,
+        "y": 322,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin north",
+        "id": null,
+        "text": "桥北",
+        "pseudo": [],
+        "x": 258,
+        "y": 322,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "pin closed",
+        "id": null,
+        "text": "临河台阶",
+        "pseudo": [
+          "\"×\""
+        ],
+        "x": 193,
+        "y": 429,
+        "size": 15.04
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 289,
+        "y": 437,
+        "size": 12
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "route-title",
+        "text": "你打算怎么走？",
+        "pseudo": [],
+        "x": 34,
+        "y": 552,
+        "size": 21.76
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": "slope-label",
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 78,
+        "y": 608,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": "slope-detail",
+        "text": "从西口进，沿斜坡去桥北",
+        "pseudo": [],
+        "x": 78,
+        "y": 634,
+        "size": 13.44
+      },
+      {
+        "tag": "button",
+        "class": null,
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 34,
+        "y": 681,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "可达 · 能到桥北",
+        "pseudo": [],
+        "x": 51,
+        "y": 753,
+        "size": 16
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "从西口进，沿斜坡一直走到桥北。",
+        "pseudo": [],
+        "x": 51,
+        "y": 783,
+        "size": 16
+      },
+      {
+        "tag": "li",
+        "class": null,
+        "id": null,
+        "text": "的话，现在只能走斜坡。",
+        "pseudo": [],
+        "x": 34,
+        "y": 848,
+        "size": 14.08
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "推手推车",
+        "pseudo": [],
+        "x": 34,
+        "y": 851,
+        "size": 14.08
+      },
+      {
+        "tag": "li",
+        "class": null,
+        "id": null,
+        "text": "，可以在斜坡尽头停下来看看，那里禁止机动车通行。",
+        "pseudo": [],
+        "x": 34,
+        "y": 877,
+        "size": 14.08
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "想看桥洞",
+        "pseudo": [],
+        "x": 34,
+        "y": 880,
+        "size": 14.08
+      }
+    ]
+  },
+  {
+    "page": "trail-B",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "div",
+        "class": "masthead-name",
+        "id": null,
+        "text": "周末散步路况",
+        "pseudo": [],
+        "x": 128,
+        "y": 21,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示资料",
+        "pseudo": [],
+        "x": 1261,
+        "y": 28,
+        "size": 12.8
+      },
+      {
+        "tag": "p",
+        "class": "closure",
+        "id": null,
+        "text": "临河台阶暂时封闭",
+        "pseudo": [],
+        "x": 128,
+        "y": 143,
+        "size": 13.12
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "去桥北，",
+        "pseudo": [],
+        "x": 128,
+        "y": 192,
+        "size": 73.44
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "从西口绕一下",
+        "pseudo": [],
+        "x": 128,
+        "y": 274,
+        "size": 73.44
+      },
+      {
+        "tag": "p",
+        "class": "intro-copy",
+        "id": null,
+        "text": "昨晚下了雨，临河台阶还滑着，先别往台阶那边走。到西口上斜坡，顺着走就能到桥北。",
+        "pseudo": [],
+        "x": 128,
+        "y": 376,
+        "size": 16
+      },
+      {
+        "tag": "legend",
+        "class": null,
+        "id": null,
+        "text": "看看这条路能不能走通",
+        "pseudo": [],
+        "x": 128,
+        "y": 461,
+        "size": 13.92
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 169,
+        "y": 505,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": null,
+        "id": null,
+        "text": "查看可达结果",
+        "pseudo": [],
+        "x": 462,
+        "y": 490,
+        "size": 15.04
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "绕行示意",
+        "pseudo": [],
+        "x": 676,
+        "y": 157,
+        "size": 15.2
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "仅示位置关系",
+        "pseudo": [],
+        "x": 1217,
+        "y": 160,
+        "size": 12.48
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "河",
+        "pseudo": [],
+        "x": 1244,
+        "y": 363,
+        "size": 21
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "西口",
+        "pseudo": [],
+        "x": 728,
+        "y": 556,
+        "size": 24
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "桥北",
+        "pseudo": [],
+        "x": 1048,
+        "y": 223,
+        "size": 24
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "斜坡",
+        "pseudo": [],
+        "x": 833,
+        "y": 403,
+        "size": 22
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "台阶",
+        "pseudo": [],
+        "x": 1049,
+        "y": 471,
+        "size": 20
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 1037,
+        "y": 503,
+        "size": 18
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "斜坡可通行",
+        "pseudo": [],
+        "x": 676,
+        "y": 636,
+        "size": 12.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "台阶封闭",
+        "pseudo": [],
+        "x": 787,
+        "y": 636,
+        "size": 12.8
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "cart-note",
+        "text": "推着手推车",
+        "pseudo": [],
+        "x": 177,
+        "y": 723,
+        "size": 15.36
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "现在只能走斜坡，从西口上去。",
+        "pseudo": [],
+        "x": 177,
+        "y": 748,
+        "size": 14.4
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "bridge-note",
+        "text": "想看看桥洞",
+        "pseudo": [],
+        "x": 794,
+        "y": 723,
+        "size": 15.36
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "可以在斜坡尽头停一停，那里禁止机动车。",
+        "pseudo": [],
+        "x": 794,
+        "y": 748,
+        "size": 14.4
+      }
+    ],
+    "type": {
+      "family": "\"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", system-ui, sans-serif",
+      "size": "73.44px",
+      "weight": "850",
+      "spacing": "-4.0392px",
+      "actual": [
+        "PingFang SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "div",
+        "class": "masthead-name",
+        "id": null,
+        "text": "周末散步路况",
+        "pseudo": [],
+        "x": 128,
+        "y": 21,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示资料",
+        "pseudo": [],
+        "x": 1261,
+        "y": 28,
+        "size": 12.8
+      },
+      {
+        "tag": "p",
+        "class": "closure",
+        "id": null,
+        "text": "临河台阶暂时封闭",
+        "pseudo": [],
+        "x": 128,
+        "y": 143,
+        "size": 13.12
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "去桥北，",
+        "pseudo": [],
+        "x": 128,
+        "y": 192,
+        "size": 73.44
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "从西口绕一下",
+        "pseudo": [],
+        "x": 128,
+        "y": 274,
+        "size": 73.44
+      },
+      {
+        "tag": "p",
+        "class": "intro-copy",
+        "id": null,
+        "text": "昨晚下了雨，临河台阶还滑着，先别往台阶那边走。到西口上斜坡，顺着走就能到桥北。",
+        "pseudo": [],
+        "x": 128,
+        "y": 376,
+        "size": 16
+      },
+      {
+        "tag": "legend",
+        "class": null,
+        "id": null,
+        "text": "看看这条路能不能走通",
+        "pseudo": [],
+        "x": 128,
+        "y": 461,
+        "size": 13.92
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 169,
+        "y": 505,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": null,
+        "id": null,
+        "text": "查看可达结果",
+        "pseudo": [],
+        "x": 462,
+        "y": 490,
+        "size": 15.04
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "result-title",
+        "text": "可达 · 西口 → 斜坡 → 桥北",
+        "pseudo": [],
+        "x": 147,
+        "y": 568,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "从西口上斜坡，沿坡走到头就到桥北。",
+        "pseudo": [],
+        "x": 147,
+        "y": 595,
+        "size": 14.72
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "绕行示意",
+        "pseudo": [],
+        "x": 676,
+        "y": 157,
+        "size": 15.2
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "仅示位置关系",
+        "pseudo": [],
+        "x": 1217,
+        "y": 160,
+        "size": 12.48
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "河",
+        "pseudo": [],
+        "x": 1244,
+        "y": 363,
+        "size": 21
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "西口",
+        "pseudo": [],
+        "x": 728,
+        "y": 556,
+        "size": 24
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "桥北",
+        "pseudo": [],
+        "x": 1048,
+        "y": 223,
+        "size": 24
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "斜坡",
+        "pseudo": [],
+        "x": 833,
+        "y": 403,
+        "size": 22
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "台阶",
+        "pseudo": [],
+        "x": 1049,
+        "y": 471,
+        "size": 20
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 1037,
+        "y": 503,
+        "size": 18
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "斜坡可通行",
+        "pseudo": [],
+        "x": 676,
+        "y": 636,
+        "size": 12.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "台阶封闭",
+        "pseudo": [],
+        "x": 787,
+        "y": 636,
+        "size": 12.8
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "cart-note",
+        "text": "推着手推车",
+        "pseudo": [],
+        "x": 177,
+        "y": 723,
+        "size": 15.36
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "现在只能走斜坡，从西口上去。",
+        "pseudo": [],
+        "x": 177,
+        "y": 748,
+        "size": 14.4
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "bridge-note",
+        "text": "想看看桥洞",
+        "pseudo": [],
+        "x": 794,
+        "y": 723,
+        "size": 15.36
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "可以在斜坡尽头停一停，那里禁止机动车。",
+        "pseudo": [],
+        "x": 794,
+        "y": 748,
+        "size": 14.4
+      }
+    ]
+  },
+  {
+    "page": "trail-B",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "div",
+        "class": "masthead-name",
+        "id": null,
+        "text": "周末散步路况",
+        "pseudo": [],
+        "x": 16,
+        "y": 14,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示资料",
+        "pseudo": [],
+        "x": 323,
+        "y": 21,
+        "size": 12.8
+      },
+      {
+        "tag": "p",
+        "class": "closure",
+        "id": null,
+        "text": "临河台阶暂时封闭",
+        "pseudo": [],
+        "x": 16,
+        "y": 87,
+        "size": 13.12
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "去桥北，",
+        "pseudo": [],
+        "x": 16,
+        "y": 131,
+        "size": 36.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "从西口绕一下",
+        "pseudo": [],
+        "x": 16,
+        "y": 172,
+        "size": 36.8
+      },
+      {
+        "tag": "p",
+        "class": "intro-copy",
+        "id": null,
+        "text": "昨晚下了雨，临河台阶还滑着，先别往台阶那边走。到西口上斜坡，顺着走就能到桥北。",
+        "pseudo": [],
+        "x": 16,
+        "y": 226,
+        "size": 16
+      },
+      {
+        "tag": "legend",
+        "class": null,
+        "id": null,
+        "text": "看看这条路能不能走通",
+        "pseudo": [],
+        "x": 16,
+        "y": 308,
+        "size": 13.92
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 57,
+        "y": 352,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": null,
+        "id": null,
+        "text": "查看可达结果",
+        "pseudo": [],
+        "x": 252,
+        "y": 337,
+        "size": 15.04
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "绕行示意",
+        "pseudo": [],
+        "x": 30,
+        "y": 426,
+        "size": 15.2
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "仅示位置关系",
+        "pseudo": [],
+        "x": 285,
+        "y": 429,
+        "size": 12.48
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "河",
+        "pseudo": [],
+        "x": 336,
+        "y": 554,
+        "size": 21
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "西口",
+        "pseudo": [],
+        "x": 56,
+        "y": 659,
+        "size": 24
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "桥北",
+        "pseudo": [],
+        "x": 230,
+        "y": 478,
+        "size": 24
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "斜坡",
+        "pseudo": [],
+        "x": 113,
+        "y": 575,
+        "size": 22
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "台阶",
+        "pseudo": [],
+        "x": 231,
+        "y": 613,
+        "size": 20
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 224,
+        "y": 630,
+        "size": 18
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "斜坡可通行",
+        "pseudo": [],
+        "x": 30,
+        "y": 708,
+        "size": 12.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "台阶封闭",
+        "pseudo": [],
+        "x": 141,
+        "y": 708,
+        "size": 12.8
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "cart-note",
+        "text": "推着手推车",
+        "pseudo": [],
+        "x": 65,
+        "y": 778,
+        "size": 15.36
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "现在只能走斜坡，从西口上去。",
+        "pseudo": [],
+        "x": 65,
+        "y": 803,
+        "size": 14.4
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "bridge-note",
+        "text": "想看看桥洞",
+        "pseudo": [],
+        "x": 65,
+        "y": 857,
+        "size": 15.36
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "可以在斜坡尽头停一停，那里禁止机动车。",
+        "pseudo": [],
+        "x": 65,
+        "y": 882,
+        "size": 14.4
+      }
+    ],
+    "type": {
+      "family": "\"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", system-ui, sans-serif",
+      "size": "36.8px",
+      "weight": "850",
+      "spacing": "-2.024px",
+      "actual": [
+        "PingFang SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "div",
+        "class": "masthead-name",
+        "id": null,
+        "text": "周末散步路况",
+        "pseudo": [],
+        "x": 16,
+        "y": 14,
+        "size": 15.04
+      },
+      {
+        "tag": "span",
+        "class": "demo",
+        "id": null,
+        "text": "演示资料",
+        "pseudo": [],
+        "x": 323,
+        "y": 21,
+        "size": 12.8
+      },
+      {
+        "tag": "p",
+        "class": "closure",
+        "id": null,
+        "text": "临河台阶暂时封闭",
+        "pseudo": [],
+        "x": 16,
+        "y": 87,
+        "size": 13.12
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "去桥北，",
+        "pseudo": [],
+        "x": 16,
+        "y": 131,
+        "size": 36.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "从西口绕一下",
+        "pseudo": [],
+        "x": 16,
+        "y": 172,
+        "size": 36.8
+      },
+      {
+        "tag": "p",
+        "class": "intro-copy",
+        "id": null,
+        "text": "昨晚下了雨，临河台阶还滑着，先别往台阶那边走。到西口上斜坡，顺着走就能到桥北。",
+        "pseudo": [],
+        "x": 16,
+        "y": 226,
+        "size": 16
+      },
+      {
+        "tag": "legend",
+        "class": null,
+        "id": null,
+        "text": "看看这条路能不能走通",
+        "pseudo": [],
+        "x": 16,
+        "y": 308,
+        "size": 13.92
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 57,
+        "y": 352,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": null,
+        "id": null,
+        "text": "查看可达结果",
+        "pseudo": [],
+        "x": 252,
+        "y": 337,
+        "size": 15.04
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "result-title",
+        "text": "可达 · 西口 → 斜坡 → 桥北",
+        "pseudo": [],
+        "x": 35,
+        "y": 415,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "从西口上斜坡，沿坡走到头就到桥北。",
+        "pseudo": [],
+        "x": 35,
+        "y": 442,
+        "size": 14.72
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "绕行示意",
+        "pseudo": [],
+        "x": 30,
+        "y": 513,
+        "size": 15.2
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "仅示位置关系",
+        "pseudo": [],
+        "x": 285,
+        "y": 516,
+        "size": 12.48
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "河",
+        "pseudo": [],
+        "x": 336,
+        "y": 642,
+        "size": 21
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "西口",
+        "pseudo": [],
+        "x": 56,
+        "y": 747,
+        "size": 24
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "桥北",
+        "pseudo": [],
+        "x": 230,
+        "y": 565,
+        "size": 24
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "斜坡",
+        "pseudo": [],
+        "x": 113,
+        "y": 663,
+        "size": 22
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "台阶",
+        "pseudo": [],
+        "x": 231,
+        "y": 701,
+        "size": 20
+      },
+      {
+        "tag": "text",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 224,
+        "y": 718,
+        "size": 18
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "斜坡可通行",
+        "pseudo": [],
+        "x": 30,
+        "y": 796,
+        "size": 12.8
+      },
+      {
+        "tag": "span",
+        "class": null,
+        "id": null,
+        "text": "台阶封闭",
+        "pseudo": [],
+        "x": 141,
+        "y": 796,
+        "size": 12.8
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "cart-note",
+        "text": "推着手推车",
+        "pseudo": [],
+        "x": 65,
+        "y": 866,
+        "size": 15.36
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "现在只能走斜坡，从西口上去。",
+        "pseudo": [],
+        "x": 65,
+        "y": 891,
+        "size": 14.4
+      },
+      {
+        "tag": "h2",
+        "class": null,
+        "id": "bridge-note",
+        "text": "想看看桥洞",
+        "pseudo": [],
+        "x": 65,
+        "y": 945,
+        "size": 15.36
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "可以在斜坡尽头停一停，那里禁止机动车。",
+        "pseudo": [],
+        "x": 65,
+        "y": 970,
+        "size": 14.4
+      }
+    ]
+  },
+  {
+    "page": "trail-C",
+    "mode": "desktop",
+    "opening": [
+      {
+        "tag": "span",
+        "class": "headline-line",
+        "id": null,
+        "text": "周末散步，",
+        "pseudo": [],
+        "x": 152,
+        "y": 131,
+        "size": 74.4
+      },
+      {
+        "tag": "span",
+        "class": "headline-line",
+        "id": null,
+        "text": "桥边怎么走？",
+        "pseudo": [],
+        "x": 152,
+        "y": 217,
+        "size": 74.4
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "昨晚下了雨，临河台阶湿滑， 。从西口绕上斜坡，就能走到桥北。",
+        "pseudo": [],
+        "x": 152,
+        "y": 409,
+        "size": 18
+      },
+      {
+        "tag": "strong",
+        "class": "closed-text",
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 386,
+        "y": 411,
+        "size": 18
+      },
+      {
+        "tag": "button",
+        "class": "route-button",
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 152,
+        "y": 493,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "临河台阶",
+        "pseudo": [],
+        "x": 1117,
+        "y": 379,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 1117,
+        "y": 404,
+        "size": 14
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "位置关系示意",
+        "pseudo": [],
+        "x": 684,
+        "y": 563,
+        "size": 14
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "推手推车",
+        "pseudo": [],
+        "x": 152,
+        "y": 653,
+        "size": 16
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "现在只能走斜坡。",
+        "pseudo": [],
+        "x": 226,
+        "y": 653,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "想看桥洞",
+        "pseudo": [],
+        "x": 740,
+        "y": 653,
+        "size": 16
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "可以在斜坡尽头停下来看看，那里禁止机动车。",
+        "pseudo": [],
+        "x": 814,
+        "y": 653,
+        "size": 16
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", SimSun, \"Noto Serif CJK SC\", serif",
+      "size": "74.4px",
+      "weight": "800",
+      "spacing": "normal",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "span",
+        "class": "headline-line",
+        "id": null,
+        "text": "周末散步，",
+        "pseudo": [],
+        "x": 152,
+        "y": 131,
+        "size": 74.4
+      },
+      {
+        "tag": "span",
+        "class": "headline-line",
+        "id": null,
+        "text": "桥边怎么走？",
+        "pseudo": [],
+        "x": 152,
+        "y": 217,
+        "size": 74.4
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "昨晚下了雨，临河台阶湿滑， 。从西口绕上斜坡，就能走到桥北。",
+        "pseudo": [],
+        "x": 152,
+        "y": 409,
+        "size": 18
+      },
+      {
+        "tag": "strong",
+        "class": "closed-text",
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 386,
+        "y": 411,
+        "size": 18
+      },
+      {
+        "tag": "button",
+        "class": "route-button",
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 152,
+        "y": 493,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "从西口上斜坡，沿斜坡走到底。",
+        "pseudo": [],
+        "x": 170,
+        "y": 569,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "可以到桥北",
+        "pseudo": [],
+        "x": 170,
+        "y": 569,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "临河台阶",
+        "pseudo": [],
+        "x": 1117,
+        "y": 379,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 1117,
+        "y": 404,
+        "size": 14
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "位置关系示意",
+        "pseudo": [],
+        "x": 684,
+        "y": 563,
+        "size": 14
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "推手推车",
+        "pseudo": [],
+        "x": 152,
+        "y": 699,
+        "size": 16
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "现在只能走斜坡。",
+        "pseudo": [],
+        "x": 226,
+        "y": 699,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "想看桥洞",
+        "pseudo": [],
+        "x": 740,
+        "y": 699,
+        "size": 16
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "可以在斜坡尽头停下来看看，那里禁止机动车。",
+        "pseudo": [],
+        "x": 814,
+        "y": 699,
+        "size": 16
+      }
+    ]
+  },
+  {
+    "page": "trail-C",
+    "mode": "phone",
+    "opening": [
+      {
+        "tag": "span",
+        "class": "headline-line",
+        "id": null,
+        "text": "周末散步，",
+        "pseudo": [],
+        "x": 16,
+        "y": 55,
+        "size": 39.2
+      },
+      {
+        "tag": "span",
+        "class": "headline-line",
+        "id": null,
+        "text": "桥边怎么走？",
+        "pseudo": [],
+        "x": 16,
+        "y": 100,
+        "size": 39.2
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "昨晚下了雨，临河台阶湿滑， 。从西口绕上斜坡，就能走到桥北。",
+        "pseudo": [],
+        "x": 16,
+        "y": 160,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": "closed-text",
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 224,
+        "y": 162,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "route-button",
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 16,
+        "y": 229,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "临河台阶",
+        "pseudo": [],
+        "x": 259,
+        "y": 490,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 259,
+        "y": 515,
+        "size": 14
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "位置关系示意",
+        "pseudo": [],
+        "x": 16,
+        "y": 590,
+        "size": 14
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "推手推车",
+        "pseudo": [],
+        "x": 16,
+        "y": 660,
+        "size": 16
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "现在只能走斜坡。",
+        "pseudo": [],
+        "x": 90,
+        "y": 660,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "想看桥洞",
+        "pseudo": [],
+        "x": 16,
+        "y": 701,
+        "size": 16
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "可以在斜坡尽头停下来看看，那里禁止机动车。",
+        "pseudo": [],
+        "x": 16,
+        "y": 729,
+        "size": 16
+      }
+    ],
+    "type": {
+      "family": "\"Songti SC\", SimSun, \"Noto Serif CJK SC\", serif",
+      "size": "39.2px",
+      "weight": "800",
+      "spacing": "normal",
+      "actual": [
+        "Songti SC"
+      ],
+      "lang": "zh-CN"
+    },
+    "horizontal_overflow": false,
+    "exact_named_flow": true,
+    "task_replay": true,
+    "runtime_errors": [],
+    "result": [
+      {
+        "tag": "span",
+        "class": "headline-line",
+        "id": null,
+        "text": "周末散步，",
+        "pseudo": [],
+        "x": 16,
+        "y": 55,
+        "size": 39.2
+      },
+      {
+        "tag": "span",
+        "class": "headline-line",
+        "id": null,
+        "text": "桥边怎么走？",
+        "pseudo": [],
+        "x": 16,
+        "y": 100,
+        "size": 39.2
+      },
+      {
+        "tag": "p",
+        "class": "intro",
+        "id": null,
+        "text": "昨晚下了雨，临河台阶湿滑， 。从西口绕上斜坡，就能走到桥北。",
+        "pseudo": [],
+        "x": 16,
+        "y": 160,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": "closed-text",
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 224,
+        "y": 162,
+        "size": 16
+      },
+      {
+        "tag": "button",
+        "class": "route-button",
+        "id": null,
+        "text": "走斜坡",
+        "pseudo": [],
+        "x": 16,
+        "y": 229,
+        "size": 16
+      },
+      {
+        "tag": "p",
+        "class": null,
+        "id": null,
+        "text": "从西口上斜坡，沿斜坡走到底。",
+        "pseudo": [],
+        "x": 34,
+        "y": 306,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "可以到桥北",
+        "pseudo": [],
+        "x": 34,
+        "y": 306,
+        "size": 16
+      },
+      {
+        "tag": "strong",
+        "class": null,
+        "id": null,
+        "text": "临河台阶",
+        "pseudo": [],
+        "x": 259,
+        "y": 578,
+        "size": 16
+      },
+      {
+        "tag": "small",
+        "class": null,
+        "id": null,
+        "text": "暂时封闭",
+        "pseudo": [],
+        "x": 259,
+        "y": 602,
+        "size": 14
+      },
+      {
+        "tag": "figcaption",
+        "class": null,
+        "id": null,
+        "text": "位置关系示意",
+        "pseudo": [],
+        "x": 16,
+        "y": 678,
+        "size": 14
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "推手推车",
+        "pseudo": [],
+        "x": 16,
+        "y": 748,
+        "size": 16
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "现在只能走斜坡。",
+        "pseudo": [],
+        "x": 90,
+        "y": 748,
+        "size": 16
+      },
+      {
+        "tag": "dt",
+        "class": null,
+        "id": null,
+        "text": "想看桥洞",
+        "pseudo": [],
+        "x": 16,
+        "y": 789,
+        "size": 16
+      },
+      {
+        "tag": "dd",
+        "class": null,
+        "id": null,
+        "text": "可以在斜坡尽头停下来看看，那里禁止机动车。",
+        "pseudo": [],
+        "x": 16,
+        "y": 817,
+        "size": 16
+      }
+    ]
+  }
+]

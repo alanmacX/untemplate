@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>周六取绘本</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f3e9;
+      --ink: #202f28;
+      --muted: #515e52;
+      --line: #cfcdbd;
+      --green: #284c3a;
+      --sage: #e1e8d8;
+      --white: #fffcf4;
+      font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; }
+    button { font: inherit; }
+    [hidden] { display: none !important; }
+    :focus-visible { outline: 3px solid #a04a29; outline-offset: 4px; }
+
+    main {
+      width: min(1120px, calc(100% - 96px));
+      margin-inline: auto;
+      padding-block: clamp(44px, 8vw, 104px) 64px;
+    }
+
+    .masthead {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px 28px;
+      padding-bottom: 25px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    h1, h2, p { margin: 0; }
+
+    h1 {
+      font-family: "Songti SC", SimSun, serif;
+      font-size: clamp(2.55rem, 6.4vw, 5.4rem);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -.055em;
+    }
+
+    .masthead p { color: var(--muted); line-height: 1.65; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+      align-items: start;
+      gap: clamp(28px, 5vw, 64px);
+      margin-top: 32px;
+    }
+
+    h2 { font-size: 1.13rem; line-height: 1.5; }
+
+    .books h2 { margin-bottom: 12px; }
+
+    .book-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+
+    .book-list li { border-bottom: 1px solid var(--line); }
+
+    .book {
+      display: grid;
+      grid-template-columns: 59px minmax(0, 1fr) 32px;
+      align-items: center;
+      gap: clamp(12px, 2vw, 20px);
+      width: 100%;
+      min-height: 101px;
+      padding: 12px 10px;
+      border: 0;
+      color: var(--ink);
+      background: transparent;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .book:hover { background: #eeeee1; }
+    .book[aria-pressed="true"] { background: #e6ecdd; }
+
+    .book-title {
+      font-size: clamp(1.02rem, 2vw, 1.3rem);
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .book-arrow {
+      display: grid;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+      border: 1px solid #a6ae9e;
+      border-radius: 50%;
+    }
+
+    .book-arrow::before {
+      width: 7px;
+      height: 7px;
+      margin-right: 3px;
+      border-top: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      transform: rotate(45deg);
+      content: "";
+    }
+
+    .book[aria-pressed="true"] .book-arrow {
+      border-color: var(--green);
+      color: var(--white);
+      background: var(--green);
+    }
+
+    .cover {
+      position: relative;
+      display: block;
+      width: 55px;
+      height: 72px;
+      overflow: hidden;
+      border-radius: 2px 5px 5px 2px;
+      box-shadow: inset 4px 0 #202f2829, 1px 2px 2px #232d2930;
+      isolation: isolate;
+    }
+
+    .river-cover {
+      background: radial-gradient(circle at 72% 23%, #f4cd74 0 8%, transparent 9%), #91ac8a;
+    }
+
+    .river-cover::before {
+      position: absolute;
+      width: 90px;
+      height: 58px;
+      left: -16px;
+      top: 27px;
+      border-radius: 52% 63% 0 0;
+      background: #345d47;
+      transform: rotate(-16deg);
+      content: "";
+    }
+
+    .river-cover::after {
+      position: absolute;
+      width: 98px;
+      height: 46px;
+      left: -27px;
+      top: 37px;
+      border: 9px solid #d0e5d7;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      transform: rotate(26deg);
+      content: "";
+    }
+
+    .street-cover {
+      background: linear-gradient(155deg, #edb47b 0 48%, #b86546 49% 77%, #954d38 78%);
+    }
+
+    .street-cover::before {
+      position: absolute;
+      bottom: 12px;
+      left: 11px;
+      width: 13px;
+      height: 29px;
+      border-radius: 8px 8px 0 0;
+      background: #63433b;
+      box-shadow: 17px -8px #f8d49a;
+      content: "";
+    }
+
+    .street-cover::after {
+      position: absolute;
+      bottom: 23px;
+      left: 19px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background: #f8d49a;
+      box-shadow: 17px -8px #63433b;
+      content: "";
+    }
+
+    .details {
+      margin-top: 18px;
+      padding: 18px 20px 20px;
+      border-left: 3px solid var(--green);
+      background: var(--white);
+    }
+
+    .pickup {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 16px;
+      align-items: baseline;
+    }
+
+    .pickup h2 { font-size: 1.2rem; }
+
+    .pickup-time {
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .directions {
+      margin-top: 8px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .add {
+      min-height: 46px;
+      margin-top: 16px;
+      padding: 9px 20px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      color: var(--white);
+      background: var(--green);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .add:hover { background: #193c2c; }
+
+    .receipt {
+      margin-top: 16px;
+      padding: 13px 16px;
+      border: 1px solid #a4b59e;
+      border-radius: 5px;
+      background: #e6ecdd;
+      line-height: 1.6;
+    }
+
+    .receipt strong, .receipt span { display: block; }
+
+    .route-board {
+      padding: clamp(20px, 3.5vw, 36px);
+      border: 1px solid #bfc9b7;
+      border-radius: 6px;
+      background-color: var(--sage);
+      background-image:
+        linear-gradient(#465c4411 1px, transparent 1px),
+        linear-gradient(90deg, #465c4411 1px, transparent 1px);
+      background-position: -1px -1px;
+      background-size: 20px 20px;
+    }
+
+    .route-board h2 {
+      padding-bottom: 13px;
+      border-bottom: 1px solid #879583;
+    }
+
+    .route {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(24px, .55fr) minmax(0, 1fr);
+      align-items: start;
+      gap: 5px;
+      margin-top: 12px;
+      padding: 15px 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .route + .route { margin-top: 4px; }
+
+    .route.is-active {
+      border-color: #849e83;
+      background: #f3f6eb;
+    }
+
+    .landmark {
+      display: grid;
+      justify-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .landmark b { line-height: 1.4; }
+
+    .route-line {
+      position: relative;
+      margin-top: 22px;
+      border-top: 2px dashed #64816a;
+    }
+
+    .route-line::after {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #64816a;
+      border-right: 2px solid #64816a;
+      transform: rotate(45deg);
+      content: "";
+    }
+
+    .landmark-icon {
+      position: relative;
+      display: block;
+      width: 54px;
+      height: 45px;
+      color: var(--green);
+    }
+
+    .landmark-icon::before, .landmark-icon::after {
+      position: absolute;
+      content: "";
+    }
+
+    .gate::before {
+      inset: 6px 15px 4px 8px;
+      border: 3px solid currentColor;
+      border-bottom: 0;
+      border-radius: 3px 3px 0 0;
+      background: #b9d0b4;
+    }
+
+    .gate::after {
+      inset: 15px 5px 4px 43px;
+      border-radius: 2px 2px 0 0;
+      background: #737c78;
+    }
+
+    .shelf::before {
+      inset: 5px 7px 4px;
+      border: 3px solid currentColor;
+      border-radius: 2px;
+      background: linear-gradient(transparent 46%, currentColor 46% 54%, transparent 54%), #ead5a3;
+    }
+
+    .shelf::after {
+      top: 14px;
+      left: 17px;
+      width: 4px;
+      height: 7px;
+      background: currentColor;
+      box-shadow: 6px 0 #a46749, 13px 13px currentColor, 19px 13px #a46749;
+    }
+
+    .courtyard::before {
+      inset: 4px 11px 12px;
+      border: 2px solid currentColor;
+      border-radius: 55% 55% 39% 39%;
+      background: #b9d0b4;
+    }
+
+    .courtyard::after {
+      bottom: 4px;
+      left: 26px;
+      width: 2px;
+      height: 24px;
+      background: currentColor;
+    }
+
+    .desk::before {
+      inset: 19px 5px 4px;
+      border: 3px solid currentColor;
+      border-radius: 3px 3px 0 0;
+      background: #ead5a3;
+    }
+
+    .desk::after {
+      inset: 7px 11px 25px 28px;
+      border: 2px solid currentColor;
+      border-radius: 2px;
+      background: #b9d0b4;
+    }
+
+    .route-note {
+      grid-column: 1 / -1;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: .88rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 740px) {
+      main {
+        width: min(540px, calc(100% - 36px));
+        padding-block: 34px 38px;
+      }
+
+      .masthead { padding-bottom: 19px; }
+      .layout { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 21px; }
+      .book { min-height: 91px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <h1>周六取绘本</h1>
+      <p>点书名，查看领取时间、地点和走法。</p>
+    </header>
+
+    <div class="layout">
+      <section class="books" aria-labelledby="books-heading">
+        <h2 id="books-heading">选一本绘本</h2>
+        <ul class="book-list">
+          <li>
+            <button class="book" type="button" data-book="river" aria-pressed="false" aria-controls="pickup-details">
+              <span class="cover river-cover" aria-hidden="true"></span>
+              <span class="book-title">去河边的那天</span>
+              <span class="book-arrow" aria-hidden="true"></span>
+            </button>
+          </li>
+          <li>
+            <button class="book" type="button" data-book="street" aria-pressed="false" aria-controls="pickup-details">
+              <span class="cover street-cover" aria-hidden="true"></span>
+              <span class="book-title">西街十二扇门</span>
+              <span class="book-arrow" aria-hidden="true"></span>
+            </button>
+          </li>
+        </ul>
+
+        <section class="details" id="pickup-details" aria-labelledby="pickup-place" hidden>
+          <div aria-live="polite" aria-atomic="true">
+            <div class="pickup">
+              <h2 id="pickup-place"></h2>
+              <p class="pickup-time" id="pickup-time"></p>
+            </div>
+            <p class="directions" id="pickup-directions"></p>
+          </div>
+          <button class="add" id="add-book" type="button">记入取书单</button>
+        </section>
+        <div id="pickup-status" role="status" aria-atomic="true">
+          <div class="receipt" id="receipt" hidden>
+            <strong>已加入取书单</strong>
+            <span id="saved-title"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="route-board" aria-labelledby="route-heading">
+        <h2 id="route-heading">取书动线示意</h2>
+
+        <div class="route" data-route="river">
+          <div class="landmark">
+            <span class="landmark-icon gate" aria-hidden="true"></span>
+            <b>北门小门</b>
+          </div>
+          <span class="route-line" aria-hidden="true"></span>
+          <div class="landmark">
+            <span class="landmark-icon shelf" aria-hidden="true"></span>
+            <b>自提架</b>
+          </div>
+          <p class="route-note">小门前有灰色柱子，入口没有台阶。</p>
+        </div>
+
+        <div class="route" data-route="street">
+          <div class="landmark">
+            <span class="landmark-icon courtyard" aria-hidden="true"></span>
+            <b>中庭</b>
+          </div>
+          <span class="route-line" aria-hidden="true"></span>
+          <div class="landmark">
+            <span class="landmark-icon desk" aria-hidden="true"></span>
+            <b>服务台</b>
+          </div>
+          <p class="route-note">经过中庭去服务台，推童车也能过。</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const books = new Map([
+      ["river", {
+        title: "去河边的那天",
+        place: "北门自提架",
+        time: "周六 10:00–12:00",
+        directions: "认准灰色柱子，从没有台阶的北门小门进去。"
+      }],
+      ["street", {
+        title: "西街十二扇门",
+        place: "服务台",
+        time: "周六 13:30–16:00",
+        directions: "经过中庭到服务台领取，推童车也能过。"
+      }]
+    ]);
+
+    const bookButtons = document.querySelectorAll("[data-book]");
+    const routes = document.querySelectorAll("[data-route]");
+    const details = document.getElementById("pickup-details");
+    const place = document.getElementById("pickup-place");
+    const time = document.getElementById("pickup-time");
+    const directions = document.getElementById("pickup-directions");
+    const receipt = document.getElementById("receipt");
+    const savedTitle = document.getElementById("saved-title");
+    const storageKey = "saturday-picture-book-demo";
+    let selectedBook;
+
+    function showReceipt(book) {
+      savedTitle.textContent = `《${book.title}》`;
+      receipt.hidden = false;
+    }
+
+    bookButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectedBook = button.dataset.book;
+        const book = books.get(selectedBook);
+        details.hidden = false;
+        place.textContent = book.place;
+        time.textContent = book.time;
+        directions.textContent = book.directions;
+
+        bookButtons.forEach((item) => {
+          item.setAttribute("aria-pressed", String(item === button));
+        });
+        routes.forEach((route) => {
+          route.classList.toggle("is-active", route.dataset.route === selectedBook);
+        });
+      });
+    });
+
+    document.getElementById("add-book").addEventListener("click", () => {
+      if (!selectedBook) return;
+
+      showReceipt(books.get(selectedBook));
+      try {
+        localStorage.setItem(storageKey, selectedBook);
+      } catch {
+        // 存储不可用时，当前页面仍显示取书单。
+      }
+    });
+
+    try {
+      const savedBook = books.get(localStorage.getItem(storageKey));
+      if (savedBook) showReceipt(savedBook);
+    } catch {
+      // 存储不可用时，从空取书单开始。
+    }
+  </script>
+</body>
+</html>

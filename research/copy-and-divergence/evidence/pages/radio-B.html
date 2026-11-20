@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e6">
+  <title>街坊收音机维修点</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f1e6;
+      --light-paper: #fffaf0;
+      --ink: #302720;
+      --muted: #66594e;
+      --line: #c9bca8;
+      --rust: #913c28;
+      --rust-dark: #752c1c;
+      --green: #34533f;
+      --serif: "Songti SC", "STSong", "Noto Serif CJK SC", "SimSun", serif;
+      --sans: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.7 var(--sans);
+    }
+
+    h1, h2, h3, p { margin: 0; }
+    button { font: inherit; }
+    button:focus-visible {
+      outline: 3px solid var(--green);
+      outline-offset: 4px;
+    }
+
+    .page {
+      width: min(calc(100% - 5rem), 65rem);
+      margin-inline: auto;
+      padding-block: clamp(2rem, 5vw, 4rem) 3rem;
+    }
+
+    .masthead {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(16rem, .76fr);
+      align-items: center;
+      gap: clamp(1.5rem, 5vw, 4.5rem);
+      padding-block: clamp(1.5rem, 4vw, 2.8rem);
+      border-top: 5px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+
+    h1, h2 { font-family: var(--serif); }
+
+    h1 {
+      font-size: clamp(2.7rem, 6.1vw, 4.85rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -.045em;
+    }
+
+    h1 span { display: block; }
+
+    .intro {
+      margin-top: 1.15rem;
+      color: var(--muted);
+      font-size: clamp(.98rem, 2vw, 1.1rem);
+    }
+
+    .radio-scene {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 12.75rem;
+      overflow: hidden;
+      isolation: isolate;
+      background: #e8d9bc;
+      background-image: repeating-linear-gradient(
+        0deg, transparent 0 4px, rgba(96, 60, 34, .045) 4px 5px
+      );
+    }
+
+    .radio-scene::before {
+      position: absolute;
+      z-index: -1;
+      inset: auto 0 0;
+      height: 24%;
+      border-top: 1px solid #b9a07c;
+      background: #d9c4a1;
+      content: "";
+    }
+
+    .radio {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 6%;
+      width: 72%;
+      max-width: 21rem;
+      aspect-ratio: 2.26;
+      margin-top: 1.5rem;
+      padding: 4%;
+      border: 2px solid #41291e;
+      border-radius: 7% / 14%;
+      background:
+        repeating-linear-gradient(0deg, #693a25 0 2px, #77452d 2px 5px);
+      box-shadow: inset 0 0 0 2px #9b6141, 0 5px 0 #523020, 3px 10px 0 #35261d25;
+    }
+
+    .antenna {
+      position: absolute;
+      right: 13%;
+      top: 0;
+      width: 63%;
+      height: 3px;
+      transform: rotate(15deg);
+      transform-origin: right center;
+      background: linear-gradient(#746456, #382e26);
+      border-radius: 2px;
+    }
+
+    .antenna::before {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 9px;
+      height: 5px;
+      border-radius: 2px;
+      background: #44372b;
+      content: "";
+    }
+
+    .speaker {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #3c291e;
+      border-radius: 5px;
+      background:
+        radial-gradient(circle at center, #352922 1px, transparent 1.5px) 0 0 / 5px 5px,
+        radial-gradient(ellipse at center, #786044 35%, #a68b60 86%);
+      box-shadow: inset 0 0 0 2px #c5a977;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-rows: 1fr .9fr;
+      gap: 12%;
+      min-width: 0;
+    }
+
+    .dial {
+      position: relative;
+      border: 2px solid #39271f;
+      border-radius: 4px;
+      background: #e9d9aa;
+      box-shadow: inset 0 0 0 2px #b59d6d;
+    }
+
+    .dial::before {
+      position: absolute;
+      inset: 25% 8% 30%;
+      border-bottom: 1px solid #716044;
+      background: repeating-linear-gradient(
+        90deg, #716044 0 1px, transparent 1px 10%
+      ) left bottom / 100% 55% no-repeat;
+      content: "";
+    }
+
+    .dial::after {
+      position: absolute;
+      inset: 16% auto 17% 62%;
+      width: 2px;
+      background: #a33c27;
+      content: "";
+    }
+
+    .knobs {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid #492d21;
+      border-radius: 4px;
+      background: #ae8a5c;
+    }
+
+    .knob {
+      position: relative;
+      height: 78%;
+      aspect-ratio: 1;
+      border: 1px solid #291f1a;
+      border-radius: 50%;
+      background: radial-gradient(circle, #59483a 49%, #332921 53%, #49392c 70%);
+      box-shadow: 0 2px 1px #4b332a66;
+    }
+
+    .knob:last-child { height: 60%; }
+
+    .knob::after {
+      position: absolute;
+      inset: 13% auto auto 48%;
+      width: 2px;
+      height: 23%;
+      background: #e2cc9d;
+      content: "";
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(15rem, .46fr);
+      align-items: start;
+      gap: clamp(2rem, 6vw, 4.25rem);
+      padding-top: clamp(1.65rem, 4vw, 2.5rem);
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      line-height: 1.25;
+    }
+
+    .choices {
+      display: grid;
+      gap: .6rem;
+      margin-top: 1rem;
+    }
+
+    .choice {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      width: 100%;
+      min-height: 3.4rem;
+      padding: .65rem .9rem;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      background: var(--light-paper);
+      color: var(--ink);
+      text-align: left;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    .choice::before {
+      flex: 0 0 1.05rem;
+      width: 1.05rem;
+      height: 1.05rem;
+      border: 1px solid #7d6d60;
+      border-radius: 50%;
+      content: "";
+    }
+
+    .choice:hover { border-color: var(--rust); }
+
+    .choice[aria-pressed="true"] {
+      border-color: var(--rust);
+      background: #f4e4d8;
+    }
+
+    .choice[aria-pressed="true"]::before {
+      border-color: var(--rust);
+      background: var(--rust);
+      box-shadow: inset 0 0 0 3px #f4e4d8;
+    }
+
+    .terms {
+      margin-top: 1.05rem;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .details, .receipt {
+      margin-top: 1rem;
+      padding: .85rem 1rem;
+      border-left: 3px solid var(--rust);
+      background: var(--light-paper);
+    }
+
+    .details h3, .receipt h3 { font-size: 1.05rem; }
+    .details p, .receipt p { margin-top: .2rem; }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .5rem .85rem;
+      margin-top: 1rem;
+    }
+
+    .submit {
+      min-height: 2.9rem;
+      padding: .45rem 1.25rem;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      background: var(--rust);
+      color: #fffaf0;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .submit:hover { background: var(--rust-dark); }
+
+    .submit:disabled {
+      border-color: var(--line);
+      background: #eee6d8;
+      color: var(--muted);
+      cursor: default;
+    }
+
+    .demo-note {
+      color: var(--muted);
+      font-size: .875rem;
+    }
+
+    .receipt {
+      border-color: var(--green);
+      background: #e6ecdf;
+      color: #263d2e;
+      scroll-margin-block: 1rem;
+    }
+
+    .receipt:focus {
+      outline: 2px solid var(--green);
+      outline-offset: 3px;
+    }
+
+    .visit {
+      padding: 1.2rem 1.15rem 1.25rem;
+      border-top: 4px solid var(--rust);
+      border-bottom: 1px solid var(--line);
+      background: #eee4d2;
+    }
+
+    .visit h2 { font-size: 1.55rem; }
+
+    .deadline {
+      margin-top: .9rem;
+      padding-bottom: .9rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .deadline span {
+      display: block;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+
+    .deadline strong {
+      color: var(--rust-dark);
+      font-size: 1.5rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .directions { margin-top: .9rem; }
+    .bell { margin-top: .55rem; }
+
+    @media (max-width: 700px) {
+      .page {
+        width: calc(100% - 2rem);
+        padding-block: 1rem 2rem;
+      }
+      .masthead { grid-template-columns: minmax(0, 1fr); gap: 1.15rem; }
+      h1 { font-size: clamp(2.5rem, 10vw, 4rem); }
+      .intro { margin-top: .8rem; }
+      .radio-scene { min-height: 0; padding-block: 1.4rem 1.2rem; }
+      .radio { width: min(64%, 16rem); }
+      .content { grid-template-columns: minmax(0, 1fr); gap: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div>
+        <h1><span>街坊收音机</span><span>维修点</span></h1>
+        <p class="intro">家里的老收音机听不清了？先看看要怎么检查。</p>
+      </div>
+      <div class="radio-scene" aria-hidden="true">
+        <div class="radio">
+          <div class="antenna"></div>
+          <div class="speaker"></div>
+          <div class="controls">
+            <div class="dial"></div>
+            <div class="knobs"><span class="knob"></span><span class="knob"></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <section aria-labelledby="symptom-title">
+        <h2 id="symptom-title">收音机有什么现象？</h2>
+        <form id="check-form">
+          <div class="choices" role="group" aria-labelledby="symptom-title">
+            <button class="choice" type="button" value="silent" aria-pressed="false" aria-controls="check-details">完全没声音</button>
+            <button class="choice" type="button" value="noise" aria-pressed="false" aria-controls="check-details">只有杂音</button>
+          </div>
+
+          <div id="check-details" class="details" aria-live="polite" aria-atomic="true" hidden>
+            <h3>检查条件</h3>
+            <p id="check-condition"></p>
+          </div>
+
+          <p class="terms">外观免费检查。需要拆机检测时，会先征得你的同意。</p>
+
+          <div class="actions">
+            <button id="apply" class="submit" type="submit" aria-describedby="demo-note" disabled>申请检查</button>
+            <p id="demo-note" class="demo-note">这里仅能发送演示检查请求。</p>
+          </div>
+        </form>
+
+        <section id="receipt" class="receipt" tabindex="-1" aria-labelledby="receipt-title" hidden>
+          <h3 id="receipt-title">已记录检查请求</h3>
+          <p>所选现象：<strong id="recorded-symptom"></strong></p>
+        </section>
+      </section>
+
+      <aside class="visit" aria-labelledby="visit-title">
+        <h2 id="visit-title">到店怎么走</h2>
+        <p class="deadline"><span>登记截止</span><strong>周六 15:30</strong></p>
+        <p class="directions">店在<strong>菜场东门内</strong>，进门后走过两级台阶。</p>
+        <p class="bell">不能走台阶，可以<strong>按门铃</strong>，有人来接。</p>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    const conditions = {
+      silent: "完全没声音要先做检测，检测前不能承诺价格。",
+      noise: "只有杂音，可以先检查旋钮。"
+    };
+
+    const form = document.getElementById("check-form");
+    const choices = [...form.querySelectorAll(".choice")];
+    const details = document.getElementById("check-details");
+    const condition = document.getElementById("check-condition");
+    const apply = document.getElementById("apply");
+    const receipt = document.getElementById("receipt");
+    const recordedSymptom = document.getElementById("recorded-symptom");
+    let selected = null;
+
+    for (const choice of choices) {
+      choice.addEventListener("click", () => {
+        if (selected === choice) return;
+
+        selected = choice;
+        for (const option of choices) {
+          option.setAttribute("aria-pressed", String(option === selected));
+        }
+
+        details.hidden = false;
+        condition.textContent = conditions[selected.value];
+        apply.disabled = false;
+        receipt.hidden = true;
+      });
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!selected) return;
+
+      recordedSymptom.textContent = selected.textContent.trim();
+      receipt.hidden = false;
+      receipt.focus();
+    });
+  </script>
+</body>
+</html>
