@@ -1,0 +1,38 @@
+[
+  {
+    "id": "lab-loan",
+    "brief": "A community electronics lab needs a checkout page for borrowing a tool. Make it feel like a place that trusts beginners.",
+    "facts": ["Two available soldering irons, one thermal camera due back Thursday, and a multimeter with a damaged lead that can be used only at the supervised bench.", "Members borrow for three days; staffed collection is Tuesday 18–20 or Saturday 10–14. Safety induction is free and required only for the irons. Members often know the task they are attempting but not the tool's name."],
+    "must": "Find suitability, availability and pickup information; request an available item. Confirm an eligible item and collection window; do not offer a loan for the damaged multimeter."
+  },
+  {
+    "id": "orchard",
+    "brief": "Make our tiny cider orchard's weekend page. I want it to feel as unforced as visiting a friend.",
+    "facts": ["Friday's harvest note says the north rows are still too muddy after rain. The two other rows contain tart Ashmead apples and sweet Russets. A gravel path reaches the shop without entering a row.", "Open Saturday 10–15; the last picking slot is 14:00. Visiting the shop requires no booking. There is one straw basket photo and a hand-marked map showing the rows and gravel path."],
+    "must": "Tell visitors where they can go today and reserve a picking slot, keeping the shop-only option clearly available."
+  },
+  {
+    "id": "river",
+    "brief": "A neighborhood history group wants a small web experience about its river. Vibe: slow, curious, tactile.",
+    "facts": ["Three records from the same bend: a 1932 ferry photo, a 1978 high-water mark and an 18-second recording captured during a 2025 river walk. The archive has the photo, a scanned mark, the audio and its transcript.", "The photographer is unverified; the water mark is on the east abutment, the recording is from the public steps; the bend has changed shape since the ferry era."],
+    "must": "Find and relate records, view sources and uncertainty, and play the recording or read its transcript. Do not invent a person, date or coordinate."
+  },
+  {
+    "id": "warm-room",
+    "brief": "Build a small page for a local utility's free public warm room. It should feel human and low-pressure.",
+    "facts": ["Main entrance has five steps. The step-free entrance is through the library courtyard and rings a bell; chairs are indoors. Doors 09:00–17:00, quiet hour 13:00–14:00.", "Visitors can just arrive. A volunteer can meet someone at the courtyard, but requests must be sent 30 minutes before arrival. A simple real entry photograph shows the door, bells and curb."],
+    "must": "Show the way in, including the step-free route; support requesting a volunteer and show the chosen arrival time. Never imply everyone needs a booking or that greeting has been accepted."
+  },
+  {
+    "id": "costume",
+    "brief": "We loan costumes to fringe productions and need an online catalogue. Make it feel like a working wardrobe, with a little mischief.",
+    "facts": ["A 40 cm fold-out hem can lengthen the skirt; the wool coat can be loaned only for indoor use; the rubber boots have an EU 40 label but fit like 39. Detail photos show the hem stitching, lining and boot label.", "One production reserves the coat May 9–12, and an alteration appointment is possible only on May 8 after 16:00."],
+    "must": "Compare actual fit and restrictions, check availability for production dates, and request eligible pieces or see the reason they cannot be requested."
+  },
+  {
+    "id": "soundwalk",
+    "brief": "A local group lines up three short sounds along a walking route. Make the evening page feel alive and easy to use with one hand.",
+    "facts": ["A bell at the square, a 46-second sound under a bridge, and a choir rehearsal behind the hall. The bridge path is too narrow for a group to stop. The step-free alternate route reaches the far side; the choir ends at 20:30.", "There are three licensed photographs and two short audio samples (bell and bridge); do not promise a choir recording."],
+    "must": "Choose a viable route, see the next reachable stop and its timing, and optionally play the available previews."
+  }
+]
