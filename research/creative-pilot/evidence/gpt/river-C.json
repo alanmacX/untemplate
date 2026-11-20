@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "river",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "7326bab668152309dc62657c87590bbb4db0fdc007ff152f63cac5126ff9d998",
+  "usage": {
+    "input_tokens": 16861,
+    "cached_input_tokens": 16000,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 569,
+    "reasoning_output_tokens": 265
+  },
+  "proposals": [
+    {
+      "premise": "The ferry photo, high-water mark and recording share a bend. Put them in date order so visitors can find each record and compare what it captures.",
+      "opening": "Desktop shows the 1932 photo beside a dated list of all three records. Phone shows the same list above the photo. The archive caption flags the unverified photographer.",
+      "move": "Select 1978 to bring the scan and its east abutment label beside the photo on desktop or directly below it on phone. Select 2025 for Play and Read transcript.",
+      "tradeoff": "Dates make records easy to find. Comparing them by location takes a visit to their captions."
+    },
+    {
+      "premise": "Visitors may arrive without knowing the old bend’s shape. Walking directions use landmarks to orient people, and family albums use room labels to group photos. Use place labels for the abutment and steps, and group all three records under the bend.",
+      "opening": "Desktop shows the ferry photo with its unverified credit beside East abutment and Public steps. Phone shows those same labels above the photo.",
+      "move": "Open Public steps to reveal the dated archive recording, Play and the transcript beneath its label. East abutment opens the dated scan.",
+      "tradeoff": "Place labels make the two known locations easy to compare. The dates take a second step to read together."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 41.47
+}

@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "soundwalk",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "0a5267a892800576c082ee2a61770f25f95f5a0c8d8af291bff9bf8829ee2862",
+  "usage": {
+    "input_tokens": 15482,
+    "cached_input_tokens": 14080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1836,
+    "reasoning_output_tokens": 1550
+  },
+  "proposals": [
+    {
+      "premise": "Train connections and recipe steps both foreground the next feasible action. Route maps to connection, stop to step, and access or closing time to readiness.",
+      "opening": "Desktop first shows two route cards beside the three licensed photographs; phone stacks them above one next-stop card. Timing, reachability, and preview status share that card.",
+      "move": "Tap Direct or Step-free. The next reachable stop, arrival time, bridge pass-through warning, and available audio button update immediately below.",
+      "tradeoff": "Fast comparison and familiar scanning; the photographs become supporting atmosphere rather than the main evening experience."
+    },
+    {
+      "premise": "Assume visitors are already outside, not studying a map. Checkout queues and airport gates foreground the next viable choice: bridge width maps to capacity, and 20:30 maps to closing.",
+      "opening": "Phone first shows Start at square with a countdown and bell preview; desktop shares that panel with a compact route overview and the three photographs.",
+      "move": "Tap Start. Direct and Step-free appear; choosing one replaces the panel with the next reachable stop, arrival time, warning, and only licensed previews.",
+      "tradeoff": "Excellent while moving and makes the choir cutoff hard to miss; weaker for visitors wanting to compare the whole evening before starting."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 43.99
+}

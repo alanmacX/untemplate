@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "orchard",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "eb97f5b212e33c86b60bf0df6cb24879ff9e2eebe97f8b974d7a4c6cb30d83bb",
+  "usage": {
+    "input_tokens": 14551,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 478,
+    "reasoning_output_tokens": 128
+  },
+  "proposals": [
+    {
+      "premise": "Organize by intent, like restaurant booking versus walk-in service: picking maps to reservations, while the shop maps to walk-in access. This straightforward split answers what visitors are trying to do.",
+      "opening": "Desktop shows Saturday 10–15, a prominent picking panel, and a shop-without-booking panel beside it. Phone shows the hours, picking status, then the shop option before the basket photo.",
+      "move": "The first control is “Reserve a picking slot.” It reveals available times through 14:00 in the same panel; the hand-marked map appears below with the muddy north rows and two open rows.",
+      "tradeoff": "Visitors can act quickly, but leading with booking gives the unbooked shop visit less visual weight."
+    },
+    {
+      "premise": "Assume visitors have not yet decided between picking and shopping. Organize like choosing a walking route or a museum area: current access conditions come before commitment. Open rows map to available routes; the gravel path maps to unrestricted access.",
+      "opening": "Desktop opens with the hand-marked map beside Friday’s note: north rows muddy, Ashmead and Russet rows available, gravel path to the shop. Phone shows the note first, with the map, basket photo, and options following.",
+      "move": "The first control is “Choose today’s visit.” It presents “Pick apples” and “Shop only”; picking opens Saturday slots ending at 14:00, while shop-only confirms no booking is needed.",
+      "tradeoff": "Visitors decide with clearer access context, but reservation takes one extra choice."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 26.5
+}

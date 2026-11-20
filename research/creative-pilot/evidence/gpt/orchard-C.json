@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "orchard",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "eb97f5b212e33c86b60bf0df6cb24879ff9e2eebe97f8b974d7a4c6cb30d83bb",
+  "usage": {
+    "input_tokens": 16848,
+    "cached_input_tokens": 16000,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 515,
+    "reasoning_output_tokens": 196
+  },
+  "proposals": [
+    {
+      "premise": "Friday’s note closes the muddy north rows, so lead with what visitors can do Saturday: pick tart Ashmeads or sweet Russets, or walk to the shop.",
+      "opening": "On desktop, the basket photo sits beside the picking and shop options. On phones, both options appear before the photo. Both layouts show 10–15 hours, the 14:00 last pick, and ‘Shop via gravel path · no booking.’",
+      "move": "‘Choose a picking time’ opens available slots beneath the button. Reserving one confirms it there.",
+      "tradeoff": "Visitors can book quickly. The hand-marked map sits farther down."
+    },
+    {
+      "premise": "Visitors may decide after seeing the gravel bypass. Returning a library book and meeting someone at a station entrance map to shop access. Booking a study room and catching a train map to picking by time.",
+      "opening": "The hand-marked map labels the muddy north rows closed, the Ashmead and Russet rows, and the gravel shop route. Saturday 10–15 hours and shop and picking controls sit beside it on desktop, directly below it on phones.",
+      "move": "‘Pick apples’ reveals reservable slots through 14:00 below the map. ‘Visit the shop’ highlights the gravel route and says ‘No booking.’",
+      "tradeoff": "Visitors can choose by route before committing. The map takes space above the slot picker."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 38.32
+}

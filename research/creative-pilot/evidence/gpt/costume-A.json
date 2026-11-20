@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "costume",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "9a552493b01cda5e2a32bc8f7829b996073cbb74019bafa2b835c6f0081c3124",
+  "usage": {
+    "input_tokens": 16721,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 355,
+    "reasoning_output_tokens": 55
+  },
+  "proposals": [
+    {
+      "premise": "The boots say EU 40 but fit like 39. Put actual fit and loan restrictions where borrowers can compare them at a glance.",
+      "opening": "Desktop shows three pieces side by side, pairing stitching, lining and label photos with the skirt’s 40 cm fold-out hem, the coat’s indoor-only rule and the boots’ fit. Phone stacks those pairs beneath the date fields.",
+      "move": "Enter production dates to reveal request buttons or blocking reasons on each piece. The coat shows its May 9–12 reservation and May 8 alteration slot after 16:00.",
+      "tradeoff": "Fit is easy to scan, but phone comparisons take scrolling."
+    },
+    {
+      "premise": "The coat is reserved May 9–12, and alterations are possible only May 8 after 16:00. Lead with the production calendar.",
+      "opening": "Desktop places the booking diary beside a fitting rail. Phone puts dates and indoor or outdoor use above compact rows pairing stitching, lining and label photos with the skirt’s 40 cm fold-out hem, the indoor-only coat and the EU 40 boots that fit like 39.",
+      "move": "Set production dates. The rail adds request buttons for eligible pieces or gives the reason beside each blocked piece.",
+      "tradeoff": "Clashes surface early, but larger photos sit farther down."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 35.71
+}

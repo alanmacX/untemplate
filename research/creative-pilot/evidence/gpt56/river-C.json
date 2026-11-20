@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "river",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "7326bab668152309dc62657c87590bbb4db0fdc007ff152f63cac5126ff9d998",
+  "usage": {
+    "input_tokens": 15496,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 791,
+    "reasoning_output_tokens": 481
+  },
+  "proposals": [
+    {
+      "premise": "The three dated records invite chronological comparison. Grocery-label comparison and sorting household bills both align unlike items by one shared field before opening details; dates map to the spine, items to records, and labels to source notes.",
+      "opening": "Desktop shows a horizontal 1932–2025 sequence beside one selected record; phone stacks the same sequence above it. Media, transcript access, source and uncertainty share the detail area.",
+      "move": "Select a dated record; its media opens in place, with links to the other two and visible provenance notes.",
+      "tradeoff": "Time relationships become immediate, but the east abutment and public steps remain secondary context."
+    },
+    {
+      "premise": "Assume visitors may know the present bend better than its dates. Airport wayfinding and hardware-store aisle signs start from recognizable places, then reveal destinations; the public steps and east abutment map to place anchors, while the ferry photo remains explicitly tied to a changed bend.",
+      "opening": "Desktop presents two place labels and a ferry-era section beside a record pane; phone shows those labels first, with the selected record directly below. Sources and uncertainty stay alongside each item.",
+      "move": "Choose a place label; matching records appear below, where the audio can play or its transcript can replace the player.",
+      "tradeoff": "Local relevance improves, but chronology requires an extra switch to compare all three dates."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 30.15
+}

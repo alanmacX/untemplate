@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Borrow a tool | Community Electronics Lab</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f4ec;
+      --surface: #fffdf7;
+      --ink: #252820;
+      --muted: #575c50;
+      --line: #d9d7ca;
+      --forest: #25392f;
+      --forest-light: #344a3e;
+      --mint: #e0ebd8;
+      --orange: #a23e27;
+      --peach: #f5e3d9;
+      font-family: system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    button:disabled { cursor: default; }
+    [hidden] { display: none !important; }
+
+    :focus-visible {
+      outline: 3px solid #b84b30;
+      outline-offset: 4px;
+    }
+
+    .shell {
+      width: min(100% - 112px, 1200px);
+      margin-inline: auto;
+    }
+
+    .masthead { border-bottom: 1px solid var(--line); }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 70px;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .brand-mark {
+      position: relative;
+      display: grid;
+      width: 28px;
+      aspect-ratio: 1;
+      flex: none;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--forest);
+    }
+
+    .brand-mark::before {
+      content: "";
+      width: 12px;
+      height: 9px;
+      border: solid #f8f5e9;
+      border-width: 0 0 2px 2px;
+      transform: skewY(-32deg) translateY(-1px);
+    }
+
+    .hero {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 55px 0 43px;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 6.1vw, 5.625rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -.065em;
+    }
+
+    .hero p {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.45vw, 1.15rem);
+      line-height: 1.5;
+    }
+
+    .circuit {
+      position: relative;
+      width: 185px;
+      height: 92px;
+      margin-right: 25px;
+      flex: none;
+    }
+
+    .trace {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      width: 137px;
+      height: 41px;
+      border: solid #9aab96;
+      border-width: 0 1px 1px 0;
+      border-bottom-right-radius: 20px;
+    }
+
+    .trace::before, .trace::after {
+      position: absolute;
+      width: 10px;
+      aspect-ratio: 1;
+      border: 1px solid #71846d;
+      border-radius: 50%;
+      content: "";
+    }
+
+    .trace::before { bottom: -5px; left: -10px; }
+    .trace::after { top: -10px; right: -5px; }
+    .trace.accent {
+      right: 38px;
+      bottom: 30px;
+      width: 137px;
+      border-color: #bf735c;
+    }
+
+    .trace.accent::before, .trace.accent::after { border-color: #ad4f38; }
+    .trace.accent::after { background: #ad4f38; }
+
+    .checkout {
+      display: grid;
+      grid-template-columns: minmax(280px, .86fr) minmax(0, 2fr);
+      align-items: start;
+      gap: 24px;
+      padding-bottom: 56px;
+    }
+
+    .pickup {
+      padding: 26px;
+      border-radius: 16px;
+      background: var(--forest);
+      color: var(--surface);
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.9rem;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -.035em;
+    }
+
+    .pickup h2 + p {
+      margin-top: 8px;
+      color: #d4dfd2;
+      font-size: .875rem;
+    }
+
+    .windows {
+      display: grid;
+      gap: 9px;
+      margin-top: 21px;
+    }
+
+    .window {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-height: 55px;
+      padding: 10px 13px;
+      border: 1px solid #7a8d80;
+      border-radius: 8px;
+      background: transparent;
+      color: inherit;
+      text-align: left;
+    }
+
+    .window:not(:disabled):hover { background: var(--forest-light); }
+    .window:focus-visible { outline-color: #fff0b8; }
+
+    .window[aria-pressed="true"],
+    .window[aria-pressed="true"]:hover {
+      border-color: var(--mint);
+      background: var(--mint);
+      color: var(--forest);
+    }
+
+    .window-dot {
+      width: 14px;
+      height: 14px;
+      flex: none;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+    }
+
+    .window[aria-pressed="true"] .window-dot {
+      border: 4px solid var(--forest);
+      background: var(--mint);
+    }
+
+    .window-day { font-weight: 700; }
+    .window-time { margin-left: auto; font-variant-numeric: tabular-nums; }
+
+    .loan-note {
+      margin-top: 22px;
+      padding-top: 17px;
+      border-top: 1px solid #6b8071;
+      color: #e0e9df;
+      font-size: .875rem;
+      line-height: 1.5;
+    }
+
+    .tools {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    .tools h2 { padding: 24px 26px 19px; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    col:first-child { width: 49%; }
+
+    thead th {
+      padding: 10px 26px;
+      border-block: 1px solid var(--line);
+      background: #f0eee5;
+      color: #4c5246;
+      font-size: .74rem;
+      font-weight: 750;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+    }
+
+    th, td { text-align: left; vertical-align: top; }
+    tbody th, tbody td { padding: 20px 26px; }
+    tbody tr + tr > * { border-top: 1px solid var(--line); }
+
+    .tool-name {
+      display: block;
+      font-size: 1.06rem;
+      font-weight: 750;
+      line-height: 1.3;
+    }
+
+    .tool-use {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 400;
+      line-height: 1.45;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 27px;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: #eeece3;
+      color: #4c4e44;
+      font-size: .8rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .status.available { background: var(--mint); color: #2f4936; }
+    .status.bench { background: var(--peach); color: #833621; }
+
+    .available::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      flex: none;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .request-line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 11px;
+      margin-top: 10px;
+    }
+
+    .action {
+      min-height: 42px;
+      padding: 8px 13px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      background: var(--forest);
+      color: white;
+      font-size: .875rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .action:not(:disabled):hover { background: var(--forest-light); }
+
+    .action:disabled {
+      border-color: #d9dbd1;
+      background: #ebece4;
+      color: #555d51;
+    }
+
+    .action.secondary {
+      border-color: #aeb3a6;
+      background: transparent;
+      color: var(--ink);
+    }
+
+    .action.secondary:hover { background: #e8ede3; }
+
+    .request-window {
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.35;
+    }
+
+    .detail > td {
+      padding: 19px 26px 21px;
+      background: #edf1e7;
+    }
+
+    .detail h3 {
+      margin-bottom: 6px;
+      color: var(--forest);
+      font-size: 1.1rem;
+    }
+
+    .detail p {
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+
+    .detail .terms { margin-top: 9px; color: var(--muted); }
+
+    .induction {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      width: fit-content;
+      min-height: 44px;
+      margin-top: 7px;
+      font-size: .9rem;
+      cursor: pointer;
+    }
+
+    .induction input {
+      width: 19px;
+      height: 19px;
+      margin: 0;
+      flex: none;
+      accent-color: var(--forest);
+    }
+
+    .review-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 7px;
+    }
+
+    @media (max-width: 1000px) {
+      .shell { width: calc(100% - 64px); }
+      .checkout { gap: 18px; }
+      .pickup { padding: 22px; }
+      .tools h2, thead th, tbody th, tbody td, .detail > td {
+        padding-inline: 20px;
+      }
+    }
+
+    @media (max-width: 740px) {
+      .shell { width: calc(100% - 40px); }
+      .brand { min-height: 57px; }
+      .hero { padding: 32px 0 25px; }
+      .hero p { margin-top: 11px; }
+      .circuit { display: none; }
+      .checkout { grid-template-columns: minmax(0, 1fr); gap: 16px; padding-bottom: 28px; }
+      .pickup { padding: 18px; }
+      h2 { font-size: 1.65rem; }
+      .windows { margin-top: 14px; }
+      .window { min-height: 47px; }
+      .loan-note { margin-top: 14px; padding-top: 11px; }
+      .tools h2 { padding: 17px 18px; border-bottom: 1px solid var(--line); }
+      table, tbody, tbody tr, tbody th, tbody td { display: block; }
+      colgroup { display: none; }
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+      tbody tr + tr { border-top: 1px solid var(--line); }
+      tbody tr + tr > * { border-top: 0; }
+      tbody th { padding: 15px 18px 0; }
+      tbody td { padding: 8px 18px 15px; }
+      .detail > td { padding: 15px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="shell brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Community Electronics Lab</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <div class="hero">
+      <div>
+        <h1>Borrow a tool</h1>
+        <p>Pick a time you can make, then find the tool for your task.</p>
+      </div>
+      <div class="circuit" aria-hidden="true">
+        <span class="trace"></span>
+        <span class="trace accent"></span>
+      </div>
+    </div>
+
+    <div class="checkout">
+      <section class="pickup" aria-labelledby="pickup-heading">
+        <h2 id="pickup-heading">Choose a pickup</h2>
+        <p>Staffed collection</p>
+        <div class="windows" role="group" aria-label="Pickup windows">
+          <button class="window" type="button" aria-pressed="false" data-window="Tuesday 18–20">
+            <span class="window-dot" aria-hidden="true"></span>
+            <span class="window-day">Tuesday</span>
+            <span class="window-time">18–20</span>
+          </button>
+          <button class="window" type="button" aria-pressed="false" data-window="Saturday 10–14">
+            <span class="window-dot" aria-hidden="true"></span>
+            <span class="window-day">Saturday</span>
+            <span class="window-time">10–14</span>
+          </button>
+        </div>
+        <p class="loan-note">Members borrow tools for three days.</p>
+      </section>
+
+      <section class="tools" aria-labelledby="tools-heading">
+        <h2 id="tools-heading">Tools</h2>
+        <table role="table" aria-labelledby="tools-heading">
+          <colgroup><col><col></colgroup>
+          <thead role="rowgroup">
+            <tr role="row">
+              <th id="tool-column" scope="col" role="columnheader">Tool and use</th>
+              <th id="status-column" scope="col" role="columnheader">Availability</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row">
+              <th id="iron-name" scope="row" role="rowheader" headers="tool-column">
+                <span class="tool-name">Soldering iron</span>
+                <span class="tool-use">Join wires or solder components onto a circuit board.</span>
+              </th>
+              <td role="cell" headers="iron-name status-column">
+                <span class="status available" id="iron-stock">2 available</span>
+                <div class="request-line" id="request-line">
+                  <button class="action" id="request-iron" type="button" aria-expanded="false" aria-controls="iron-review" aria-describedby="request-window" disabled>Request an iron</button>
+                  <span class="request-window" id="request-window">Choose a pickup window</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="detail" id="iron-review" role="row" hidden>
+              <td colspan="2" role="cell">
+                <form id="iron-form" aria-labelledby="review-heading">
+                  <h3 id="review-heading" tabindex="-1">Review your request</h3>
+                  <p><strong>Soldering iron</strong> · <span id="review-window"></span></p>
+                  <p class="terms" id="iron-terms">Three-day loan. A free safety induction is required for soldering irons only.</p>
+                  <label class="induction">
+                    <input id="induction-complete" type="checkbox" aria-describedby="iron-terms" required>
+                    <span>I’ve completed the free safety induction.</span>
+                  </label>
+                  <div class="review-actions">
+                    <button class="action" id="confirm-pickup" type="submit" disabled>Confirm pickup</button>
+                    <button class="action secondary" id="cancel-review" type="button">Cancel</button>
+                  </div>
+                </form>
+              </td>
+            </tr>
+
+            <tr class="detail" id="iron-confirmation" role="row" hidden>
+              <td colspan="2" role="cell">
+                <h3 id="confirmation-heading" tabindex="-1" aria-describedby="confirmed-details">Pickup confirmed</h3>
+                <p id="confirmed-details"><strong>Soldering iron</strong> · <span id="confirmed-window"></span></p>
+              </td>
+            </tr>
+
+            <tr role="row">
+              <th id="camera-name" scope="row" role="rowheader" headers="tool-column">
+                <span class="tool-name">Thermal camera</span>
+                <span class="tool-use">See which parts of a circuit are getting hot.</span>
+              </th>
+              <td role="cell" headers="camera-name status-column">
+                <span class="status">Due Thursday</span>
+              </td>
+            </tr>
+
+            <tr role="row">
+              <th id="meter-name" scope="row" role="rowheader" headers="tool-column">
+                <span class="tool-name">Multimeter</span>
+                <span class="tool-use">Measure voltage or resistance, or check for a connection.</span>
+              </th>
+              <td role="cell" headers="meter-name status-column">
+                <span class="status bench">Damaged lead · supervised bench only.</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const windows = document.querySelectorAll(".window");
+    const request = document.querySelector("#request-iron");
+    const requestLine = document.querySelector("#request-line");
+    const requestWindow = document.querySelector("#request-window");
+    const review = document.querySelector("#iron-review");
+    const reviewHeading = document.querySelector("#review-heading");
+    const reviewWindow = document.querySelector("#review-window");
+    const form = document.querySelector("#iron-form");
+    const induction = document.querySelector("#induction-complete");
+    const confirmPickup = document.querySelector("#confirm-pickup");
+    const cancel = document.querySelector("#cancel-review");
+    const stock = document.querySelector("#iron-stock");
+    const confirmation = document.querySelector("#iron-confirmation");
+    const confirmedWindow = document.querySelector("#confirmed-window");
+    const confirmationHeading = document.querySelector("#confirmation-heading");
+
+    let selectedWindow = "";
+
+    for (const pickup of windows) {
+      pickup.addEventListener("click", () => {
+        selectedWindow = pickup.dataset.window;
+        for (const option of windows) {
+          option.setAttribute("aria-pressed", String(option === pickup));
+        }
+        requestWindow.textContent = selectedWindow;
+        reviewWindow.textContent = selectedWindow;
+        request.disabled = false;
+      });
+    }
+
+    request.addEventListener("click", () => {
+      review.hidden = false;
+      request.setAttribute("aria-expanded", "true");
+      reviewHeading.focus();
+    });
+
+    induction.addEventListener("change", () => {
+      confirmPickup.disabled = !induction.checked;
+    });
+
+    cancel.addEventListener("click", () => {
+      review.hidden = true;
+      form.reset();
+      confirmPickup.disabled = true;
+      request.setAttribute("aria-expanded", "false");
+      request.focus();
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!selectedWindow || !induction.checked || review.hidden) return;
+
+      confirmedWindow.textContent = selectedWindow;
+      stock.textContent = "1 available";
+      review.hidden = true;
+      requestLine.hidden = true;
+      request.setAttribute("aria-expanded", "false");
+      for (const pickup of windows) {
+        pickup.disabled = true;
+      }
+      confirmation.hidden = false;
+      confirmationHeading.focus();
+    });
+  </script>
+</body>
+</html>

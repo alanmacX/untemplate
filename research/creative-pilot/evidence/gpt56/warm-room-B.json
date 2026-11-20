@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "warm-room",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "3a00aa408bccfa0f0730714e6d950e7eafa70c5da6f7b36b6ba7756381278ab2",
+  "usage": {
+    "input_tokens": 15440,
+    "cached_input_tokens": 14080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 403,
+    "reasoning_output_tokens": 117
+  },
+  "proposals": [
+    {
+      "premise": "Visitors primarily need quick reassurance, opening times and a clear choice between the main and step-free entrances.",
+      "opening": "Desktop shows arrival guidance beside the entry photograph; phone shows “You can just arrive” first, followed by doors 09:00–17:00, quiet hour 13:00–14:00 and the same photograph.",
+      "move": "The first control, “Choose your way in,” switches between five-step main entrance and step-free library-courtyard directions; the selected route appears directly below.",
+      "tradeoff": "This makes independent arrival fastest, but volunteer help is less prominent."
+    },
+    {
+      "premise": "Assume visitors may not know the courtyard entrance by name; the real photograph can anchor recognition before they decide whether they need help.",
+      "opening": "Desktop pairs the door, bells and curb photograph with step-free instructions and volunteer help; phone leads with the photograph, then identifies the courtyard bell, indoor chairs and entrance conditions.",
+      "move": "The first control, “Request a courtyard welcome,” opens an arrival-time picker restricted to times at least 30 minutes ahead; the chosen time appears in a pending request summary.",
+      "tradeoff": "Recognition and assisted arrival improve, but independent visitors must read farther to confirm no booking is required."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 18.71
+}

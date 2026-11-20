@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "costume",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "6b4772abb5a28c7c83e3a980c25cc7a5d10f9cf976ebd8575c8de5d4cb0f1446",
+  "usage": {
+    "input_tokens": 16798,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 446,
+    "reasoning_output_tokens": 140
+  },
+  "proposals": [
+    {
+      "premise": "The coat is reserved May 9–12. Start with the production dates so visitors can build a shortlist they can actually request.",
+      "opening": "On desktop, the date range sits beside three garment cards. On phones it sits above them. Each card pairs its detail photo with the fit or use note.",
+      "move": "Set the production dates. The cards show Request for eligible pieces or explain the block in place, such as overlapping coat dates or outdoor use. Alteration timing appears below the results.",
+      "tradeoff": "A date conflict is easy to spot while comparing garments. Fit takes a second pass."
+    },
+    {
+      "premise": "The boots are labelled EU 40 but fit like 39. Assume visitors are still deciding what fits and organise the catalogue around the wardrobe notes.",
+      "opening": "Desktop shows stitching, lining and label photos alongside the notes. Phones pair each photo with its note: 40 cm fold-out hem, indoors only, and ‘40 on paper, 39 on foot.’",
+      "move": "Tap Compare to pin a piece in a tray beside the photos on desktop or below them on phones. The tray takes production dates and indoor or outdoor use, shows Request or the blocking reason, and lists the alteration slot on May 8 after 16:00.",
+      "tradeoff": "Fit surprises surface earlier. Availability takes an extra interaction."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 35.13
+}

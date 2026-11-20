@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "warm-room",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "3a00aa408bccfa0f0730714e6d950e7eafa70c5da6f7b36b6ba7756381278ab2",
+  "usage": {
+    "input_tokens": 16803,
+    "cached_input_tokens": 16000,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 431,
+    "reasoning_output_tokens": 122
+  },
+  "proposals": [
+    {
+      "premise": "Visitors can just arrive, so help them choose an entrance first.",
+      "opening": "Desktop pairs the entry photo with the two routes. Phone shows five steps at the main entrance and the step-free library courtyard route above the photo. Both show doors 09:00–17:00 and quiet hour 13:00–14:00.",
+      "move": "Tap “Step-free entrance” to reveal “Go through the library courtyard and ring the bell” beneath the route. The optional volunteer request shows your selected arrival time and requires 30 minutes’ notice.",
+      "tradeoff": "The route is quick to find. On phones, the photo sits farther down."
+    },
+    {
+      "premise": "Visitors may still be deciding when to come. Quiet hour gives them a reason to start with the time.",
+      "opening": "Desktop pairs the door, bells and curb photo with hours and both routes. Phone leads with doors 09:00–17:00, quiet hour 13:00–14:00 and “Just arrive,” then shows the photo beside the entrance notes.",
+      "move": "Choose an arrival time. The time appears beside “Request a volunteer,” with the 30-minute notice requirement. The entrance notes show five steps at the main door and bell access through the step-free library courtyard.",
+      "tradeoff": "Timing is easier to compare. Entrance details sit lower on phones."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 46.97
+}

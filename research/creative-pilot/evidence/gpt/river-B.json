@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "river",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "f77c16f36a199f6b3d6d222bed503c0840aec63a5d026293c93468c189883863",
+  "usage": {
+    "input_tokens": 16801,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 327,
+    "reasoning_output_tokens": 50
+  },
+  "proposals": [
+    {
+      "premise": "The three records come from the same bend. Visitors looking for its history can follow a dated sequence from the ferry photo to the river walk.",
+      "opening": "On desktop, the 1932 photo and its unverified photographer note sit beside a year index. On phones, the three year buttons sit above the photo and note.",
+      "move": "Select 1978 to open the scan in the same viewer, with its east abutment caption. Select 2025 for playback and the transcript.",
+      "tradeoff": "Dates make records easy to find, while comparing sources takes switching between years."
+    },
+    {
+      "premise": "Visitors may expect to match the ferry photo to the bend they know. Its changed shape makes the recorded locations a better starting point for comparison.",
+      "opening": "Desktop opens with the east abutment scan beside a public steps audio panel. Phones stack the scan and audio panel beneath a shared caption about the bend.",
+      "move": "Choose Compare with 1932 to reveal the ferry photo and its unverified photographer note below both sources. Playback and transcript controls stay in the audio panel.",
+      "tradeoff": "The opening makes the two documented locations easy to compare. The ferry photo takes one extra step."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 29.35
+}

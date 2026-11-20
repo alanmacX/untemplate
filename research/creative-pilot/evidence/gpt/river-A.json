@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "river",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "f6f8bbbdbf77c60bfb7546d1fceace06b21f45d3f8c9d1557ea7f40e03fc669b",
+  "usage": {
+    "input_tokens": 16732,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 316,
+    "reasoning_output_tokens": 30
+  },
+  "proposals": [
+    {
+      "premise": "The bend changed shape since the ferry era. Use the 1932 ferry photo and the scanned 1978 high-water mark for a comparison grounded in their source notes.",
+      "opening": "Desktop shows the photo beside a dated record list. On phones, the ferry entry and two other record titles sit above the photo.",
+      "move": "Select the high-water mark to show its scan below the photo, with the east abutment and unverified photographer noted beside their sources. The recording entry opens the player and transcript.",
+      "tradeoff": "The stacked comparison keeps both images available but takes more scrolling on phones."
+    },
+    {
+      "premise": "The 18-second recording comes from the public steps. Start there and use the transcript to anchor a reading path through the three records.",
+      "opening": "Desktop places Play and the transcript beside the ferry and high-water entries. Phones show Play, the transcript opening, and both dated links together.",
+      "move": "Press Play to start audio in place, with progress above the transcript. Either dated link opens the original image alongside the recording on desktop or below it on phones, with notes on the abutment, changed bend, and unverified photographer.",
+      "tradeoff": "Listening takes one press. Comparing images takes two source visits."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 29.54
+}

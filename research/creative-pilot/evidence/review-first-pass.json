@@ -1,0 +1,203 @@
+{
+  "judge": "gpt-6.2-sol",
+  "observations": [
+    {
+      "case": "lab-loan",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "C",
+      "anonymous_id": "5eabd",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "no",
+      "why": "Both openings show the same use-to-tool matches, availability, and pickup hours before any action. B labels the entries by task and adds a reveal before the iron request, but that step leaves the borrowing decision unchanged."
+    },
+    {
+      "case": "lab-loan",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "B",
+      "anonymous_id": "cac27",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A exposes stock in a tool list and lets members request the iron directly. B starts with the job and reveals the matching tool and its status after selection, letting members find a suitable item without knowing its name."
+    },
+    {
+      "case": "lab-loan",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "A",
+      "anonymous_id": "fbcf6",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A starts with suitability and brings the matching irons into view. B lets members settle pickup first and shows their chosen window beside the iron request, carrying that decision into checkout."
+    },
+    {
+      "case": "orchard",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "C",
+      "anonymous_id": "03da8",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A leads with the choice between picking and shopping. B shows the closed rows and gravel bypass before the visitor chooses, then highlights the bypass when they select the shop. Both support booking and clearly offer a shop-only visit."
+    },
+    {
+      "case": "orchard",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "B",
+      "anonymous_id": "bd926",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A opens the slot picker from a dedicated booking button. B lets visitors use either open row on the map to open the picker beneath it, so seeing where they can pick informs the first action. Both keep shop access visible."
+    },
+    {
+      "case": "orchard",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "A",
+      "anonymous_id": "25637",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A opens with the harvest note and puts the map farther down. B places the annotated map alongside or directly below the visit choices, making it immediately visible that the gravel path reaches the shop without crossing a picking row. Booking works the same way."
+    },
+    {
+      "case": "river",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "C",
+      "anonymous_id": "f6bef",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A exposes all three dates upfront and adds the high-water scan beside or below the ferry photo. B groups records by the bend, exposes the two documented landmarks first, and reveals dates when visitors open those sources."
+    },
+    {
+      "case": "river",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "B",
+      "anonymous_id": "75ea4",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A starts with the ferry photo and switches sources in a single viewer by year. B puts the abutment scan and steps audio panel together at opening, then adds the ferry photo below both on request."
+    },
+    {
+      "case": "river",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "A",
+      "anonymous_id": "35974",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A starts with the ferry photo and adds the high-water scan below it for direct image comparison. B offers playback and transcript access at opening and keeps the recording in view as visitors open either image."
+    },
+    {
+      "case": "warm-room",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "A",
+      "anonymous_id": "669f5",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A starts with recognizing the entrance and puts the optional request inside the courtyard directions. B puts the optional form beside the welcome on desktop and keeps the route instructions ahead of the form on phones."
+    },
+    {
+      "case": "warm-room",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "B",
+      "anonymous_id": "a70d6",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A starts with choosing an entrance and reveals the courtyard instructions under that route. B leads with opening hours and quiet hour on phones, then carries the chosen arrival time into the optional volunteer request."
+    },
+    {
+      "case": "warm-room",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "C",
+      "anonymous_id": "76471",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "On phones, A gives visitors the written entrance choices first. B leads with the real photo so visitors can match the door, bells and curb to what they see, then offers courtyard directions and the optional request beneath it."
+    },
+    {
+      "case": "costume",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "B",
+      "anonymous_id": "091e7",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A starts with production dates and shows eligibility on each garment card. B starts with fit notes and lets borrowers pin pieces before checking dates and intended use in a comparison tray."
+    },
+    {
+      "case": "costume",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "C",
+      "anonymous_id": "ca07b",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A checks dates first and shows conflicts on the wardrobe rail. B starts by collecting pieces for fit comparison, then checks dates and intended use in the same comparison panel."
+    },
+    {
+      "case": "costume",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "A",
+      "anonymous_id": "e2ad2",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "no",
+      "why": "Both expose fit and restriction notes before entry, then make production dates the first action and show eligibility beside each piece. The desktop emphasis changes, while the decision sequence and result location stay the same."
+    },
+    {
+      "case": "soundwalk",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "C",
+      "anonymous_id": "c4684",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A starts walkers at the square and keeps the bell next after either route choice. B lets walkers join at the bridge and puts the choir and its 20:30 cutoff in the next-stop card after they choose the step-free route."
+    },
+    {
+      "case": "soundwalk",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "B",
+      "anonymous_id": "419be",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "yes",
+      "why": "A asks which path to take, then shows the next reachable stop. B asks whether to include the choir before its cutoff, then opens the corresponding itinerary. A should label 46 seconds as the bridge sound’s duration, since preview length is unspecified."
+    },
+    {
+      "case": "soundwalk",
+      "engine": "gpt",
+      "model": "gpt-6.2-sol",
+      "arm": "A",
+      "anonymous_id": "f632e",
+      "a_usable": "yes",
+      "b_usable": "yes",
+      "fork": "no",
+      "why": "Both ask walkers to choose a crossing or the step-free alternate and show the next reachable stop in a card. B enlarges the photo and moves route controls to the bottom without specifying what the crop helps walkers see or decide."
+    }
+  ]
+}

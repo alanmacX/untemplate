@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "soundwalk",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "72963e523e10f6eaf144831825eb9d006fe625fbd20a90efe13e4f2f000c66f2",
+  "usage": {
+    "input_tokens": 15355,
+    "cached_input_tokens": 14080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 369,
+    "reasoning_output_tokens": 91
+  },
+  "proposals": [
+    {
+      "premise": "The narrow bridge path rules out a group stop, so route choice must foreground the step-free alternate while keeping all three sounds in sequence.",
+      "opening": "Desktop opens with the walking route beside the three licensed photographs; phone opens with the next reachable stop, timing, and a compact route strip sharing the screen.",
+      "move": "The first control chooses the direct or step-free route; the updated next stop and timing appear immediately above the route, with bell and bridge preview buttons.",
+      "tradeoff": "Immediate viability reduces uncertainty, but photographs receive less space on phone."
+    },
+    {
+      "premise": "The choir ending at 20:30 makes time the route’s key constraint, while the bell and 46-second bridge sound can animate progress without implying a choir recording.",
+      "opening": "Desktop opens as an evening timeline paired with a photograph and route map; phone shows the next reachable stop first, with its timing, image, and route choice sharing one card.",
+      "move": "The first control selects a departure time; the page reveals a viable sequence, flags the choir deadline, and places available bell or bridge playback beside the relevant stop.",
+      "tradeoff": "Time-first planning makes feasibility clear, but the full route is less immediately visible."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 19.59
+}

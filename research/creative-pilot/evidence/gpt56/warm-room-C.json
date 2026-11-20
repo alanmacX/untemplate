@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "warm-room",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "aafbd26ff83e7d2e2859ddeda96dadbee52e81836732983e1bb5556f745c51f0",
+  "usage": {
+    "input_tokens": 15500,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 444,
+    "reasoning_output_tokens": 137
+  },
+  "proposals": [
+    {
+      "premise": "Evidence: visitors may simply arrive, while access details affect the route. Like entering a museum and meeting someone at a station, place-finding comes before optional assistance: the door photograph maps to recognition, and the courtyard meeting maps to pickup.",
+      "opening": "Desktop shows “Come in today” beside the entry photograph; phone shows that message, then the photograph. Hours, quiet hour, and “no booking needed” share the opening.",
+      "move": "First control: “Show step-free route.” It reveals courtyard, bell, indoor-chair, and five-step entrance details directly below.",
+      "tradeoff": "Fast independent arrival gains priority; volunteer help is less prominent."
+    },
+    {
+      "premise": "Assumption changed: a visitor may still need to decide when to arrive. As with choosing a train time before arranging pickup, and checking an entrance before setting out, time determines whether optional help remains possible. Arrival time maps to departure choice; volunteer request maps to pickup.",
+      "opening": "Desktop pairs an arrival-time chooser with the photograph; phone shows the chooser first, with hours and quiet hour beside it, then both entrance routes.",
+      "move": "First control: choose an arrival time. The selected time appears immediately above “Request courtyard meeting,” which remains clearly unaccepted and enforces 30 minutes.",
+      "tradeoff": "Planning becomes concrete, but immediate route guidance moves lower."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 22.38
+}

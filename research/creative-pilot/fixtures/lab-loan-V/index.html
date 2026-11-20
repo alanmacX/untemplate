@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Tool checkout · Community electronics lab</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202a25;
+      --muted: #505a52;
+      --paper: #fffdf7;
+      --background: #eae8df;
+      --rule: #b7bcb0;
+      --green: #23513b;
+      --wash: #eaf1e7;
+      --rust: #744221;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 1rem/1.5 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(1184px, calc(100% - 80px));
+      margin: 44px auto;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-top: 6px solid var(--green);
+    }
+
+    .masthead {
+      padding: 25px 32px 27px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .eyebrow {
+      margin: 0;
+      color: var(--green);
+      font: 700 .75rem/1.4 ui-monospace, monospace;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p, dl, dd { margin: 0; }
+
+    h1 {
+      margin-top: 6px;
+      font: 700 clamp(2.6rem, 5vw, 4.6rem)/.98 Georgia, serif;
+      letter-spacing: -.055em;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(252px, 30%);
+    }
+
+    .task-heading {
+      padding: 15px 32px;
+      background: #f2f1e8;
+    }
+
+    details { border-top: 1px solid var(--rule); }
+
+    summary {
+      position: relative;
+      display: flex;
+      min-height: 109px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 32px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::marker { content: ""; }
+    summary:hover { background: #f4f4ec; }
+
+    .task-title {
+      display: block;
+      font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+      font-weight: 720;
+      line-height: 1.2;
+      letter-spacing: -.025em;
+    }
+
+    .task-description {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .toggle {
+      position: relative;
+      flex: none;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--rule);
+      border-radius: 50%;
+      color: var(--green);
+    }
+
+    .toggle::before, .toggle::after {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      width: 12px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+      transform: translate(-50%, -50%);
+    }
+
+    .toggle::after { transform: translate(-50%, -50%) rotate(90deg); }
+
+    details[open] > summary {
+      background: var(--wash);
+      box-shadow: inset 4px 0 var(--green);
+    }
+
+    details[open] .toggle {
+      color: white;
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    details[open] .toggle::after { display: none; }
+
+    .response {
+      padding: 21px 32px 27px;
+      background: #f6f8f0;
+      border-top: 1px solid var(--rule);
+      box-shadow: inset 4px 0 var(--green);
+    }
+
+    .item-heading {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 5px 13px;
+      margin-bottom: 8px;
+    }
+
+    .item-heading h3, .confirmation h3 {
+      font-size: 1.13rem;
+      line-height: 1.3;
+    }
+
+    .status {
+      color: var(--green);
+      font: 700 .78rem/1.4 ui-monospace, monospace;
+    }
+
+    .status.limited { color: var(--rust); }
+    .response p { color: var(--muted); }
+
+    form { margin-top: 18px; }
+
+    .control {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 44px;
+      cursor: pointer;
+    }
+
+    input {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      flex: none;
+      accent-color: var(--green);
+    }
+
+    fieldset {
+      min-width: 0;
+      margin: 10px 0 16px;
+      padding: 0;
+      border: 0;
+    }
+
+    legend {
+      margin-bottom: 6px;
+      padding: 0;
+      font-weight: 700;
+    }
+
+    .windows {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .windows .control {
+      padding: 5px 12px;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .windows .control:has(input:checked) {
+      background: var(--wash);
+      border-color: var(--green);
+    }
+
+    button {
+      min-height: 44px;
+      padding: 8px 17px;
+      border: 1px solid var(--green);
+      border-radius: 2px;
+      background: var(--green);
+      color: white;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover { background: #173a29; }
+
+    :focus-visible {
+      outline: 2px solid #805020;
+      outline-offset: 3px;
+    }
+
+    summary:focus-visible { outline-offset: -5px; }
+
+    .confirmation {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border: 1px solid var(--green);
+      background: var(--wash);
+    }
+
+    .confirmation h3 { color: var(--green); }
+    .confirmation p { margin-top: 4px; color: var(--ink); }
+
+    .terms {
+      padding: 26px 28px;
+      border-left: 1px solid var(--rule);
+      background: #f2f1e8;
+    }
+
+    .terms dl { margin-top: 18px; }
+    .terms dt { color: var(--muted); font-size: .88rem; }
+
+    .duration {
+      margin: 2px 0 17px;
+      font: 700 2.05rem/1.15 Georgia, serif;
+      letter-spacing: -.04em;
+    }
+
+    .hours {
+      display: grid;
+      gap: 5px;
+      margin-top: 6px;
+    }
+
+    .hours span {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .hours strong { font-weight: 650; }
+    .hours time { font-variant-numeric: tabular-nums; }
+
+    @media (max-width: 700px) {
+      main {
+        width: calc(100% - 24px);
+        margin: 12px auto 24px;
+      }
+
+      .masthead { padding: 19px 18px 21px; }
+      .layout { grid-template-columns: minmax(0, 1fr); }
+      .task-heading { padding: 11px 18px; }
+      summary { min-height: 78px; padding: 13px 18px; }
+      .task-description { font-size: .87rem; }
+      .response { padding: 16px 18px 20px; }
+      .windows .control { padding-inline: 8px; font-size: .92rem; }
+
+      .terms {
+        padding: 19px 18px 23px;
+        border-top: 1px solid var(--rule);
+        border-left: 0;
+      }
+
+      .terms dl { margin-top: 12px; }
+      .hours { max-width: 240px; }
+    }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="page-title">
+    <header class="masthead">
+      <p class="eyebrow">Community electronics lab</p>
+      <h1 id="page-title">Tool checkout</h1>
+    </header>
+
+    <div class="layout">
+      <section aria-labelledby="task-heading">
+        <h2 class="eyebrow task-heading" id="task-heading">What do you want to do?</h2>
+
+        <details name="task">
+          <summary>
+            <span>
+              <span class="task-title">Solder something</span>
+              <span class="task-description">Join wires or attach a component.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="response">
+            <div class="item-heading">
+              <h3>Soldering iron</h3>
+              <span class="status" id="iron-stock">2 available</span>
+            </div>
+            <p id="induction-note">The free safety induction is required to borrow an iron.</p>
+
+            <form id="iron-request">
+              <label class="control">
+                <input type="checkbox" name="induction" aria-describedby="induction-note" required>
+                <span>I’ve completed the free safety induction.</span>
+              </label>
+
+              <fieldset>
+                <legend>Choose a pickup window</legend>
+                <div class="windows">
+                  <label class="control">
+                    <input type="radio" name="pickup" value="Tuesday 18–20" required>
+                    <span>Tuesday 18–20</span>
+                  </label>
+                  <label class="control">
+                    <input type="radio" name="pickup" value="Saturday 10–14" required>
+                    <span>Saturday 10–14</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <button type="submit">Request an iron</button>
+            </form>
+
+            <section class="confirmation" id="confirmation" aria-labelledby="confirmation-title"
+                     aria-describedby="confirmation-details" tabindex="-1" hidden>
+              <h3 id="confirmation-title">Pickup confirmed</h3>
+              <p id="confirmation-details"></p>
+            </section>
+          </div>
+        </details>
+
+        <details name="task">
+          <summary>
+            <span>
+              <span class="task-title">Find what’s heating up</span>
+              <span class="task-description">Look for hot spots on a circuit.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="response">
+            <div class="item-heading">
+              <h3>Thermal camera</h3>
+              <span class="status limited">Due back Thursday</span>
+            </div>
+            <p>The lab’s one thermal camera is currently out on loan.</p>
+          </div>
+        </details>
+
+        <details name="task">
+          <summary>
+            <span>
+              <span class="task-title">Check a circuit</span>
+              <span class="task-description">Measure voltage or check a connection.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="response">
+            <div class="item-heading">
+              <h3>Multimeter</h3>
+              <span class="status limited">Supervised bench only</span>
+            </div>
+            <p>The multimeter has a damaged lead. Use it only at the supervised bench.</p>
+          </div>
+        </details>
+      </section>
+
+      <aside class="terms" aria-labelledby="terms-heading">
+        <h2 class="eyebrow" id="terms-heading">Member loans</h2>
+        <dl>
+          <dt>Loan length</dt>
+          <dd class="duration">3 days</dd>
+          <dt>Staffed pickup</dt>
+          <dd class="hours">
+            <span><strong>Tuesday</strong><span><time datetime="18:00">18</time>–<time datetime="20:00">20</time></span></span>
+            <span><strong>Saturday</strong><span><time datetime="10:00">10</time>–<time datetime="14:00">14</time></span></span>
+          </dd>
+        </dl>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    const requestForm = document.getElementById("iron-request");
+    const confirmation = document.getElementById("confirmation");
+
+    requestForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (requestForm.hidden || !requestForm.reportValidity()) return;
+
+      const pickup = new FormData(requestForm).get("pickup");
+      document.getElementById("confirmation-details").textContent =
+        `Soldering iron · ${pickup} · 3-day loan`;
+      document.getElementById("iron-stock").textContent = "1 available";
+      requestForm.hidden = true;
+      confirmation.hidden = false;
+      confirmation.focus();
+    });
+  </script>
+</body>
+</html>

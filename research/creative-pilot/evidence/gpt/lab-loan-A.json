@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "lab-loan",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "1065683b320fff7f56f138cec07b18b4894a2cec9d68c1809f55207e53a8ebe7",
+  "usage": {
+    "input_tokens": 17661,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 440,
+    "reasoning_output_tokens": 139
+  },
+  "proposals": [
+    {
+      "premise": "Members often know the job before the tool name, so lead with tasks like “Solder a joint.”",
+      "opening": "Desktop shows task buttons beside a tool list. On phones, the buttons sit above it. Each tool’s use and status share a row.",
+      "move": "“Solder a joint” brings the two available irons into view with the three-day loan, free required induction, and both pickup windows. Request an iron, then confirm the eligible item and chosen window in the same panel.",
+      "tradeoff": "Beginners can start in their own words. Returning borrowers scan past the task buttons."
+    },
+    {
+      "premise": "Staffed pickup has two windows, so let members start with the one they can make.",
+      "opening": "Desktop pairs Tuesday 18–20 and Saturday 10–14 buttons with a tool table. On phones, the buttons sit above stacked entries. Each entry pairs a plain-language use with its status.",
+      "move": "Choose a window to show it beside the request button for the two available irons. The camera shows “Due Thursday” and the multimeter “Damaged lead · supervised bench only.” Review the three-day loan and free required induction, then confirm the eligible iron and window.",
+      "tradeoff": "Members settle pickup early. Those unsure what to borrow need to scan the tool descriptions."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 33.2
+}

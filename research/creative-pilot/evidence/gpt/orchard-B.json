@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "orchard",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "30caff4cd1f2d75f5cd1cbaf95d2b659b2e137e7f27f30ca440aa27620f3262d",
+  "usage": {
+    "input_tokens": 17728,
+    "cached_input_tokens": 16512,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 379,
+    "reasoning_output_tokens": 72
+  },
+  "proposals": [
+    {
+      "premise": "Friday’s note closes the muddy north rows, while the gravel path still reaches the shop. Lead with the visitor’s choice between picking and a shop-only visit.",
+      "opening": "Desktop pairs the picking and shop options beside the straw basket photo. Phone starts with Saturday 10–15, then stacks both options before the photo. The shop option says no booking needed.",
+      "move": "Choose a picking time opens the Saturday slot picker directly below the picking option, with 14:00 marked as the last slot. The reservation confirmation appears there.",
+      "tradeoff": "Both visits are easy to spot. The marked map sits farther down."
+    },
+    {
+      "premise": "Visitors may still be deciding whether to pick. Friday’s note and the marked map make that decision concrete by showing where they can go after rain.",
+      "opening": "Desktop puts the map beside Saturday 10–15 and route notes. Phone shows the hours above the map and keeps the route notes directly below. The map labels the closed north rows, tart Ashmeads, sweet Russets, and the gravel path to the shop, which needs no booking.",
+      "move": "Tap either open row to reveal Saturday picking times beneath the map and reserve there. The last slot is 14:00.",
+      "tradeoff": "Visitors can orient themselves first. The map takes up more of the phone’s opening screen."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 28.64
+}

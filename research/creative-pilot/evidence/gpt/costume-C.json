@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "costume",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "4fcb0f936df69c3ada495725a4e6bb6ce44d5c1be2104172c7b31006667ac374",
+  "usage": {
+    "input_tokens": 16854,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 597,
+    "reasoning_output_tokens": 264
+  },
+  "proposals": [
+    {
+      "premise": "The coat’s May 9–12 reservation makes dates a useful first filter. As when booking a meeting room, check the slot first, then check whether what’s free suits the job.",
+      "opening": "Desktop puts production dates beside a wardrobe rail with stitching, lining and label thumbnails. Phone puts dates above the same rows, with fit and use notes beside each photo.",
+      "move": "Enter production dates. The coat row shows any reservation overlap and its indoor-only rule. May 8 after 16:00 appears as the alteration slot. Confirm intended use to request eligible pieces or see the blocker.",
+      "tradeoff": "Date conflicts surface early. Fit comparisons sit below the date controls on phones."
+    },
+    {
+      "premise": "Boots labelled EU 40 fit like 39. Moving furniture starts with actual doorway clearance. Here, worn fit is the clearance, so compare it before checking dates.",
+      "opening": "Desktop opens a fitting bench with photos beside the notes. Phone stacks the same pairs. The boot label sits with “Fits like 39,” the hem stitching with “+40 cm,” and the lining with “Indoor only.”",
+      "move": "Tap Compare on pieces to collect their notes in one panel. Enter dates and intended use there to request eligible pieces or see blockers, including the coat’s May 9–12 reservation. The panel shows the May 8 alteration slot after 16:00.",
+      "tradeoff": "Fit surprises surface early. Date conflicts take one more step."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 39.5
+}

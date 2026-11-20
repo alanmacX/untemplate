@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "warm-room",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "9b4308343c6d37b3632648393920507d8cebd325343eb74c62fc2652dc683ed8",
+  "usage": {
+    "input_tokens": 15369,
+    "cached_input_tokens": 14080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 593,
+    "reasoning_output_tokens": 306
+  },
+  "proposals": [
+    {
+      "premise": "Five entrance steps make access the first uncertainty, so this direction leads with the step-free courtyard route and the real entry photograph.",
+      "opening": "Desktop shows route guidance beside the photograph; phone shows guidance first, then the door, bells, and curb. Hours and quiet hour share this opening.",
+      "move": "The first control, “Show step-free entrance,” reveals the library courtyard route, bell, and indoor chairs. A volunteer request then displays the chosen arrival time beside the 30-minute notice.",
+      "tradeoff": "Visitors gain immediate physical reassurance, but ordinary walk-in access receives less visual emphasis."
+    },
+    {
+      "premise": "Because visitors can simply arrive, this direction leads with open access while separating optional volunteer help from any suggestion of booking.",
+      "opening": "Desktop pairs “Just arrive” with today’s 09:00–17:00 doors and 13:00–14:00 quiet hour; phone stacks them above two entrance choices.",
+      "move": "The first control, an arrival-time field under optional volunteer help, displays the chosen time in the request summary and states that requests must be sent 30 minutes before arrival.",
+      "tradeoff": "The low-pressure walk-in message becomes unmistakable, but the step-free photograph and courtyard instructions sit one step lower."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 25.29
+}

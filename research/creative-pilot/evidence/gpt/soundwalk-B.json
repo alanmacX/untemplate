@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "soundwalk",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "c62d3f6a057bc34800020a2c446aed2ed9b7d871810cc109fde807117c8ad6e0",
+  "usage": {
+    "input_tokens": 16789,
+    "cached_input_tokens": 16000,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 561,
+    "reasoning_output_tokens": 268
+  },
+  "proposals": [
+    {
+      "premise": "The step-free alternate reaches the far side. Put route choice first so visitors can see what they can reach before they start walking.",
+      "opening": "Desktop pairs a three-stop list with a licensed photo. Phone puts two thumb-sized route buttons above the next-stop card, with a preview button when available.",
+      "move": "Tap Step-free route. The card shows the next reachable stop and keeps the choir’s 20:30 finish visible. The bridge sample is labeled 46 seconds and can play away from the narrow path.",
+      "tradeoff": "Route choice is immediate, while the choir deadline shares attention with the other stops."
+    },
+    {
+      "premise": "Visitors may expect to hear all three sounds in order. The choir ends at 20:30, so let that deadline shape the route choice.",
+      "opening": "Desktop places the choir deadline and route choices beside a licensed photo. Phone pairs the deadline with two thumb-sized choices, Include choir and Bell and bridge.",
+      "move": "Tap Include choir. The panel opens the step-free route and shows its next reachable stop beneath the 20:30 deadline. Bell and bridge previews sit below the route, with bridge playback available away from the narrow path.",
+      "tradeoff": "Visitors see the deadline before committing, while previews take an extra scroll on phones."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 36.09
+}

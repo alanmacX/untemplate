@@ -1,0 +1,138 @@
+[
+  {
+    "case": "lab-loan",
+    "arm": "A",
+    "view": "desktop",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": null,
+    "title_height_px": 88
+  },
+  {
+    "case": "lab-loan",
+    "arm": "A",
+    "view": "phone",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": null,
+    "title_height_px": 48
+  },
+  {
+    "case": "lab-loan",
+    "arm": "B",
+    "view": "desktop",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": [
+      432,
+      520,
+      608
+    ],
+    "title_height_px": 179
+  },
+  {
+    "case": "lab-loan",
+    "arm": "B",
+    "view": "phone",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": [
+      296,
+      374,
+      452
+    ],
+    "title_height_px": 95
+  },
+  {
+    "case": "lab-loan",
+    "arm": "V",
+    "view": "desktop",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": [
+      244,
+      354,
+      464
+    ],
+    "title_height_px": 71
+  },
+  {
+    "case": "lab-loan",
+    "arm": "V",
+    "view": "phone",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": [
+      162,
+      241,
+      320
+    ],
+    "title_height_px": 41
+  },
+  {
+    "case": "orchard",
+    "arm": "A",
+    "view": "desktop",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": null,
+    "title_height_px": 161
+  },
+  {
+    "case": "orchard",
+    "arm": "A",
+    "view": "phone",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": null,
+    "title_height_px": 99
+  },
+  {
+    "case": "orchard",
+    "arm": "B",
+    "view": "desktop",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": [
+      610,
+      610
+    ],
+    "title_height_px": 87
+  },
+  {
+    "case": "orchard",
+    "arm": "B",
+    "view": "phone",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": [
+      602,
+      602
+    ],
+    "title_height_px": 95
+  },
+  {
+    "case": "orchard",
+    "arm": "V",
+    "view": "desktop",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": [
+      397,
+      397
+    ],
+    "title_height_px": 74
+  },
+  {
+    "case": "orchard",
+    "arm": "V",
+    "view": "phone",
+    "main_flow": "pass",
+    "page_errors": [],
+    "opening_control_top_px": [
+      298,
+      298
+    ],
+    "title_height_px": 66
+  }
+]

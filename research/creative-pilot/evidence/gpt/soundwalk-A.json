@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "soundwalk",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "72963e523e10f6eaf144831825eb9d006fe625fbd20a90efe13e4f2f000c66f2",
+  "usage": {
+    "input_tokens": 17652,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 428,
+    "reasoning_output_tokens": 144
+  },
+  "proposals": [
+    {
+      "premise": "The bridge path is too narrow for a group to stop. Put route choice ahead of listening.",
+      "opening": "Desktop pairs a compact route list with one licensed photo. Phone opens on two thumb-sized route buttons, with the next-stop card directly below.",
+      "move": "Tap “Walk through” or “Take the step-free route.” The card updates in place as you advance, showing the next stop, the bridge sound’s 46-second duration, and the choir’s 20:30 cutoff where relevant. Bell and bridge previews are optional.",
+      "tradeoff": "The route stays visible while photography takes less screen space."
+    },
+    {
+      "premise": "The choir ends at 20:30. Give the deadline a fixed place on a photo-led stop card.",
+      "opening": "Desktop shows a licensed photo beside the square’s bell card, with route choices and the choir cutoff alongside. Phone fits a photo crop, the bell card, and a bottom route bar in the first view.",
+      "move": "Tap the bridge crossing or step-free alternate in the bar. The card advances to the next reachable stop and shows its timing. Play either available preview from its stop card.",
+      "tradeoff": "The larger image sets the scene while later stops sit one tap away."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 37.44
+}

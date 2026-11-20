@@ -1,0 +1,1046 @@
+[
+  {
+    "page": "lab-loan-A",
+    "width": 1440,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Borrow a tool",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 87.84,
+        "weight": "400",
+        "line_height": "87.84px",
+        "letter_spacing": "-5.7096px",
+        "content_fits": true,
+        "top": 126,
+        "bottom": 214,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 13
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Pick a time you can make, then find the tool for your task.",
+        "family": "system-ui, sans-serif",
+        "size": 18.4,
+        "weight": "400",
+        "line_height": "27.6px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 230,
+        "bottom": 257,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 59
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Tuesday 18\u201320",
+        "family": "system-ui, sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "normal",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 406,
+        "bottom": 461,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 5
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "lab-loan-A",
+    "width": 390,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Borrow a tool",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 48,
+        "weight": "400",
+        "line_height": "48px",
+        "letter_spacing": "-3.12px",
+        "content_fits": true,
+        "top": 90,
+        "bottom": 138,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 13
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Pick a time you can make, then find the tool for your task.",
+        "family": "system-ui, sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "24px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 149,
+        "bottom": 197,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 58
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Tuesday 18\u201320",
+        "family": "system-ui, sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "normal",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 308,
+        "bottom": 355,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 5
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "lab-loan-A",
+    "width": 320,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Borrow a tool",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 48,
+        "weight": "400",
+        "line_height": "48px",
+        "letter_spacing": "-3.12px",
+        "content_fits": true,
+        "top": 90,
+        "bottom": 138,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 13
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Pick a time you can make, then find the tool for your task.",
+        "family": "system-ui, sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "24px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 149,
+        "bottom": 197,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 58
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Tuesday 18\u201320",
+        "family": "system-ui, sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "normal",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 308,
+        "bottom": 355,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 5
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "lab-loan-B",
+    "width": 1440,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "What are youworking on?",
+        "family": "system-ui, sans-serif",
+        "size": 90.4,
+        "weight": "760",
+        "line_height": "89.496px",
+        "letter_spacing": "-7.1416px",
+        "content_fits": true,
+        "top": 142,
+        "bottom": 321,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 23
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Tool loans",
+        "family": "ui-monospace, \"Cascadia Mono\", Consolas, monospace",
+        "size": 12.32,
+        "weight": "700",
+        "line_height": "17.248px",
+        "letter_spacing": "1.6016px",
+        "content_fits": true,
+        "top": 112,
+        "bottom": 129,
+        "font_faces": [
+          {
+            "family": "Courier",
+            "glyphs": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "lab-loan-B",
+    "width": 390,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "What are youworking on?",
+        "family": "system-ui, sans-serif",
+        "size": 48,
+        "weight": "760",
+        "line_height": "47.52px",
+        "letter_spacing": "-3.792px",
+        "content_fits": true,
+        "top": 118,
+        "bottom": 213,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 23
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Tool loans",
+        "family": "ui-monospace, \"Cascadia Mono\", Consolas, monospace",
+        "size": 12.32,
+        "weight": "700",
+        "line_height": "17.248px",
+        "letter_spacing": "1.6016px",
+        "content_fits": true,
+        "top": 91,
+        "bottom": 108,
+        "font_faces": [
+          {
+            "family": "Courier",
+            "glyphs": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "lab-loan-B",
+    "width": 320,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "What are youworking on?",
+        "family": "system-ui, sans-serif",
+        "size": 48,
+        "weight": "760",
+        "line_height": "47.52px",
+        "letter_spacing": "-3.792px",
+        "content_fits": true,
+        "top": 118,
+        "bottom": 213,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 23
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Tool loans",
+        "family": "ui-monospace, \"Cascadia Mono\", Consolas, monospace",
+        "size": 12.32,
+        "weight": "700",
+        "line_height": "17.248px",
+        "letter_spacing": "1.6016px",
+        "content_fits": true,
+        "top": 91,
+        "bottom": 108,
+        "font_faces": [
+          {
+            "family": "Courier",
+            "glyphs": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "lab-loan-V",
+    "width": 1440,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Tool checkout",
+        "family": "Georgia, serif",
+        "size": 72,
+        "weight": "700",
+        "line_height": "70.56px",
+        "letter_spacing": "-3.96px",
+        "content_fits": true,
+        "top": 98,
+        "bottom": 168,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 13
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Community electronics lab",
+        "family": "ui-monospace, monospace",
+        "size": 12,
+        "weight": "700",
+        "line_height": "16.8px",
+        "letter_spacing": "1.08px",
+        "content_fits": true,
+        "top": 75,
+        "bottom": 92,
+        "font_faces": [
+          {
+            "family": "Courier",
+            "glyphs": 25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "lab-loan-V",
+    "width": 390,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Tool checkout",
+        "family": "Georgia, serif",
+        "size": 41.6,
+        "weight": "700",
+        "line_height": "40.768px",
+        "letter_spacing": "-2.288px",
+        "content_fits": true,
+        "top": 60,
+        "bottom": 101,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 13
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Community electronics lab",
+        "family": "ui-monospace, monospace",
+        "size": 12,
+        "weight": "700",
+        "line_height": "16.8px",
+        "letter_spacing": "1.08px",
+        "content_fits": true,
+        "top": 37,
+        "bottom": 54,
+        "font_faces": [
+          {
+            "family": "Courier",
+            "glyphs": 25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "lab-loan-V",
+    "width": 320,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Tool checkout",
+        "family": "Georgia, serif",
+        "size": 41.6,
+        "weight": "700",
+        "line_height": "40.768px",
+        "letter_spacing": "-2.288px",
+        "content_fits": true,
+        "top": 60,
+        "bottom": 141,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 12
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Community electronics lab",
+        "family": "ui-monospace, monospace",
+        "size": 12,
+        "weight": "700",
+        "line_height": "16.8px",
+        "letter_spacing": "1.08px",
+        "content_fits": true,
+        "top": 37,
+        "bottom": 54,
+        "font_faces": [
+          {
+            "family": "Courier",
+            "glyphs": 25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-A",
+    "width": 1440,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 82.8,
+        "weight": "400",
+        "line_height": "80.316px",
+        "letter_spacing": "-5.382px",
+        "content_fits": true,
+        "top": 187,
+        "bottom": 347,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 22
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Saturday 10\u201315",
+        "family": "system-ui, sans-serif",
+        "size": 13.12,
+        "weight": "720",
+        "line_height": "19.68px",
+        "letter_spacing": "1.3776px",
+        "content_fits": true,
+        "top": 148,
+        "bottom": 168,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 13
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Reserve picking",
+        "family": "system-ui, sans-serif",
+        "size": 14,
+        "weight": "680",
+        "line_height": "18.2px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 467,
+        "bottom": 513,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-A",
+    "width": 390,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 51.09,
+        "weight": "400",
+        "line_height": "49.5573px",
+        "letter_spacing": "-3.32085px",
+        "content_fits": true,
+        "top": 118,
+        "bottom": 217,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 22
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Saturday 10\u201315",
+        "family": "system-ui, sans-serif",
+        "size": 13.12,
+        "weight": "720",
+        "line_height": "19.68px",
+        "letter_spacing": "1.3776px",
+        "content_fits": true,
+        "top": 86,
+        "bottom": 106,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 13
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Reserve picking",
+        "family": "system-ui, sans-serif",
+        "size": 13.44,
+        "weight": "680",
+        "line_height": "17.472px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 320,
+        "bottom": 366,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-A",
+    "width": 320,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 44.8,
+        "weight": "400",
+        "line_height": "43.456px",
+        "letter_spacing": "-2.912px",
+        "content_fits": true,
+        "top": 118,
+        "bottom": 205,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 22
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Saturday 10\u201315",
+        "family": "system-ui, sans-serif",
+        "size": 13.12,
+        "weight": "720",
+        "line_height": "19.68px",
+        "letter_spacing": "1.3776px",
+        "content_fits": true,
+        "top": 86,
+        "bottom": 106,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 13
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Reserve picking",
+        "family": "system-ui, sans-serif",
+        "size": 13.44,
+        "weight": "680",
+        "line_height": "17.472px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 331,
+        "bottom": 377,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-B",
+    "width": 1440,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 87.84,
+        "weight": "400",
+        "line_height": "86.9616px",
+        "letter_spacing": "-5.7096px",
+        "content_fits": true,
+        "top": 133,
+        "bottom": 220,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 23
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Friday\u2019s harvest noteThe north rows are still too muddy after the rain.",
+        "family": "system-ui, sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "24px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 239,
+        "bottom": 284,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 50
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 21
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "AshmeadsTart \u2198",
+        "family": "system-ui, sans-serif",
+        "size": 16.64,
+        "weight": "400",
+        "line_height": "19.136px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 610,
+        "bottom": 665,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 5
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-B",
+    "width": 390,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 48,
+        "weight": "400",
+        "line_height": "47.52px",
+        "letter_spacing": "-3.12px",
+        "content_fits": true,
+        "top": 86,
+        "bottom": 181,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 22
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Friday\u2019s harvest noteThe north rows are still too muddy after the rain.",
+        "family": "system-ui, sans-serif",
+        "size": 14.4,
+        "weight": "400",
+        "line_height": "21.6px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 195,
+        "bottom": 238,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 50
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 21
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "AshmeadsTart \u2198",
+        "family": "system-ui, sans-serif",
+        "size": 13.6,
+        "weight": "400",
+        "line_height": "15.64px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 602,
+        "bottom": 656,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 5
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-B",
+    "width": 320,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 48,
+        "weight": "400",
+        "line_height": "47.52px",
+        "letter_spacing": "-3.12px",
+        "content_fits": true,
+        "top": 86,
+        "bottom": 181,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 22
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Friday\u2019s harvest noteThe north rows are still too muddy after the rain.",
+        "family": "system-ui, sans-serif",
+        "size": 14.4,
+        "weight": "400",
+        "line_height": "21.6px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 195,
+        "bottom": 259,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 49
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 21
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "AshmeadsTart \u2198",
+        "family": "system-ui, sans-serif",
+        "size": 13.6,
+        "weight": "400",
+        "line_height": "15.64px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 605,
+        "bottom": 659,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 5
+          },
+          {
+            "family": ".SF NS",
+            "glyphs": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-V",
+    "width": 1440,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 75.6,
+        "weight": "400",
+        "line_height": "74.088px",
+        "letter_spacing": "-4.6116px",
+        "content_fits": true,
+        "top": 151,
+        "bottom": 225,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 23
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Orchard map",
+        "family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+        "size": 10.88,
+        "weight": "750",
+        "line_height": "15.232px",
+        "letter_spacing": "1.5232px",
+        "content_fits": true,
+        "top": 131,
+        "bottom": 146,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 11
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Tart AshmeadsPicking times \u2193",
+        "family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "24px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 397,
+        "bottom": 485,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-V",
+    "width": 390,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 33.54,
+        "weight": "400",
+        "line_height": "32.8692px",
+        "letter_spacing": "-2.04594px",
+        "content_fits": true,
+        "top": 97,
+        "bottom": 163,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 22
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Orchard map",
+        "family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+        "size": 10.88,
+        "weight": "750",
+        "line_height": "15.232px",
+        "letter_spacing": "1.5232px",
+        "content_fits": true,
+        "top": 77,
+        "bottom": 92,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 11
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Tart AshmeadsPicking times \u2193",
+        "family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "24px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 298,
+        "bottom": 365,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "orchard-V",
+    "width": 320,
+    "horizontal_overflow": false,
+    "spacing_stress_overflow": false,
+    "targets": [
+      {
+        "selector": "h1",
+        "text": "Saturday at the orchard",
+        "family": "Georgia, \"Times New Roman\", serif",
+        "size": 32.8,
+        "weight": "400",
+        "line_height": "32.144px",
+        "letter_spacing": "-2.0008px",
+        "content_fits": true,
+        "top": 97,
+        "bottom": 162,
+        "font_faces": [
+          {
+            "family": "Georgia",
+            "glyphs": 22
+          }
+        ]
+      },
+      {
+        "selector": "main p",
+        "text": "Orchard map",
+        "family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+        "size": 10.88,
+        "weight": "750",
+        "line_height": "15.232px",
+        "letter_spacing": "1.5232px",
+        "content_fits": true,
+        "top": 77,
+        "bottom": 92,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 11
+          }
+        ]
+      },
+      {
+        "selector": "main button",
+        "text": "Tart AshmeadsPicking times \u2193",
+        "family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+        "size": 16,
+        "weight": "400",
+        "line_height": "24px",
+        "letter_spacing": "normal",
+        "content_fits": true,
+        "top": 313,
+        "bottom": 385,
+        "font_faces": [
+          {
+            "family": ".SF NS",
+            "glyphs": 1
+          }
+        ]
+      }
+    ]
+  }
+]

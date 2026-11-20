@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "soundwalk",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "c62d3f6a057bc34800020a2c446aed2ed9b7d871810cc109fde807117c8ad6e0",
+  "usage": {
+    "input_tokens": 14492,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 463,
+    "reasoning_output_tokens": 185
+  },
+  "proposals": [
+    {
+      "premise": "Three timed sound stops make route choice the primary task; photographs and available audio support decisions without replacing timing and access information.",
+      "opening": "Desktop shows the route beside three ordered stop cards; phone starts with the next stop, timing, and route choice, with one photograph sharing the screen.",
+      "move": "Choose the direct or step-free route; the ordered stops update immediately, showing the next reachable stop and whether the choir remains available before 20:30.",
+      "tradeoff": "The sequence is quick to understand and operate one-handed, but photographs and previews remain secondary to practical route information."
+    },
+    {
+      "premise": "Visitors may assume every sound location is a stopping point, but the narrow bridge path requires an organization around movement and reachability.",
+      "opening": "Desktop opens with a route strip and large current-stage panel; phone opens with “keep moving” at the bridge, while timing and the bridge photograph share space.",
+      "move": "Tap “route me onward”; the next reachable stop appears in the same panel, using the step-free alternate route to the far side when selected.",
+      "tradeoff": "This prevents the bridge from reading as a group stop and makes access explicit, but the three sounds feel less like equal attractions."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 20.45
+}

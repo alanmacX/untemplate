@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "warm-room",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "aafbd26ff83e7d2e2859ddeda96dadbee52e81836732983e1bb5556f745c51f0",
+  "usage": {
+    "input_tokens": 17795,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 660,
+    "reasoning_output_tokens": 300
+  },
+  "proposals": [
+    {
+      "premise": "Visitors can just arrive. Lead with both entrances and put the volunteer request alongside the directions as an option.",
+      "opening": "Desktop pairs the entry photo with both routes. Phone puts the routes above the photo. Both show five steps at the main entrance, step-free access through the library courtyard with a bell, indoor chairs, doors 09:00–17:00 and quiet hour 13:00–14:00.",
+      "move": "Choose an arrival time in the volunteer form. It appears above Send request. Send at least 30 minutes ahead. The panel then shows “Request sent” and the chosen time.",
+      "tradeoff": "Both routes are easy to scan. On a phone, visitors reach the request after the photo."
+    },
+    {
+      "premise": "Visiting a friend or collecting a secondhand purchase can mean finding the door or arranging to meet. First-time visitors here can use the photo to recognize the door, bells and curb, or request a courtyard meetup.",
+      "opening": "Desktop puts the photo beside the entrance choices. Phone puts it above them. Both say “Just come by” and show five steps at the main door, the step-free courtyard bell, indoor chairs, doors 09:00–17:00 and quiet hour 13:00–14:00.",
+      "move": "Tap “Show courtyard route” to reveal directions and a volunteer form under the photo. It shows the chosen arrival time before sending and beside “Request sent” afterward. Send at least 30 minutes ahead.",
+      "tradeoff": "The photo helps visitors recognize the entrance on arrival. The request takes an extra tap."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 46.82
+}

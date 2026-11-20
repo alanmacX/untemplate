@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "warm-room",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "9b4308343c6d37b3632648393920507d8cebd325343eb74c62fc2652dc683ed8",
+  "usage": {
+    "input_tokens": 16734,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 366,
+    "reasoning_output_tokens": 71
+  },
+  "proposals": [
+    {
+      "premise": "The main entrance has five steps. Use the real photo of the door, bells and curb to help visitors recognize the entrance, and give the step-free route its own prominent line.",
+      "opening": "Desktop puts the photo beside both entrance instructions, hours and quiet hour. Phone puts both routes and “Just arrive” above the photo.",
+      "move": "“Show courtyard directions” expands “Go through the library courtyard and ring the bell” beside the photo or directly below it. The same panel offers an optional volunteer request and shows the chosen arrival time beside Send.",
+      "tradeoff": "The photo helps visitors match what they see outside. On phones, the request takes an extra tap."
+    },
+    {
+      "premise": "Visitors can just arrive, and chairs are indoors. Lead with that welcome and give people who want a courtyard greeting a visible way to ask.",
+      "opening": "Desktop pairs the welcome, hours and quiet hour with the request form. Phone shows the welcome and both routes first, then the form and entry photo.",
+      "move": "The optional arrival-time picker shows the chosen time beside Send. Requests require 30 minutes’ notice. After sending, the form shows “Request sent” with that time.",
+      "tradeoff": "The form makes requesting help quicker, but takes space the photo could use near the top."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 30.03
+}

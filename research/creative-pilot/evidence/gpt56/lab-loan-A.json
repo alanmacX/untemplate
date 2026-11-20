@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "lab-loan",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "1065683b320fff7f56f138cec07b18b4894a2cec9d68c1809f55207e53a8ebe7",
+  "usage": {
+    "input_tokens": 15366,
+    "cached_input_tokens": 14080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 359,
+    "reasoning_output_tokens": 70
+  },
+  "proposals": [
+    {
+      "premise": "Because members often know their task but not the tool name, organize borrowing around jobs, then explain suitable tools, constraints, and availability in plain language.",
+      "opening": "Desktop first shows a task prompt beside current availability and collection hours; phone stacks the prompt above the same status summary.",
+      "move": "Choose a task from the first control. Matching items appear below, with eligibility, three-day borrowing, and Tuesday or Saturday collection windows; an available item can be requested there.",
+      "tradeoff": "Beginners gain confident guidance, but experienced members take an extra step to reach a named tool."
+    },
+    {
+      "premise": "Because stock and restrictions determine what can actually be borrowed, lead with an honest inventory while adding task-based suitability cues to each item.",
+      "opening": "Desktop first shows tool cards beside a pickup panel; phone shows the cards first, followed by collection hours. Two irons, Thursday’s thermal-camera return, and the supervised-bench multimeter share the view.",
+      "move": "Select Request on an available card. An inline panel confirms suitability, induction when choosing an iron, and an eligible Tuesday or Saturday collection window; the damaged multimeter has no loan control.",
+      "tradeoff": "Availability is immediately scannable, but members unfamiliar with tool names may compare more cards."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 19.99
+}

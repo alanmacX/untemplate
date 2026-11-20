@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "lab-loan",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "5f77a5ea122412a58da56dc0e5f0aaa4f3fb0323ccbc1ed9820dc1517895fab3",
+  "usage": {
+    "input_tokens": 16856,
+    "cached_input_tokens": 16000,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 489,
+    "reasoning_output_tokens": 136
+  },
+  "proposals": [
+    {
+      "premise": "Members borrow for three days, so organize the checkout around which tools they can take home and when they can collect them.",
+      "opening": "Desktop pairs three tool rows with pickup hours. Phone puts the hours above the same rows. Each row pairs a use with its status. Two irons available, thermal camera due Thursday, multimeter supervised-bench only due to a damaged lead.",
+      "move": "Request an iron opens a panel alongside the rows on desktop and below the iron on phone. After verifying membership and free induction, confirm the iron and the chosen pickup window, Tuesday 18–20 or Saturday 10–14.",
+      "tradeoff": "Availability is visible at a glance, but beginners still have to match their task to a tool row."
+    },
+    {
+      "premise": "Members often know the job before the tool name. Choosing a bus by destination and choosing a recipe by ingredient both start with what you know. Here, that starting point is the job.",
+      "opening": "Desktop pairs task choices with pickup hours. Phone puts hours below the choices. Solder, check heat, and measure voltage share space with their statuses: two irons available, camera due Thursday, multimeter at the supervised bench only due to a damaged lead.",
+      "move": "Choose Solder to reveal the iron request beside the choices on desktop or directly below Solder on phone. Verify membership and free induction, then confirm the iron for three days and pickup Tuesday 18–20 or Saturday 10–14.",
+      "tradeoff": "Beginners can start with familiar words. Members who know the tool name make one extra choice."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 34.72
+}

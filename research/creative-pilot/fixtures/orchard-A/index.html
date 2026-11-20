@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saturday at the orchard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f5eb;
+      --ink: #252d22;
+      --muted: #53594c;
+      --line: #c9cbbb;
+      --green: #314a36;
+      --green-dark: #223828;
+      --rust: #883f2b;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.5 system-ui, sans-serif;
+    }
+    [hidden] { display: none !important; }
+    figure, p, h1, h2, fieldset { margin: 0; }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible {
+      outline: 3px solid var(--rust);
+      outline-offset: 4px;
+    }
+
+    .wrap {
+      width: min(1184px, calc(100% - 96px));
+      margin-inline: auto;
+    }
+    .masthead {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-height: 76px;
+      border-bottom: 1px solid var(--line);
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      letter-spacing: -.02em;
+    }
+    .masthead svg { width: 26px; height: 26px; }
+    .visit {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.28fr);
+      align-items: start;
+      gap: clamp(36px, 5.4vw, 82px);
+      padding-block: 61px 56px;
+    }
+    .intro { padding-block: 11px 0; }
+    .hours {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .55rem;
+      margin-bottom: 19px;
+      color: var(--rust);
+      font-size: .82rem;
+      font-weight: 720;
+      letter-spacing: .105em;
+      text-transform: uppercase;
+    }
+    .hours span { color: var(--ink); }
+    h1 {
+      max-width: 9ch;
+      margin-bottom: 21px;
+      font: 400 clamp(3.35rem, 5.75vw, 5.5rem)/.97 var(--serif);
+      letter-spacing: -.065em;
+    }
+    .today {
+      max-width: 37ch;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+    .action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      min-height: 46px;
+      padding: 10px 14px;
+      border: 1px solid var(--green);
+      border-radius: 4px;
+      background: var(--green);
+      color: #fffdf5;
+      cursor: pointer;
+      font-size: .875rem;
+      font-weight: 680;
+      line-height: 1.3;
+      text-decoration: none;
+    }
+    .action:hover { background: var(--green-dark); }
+    .action--shop {
+      background: transparent;
+      color: var(--green-dark);
+    }
+    .action--shop:hover { background: #e9eddf; }
+    .action svg { width: 15px; height: 15px; flex: none; }
+    .reserve[aria-expanded="true"] svg { transform: rotate(180deg); }
+    .reservation {
+      margin-top: 13px;
+      padding: 16px;
+      border: 1px solid #b9c4b2;
+      border-radius: 4px;
+      background: #eef0e5;
+    }
+    .reservation fieldset { padding: 0; border: 0; }
+    .reservation legend { padding: 0; font-weight: 700; }
+    .preview {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: .83rem;
+    }
+    .time {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      min-height: 44px;
+      gap: 9px;
+      margin-block: 5px;
+      cursor: pointer;
+      font-weight: 650;
+    }
+    .time input {
+      width: 17px;
+      height: 17px;
+      margin: 0;
+      accent-color: var(--green);
+    }
+    .confirmed {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 10px;
+      color: var(--green-dark);
+      font-weight: 750;
+    }
+    .confirmed time {
+      padding: 1px 8px;
+      border: 1px solid #a9b7a1;
+      border-radius: 3px;
+      font-variant-numeric: tabular-nums;
+    }
+    .harvest {
+      margin-top: 31px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+    .harvest h2 {
+      margin-bottom: 5px;
+      color: var(--rust);
+      font: 700 .78rem/1.4 system-ui, sans-serif;
+      letter-spacing: .105em;
+      text-transform: uppercase;
+    }
+    .harvest p { max-width: 47ch; color: var(--muted); font-size: .91rem; }
+
+    .map {
+      overflow: hidden;
+      border: 1px solid #c1c7b2;
+      border-radius: 5px;
+      background: #edf0e2;
+    }
+    .map-heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 3px 12px;
+      padding: 15px 20px 13px;
+      border-bottom: 1px solid #cbd0be;
+    }
+    .map-heading h2 { font: 400 1.44rem/1.15 var(--serif); }
+    .map-heading p { color: var(--muted); font-size: .75rem; }
+    .map svg { display: block; width: 100%; height: auto; }
+    .route-halo { opacity: 0; }
+    .map:focus .route-halo,
+    .map:target .route-halo { opacity: 1; }
+
+    .photo {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+      align-items: end;
+      gap: clamp(19px, 4vw, 57px);
+      padding-block: 30px 44px;
+      border-top: 1px solid var(--line);
+    }
+    .photo img {
+      display: block;
+      width: 100%;
+      height: clamp(230px, 26vw, 345px);
+      border-radius: 4px;
+      object-fit: cover;
+      background: #e8e4d7;
+    }
+    .photo figcaption {
+      padding-bottom: 4px;
+      color: var(--muted);
+      font-size: .84rem;
+    }
+    .photo figcaption span { display: block; }
+    .photo .photo-description {
+      margin-bottom: 6px;
+      color: var(--ink);
+      font: 400 1.3rem/1.3 var(--serif);
+    }
+
+    @media (max-width: 850px) {
+      .wrap { width: min(640px, calc(100% - 48px)); }
+      .visit { grid-template-columns: 1fr; gap: 27px; padding-block: 36px 33px; }
+      .intro { padding-top: 0; }
+      h1 { max-width: 10ch; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width: calc(100% - 36px); }
+      .masthead { min-height: 58px; }
+      .visit { padding-top: 28px; }
+      .hours { margin-bottom: 12px; }
+      h1 { margin-bottom: 15px; font-size: clamp(2.8rem, 13.1vw, 3.7rem); }
+      .today { font-size: .97rem; }
+      .options { margin-top: 18px; gap: 8px; }
+      .action { padding-inline: 10px; font-size: .84rem; }
+      .harvest { margin-top: 22px; padding-top: 12px; }
+      .map-heading { padding: 12px; }
+      .photo { grid-template-columns: 1fr; gap: 12px; padding-top: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap masthead">
+    <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M14 10C8.6 6.2 4 9.5 4.5 15.4c.4 5.4 3.9 9.3 7 8.2l2.5-.8 2.5.8c3.1 1.1 6.6-2.8 7-8.2.5-5.9-4.1-9.2-9.5-5.4Z"/>
+      <path d="M14 10c0-3.5-1.5-5.3-2.6-6.4M14.1 7.5c.9-3.1 3.6-4.4 6.3-4.4-.7 2.9-3 4.5-6.3 4.4Z"/>
+    </svg>
+    The cider orchard
+  </header>
+
+  <main class="wrap">
+    <section class="visit" aria-labelledby="visit-title">
+      <div class="intro">
+        <p class="hours">Saturday <span>10–15</span></p>
+        <h1 id="visit-title">Saturday at the orchard</h1>
+        <p class="today">Pick in either open row, or follow the gravel path straight to the shop without entering a row. The last picking slot is <time datetime="14:00">14:00</time>.</p>
+
+        <div class="options">
+          <button class="action reserve" type="button" aria-expanded="false" aria-controls="reservation">
+            <span>Reserve picking</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
+          </button>
+          <a class="action action--shop" href="#orchard-map">
+            Shop only · no booking
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h9m-4-4 4 4-4 4"/></svg>
+          </a>
+        </div>
+
+        <div class="reservation" id="reservation" hidden>
+          <form id="picking-form" aria-describedby="picking-preview">
+            <fieldset>
+              <legend>Saturday picking time</legend>
+              <p class="preview" id="picking-preview">Practice reservation only. No booking is made.</p>
+              <label class="time">
+                <input type="radio" name="time" value="14:00" required>
+                14:00
+              </label>
+            </fieldset>
+            <button class="action" type="submit">Confirm picking time</button>
+          </form>
+          <div id="confirmation" tabindex="-1" aria-describedby="confirmation-preview" hidden>
+            <p class="confirmed">Reservation confirmed <time id="picked-time"></time></p>
+            <p class="preview" id="confirmation-preview">Preview only. No booking was made.</p>
+          </div>
+        </div>
+
+        <div class="harvest">
+          <h2>Friday’s harvest note</h2>
+          <p>The north rows are still too muddy after rain and are closed. The two open rows have tart Ashmeads and sweet Russets.</p>
+        </div>
+      </div>
+
+      <figure class="map" id="orchard-map" tabindex="-1" aria-labelledby="map-heading">
+        <figcaption class="map-heading">
+          <h2 id="map-heading">Orchard map</h2>
+          <p>Schematic · not to scale</p>
+        </figcaption>
+        <svg viewBox="0 0 600 434" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">Orchard rows and gravel path</title>
+          <desc id="map-desc">The muddy north rows are closed. The Ashmead and Russet rows are open. The gravel path runs beside the rows and reaches the shop without entering any row.</desc>
+          <defs>
+            <pattern id="paper-flecks" width="39" height="41" patternUnits="userSpaceOnUse">
+              <path d="M5 9h1m24 12h1m-12 15h1" stroke="#667a60" stroke-opacity=".22" stroke-linecap="round"/>
+            </pattern>
+            <pattern id="mud-hatching" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(24)">
+              <path d="M0 0v12" stroke="#a76d55" stroke-opacity=".26" stroke-width="2"/>
+            </pattern>
+            <g id="tree" stroke="#57734f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M-8-1c-2-4 1-8 5-8 2-3 7-3 9 1 5 1 6 6 2 9-4 3-13 3-16-2Z" fill="#a7bb8d"/>
+              <path d="M0 1v6m-3 0h6" fill="none"/>
+            </g>
+          </defs>
+          <path fill="url(#paper-flecks)" d="M0 0h600v434H0z"/>
+
+          <path d="M33 33q124-8 305 0l-3 88q-145 5-305-1Z" fill="#ead7ca" stroke="#a97159" stroke-width="2"/>
+          <path d="M33 33q124-8 305 0l-3 88q-145 5-305-1Z" fill="url(#mud-hatching)"/>
+          <path d="m266 59 17 17m-17 0 17-17m16 16 15 15m-15 0 15-15" fill="none" stroke="#974e39" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="50" y="70" fill="#542d22" font-family="Georgia, serif" font-size="27">North rows</text>
+          <text x="51" y="97" fill="#733a2c" font-family="system-ui, sans-serif" font-size="18" font-weight="650">Closed · too muddy</text>
+
+          <path d="M36 143q119-4 301 3l-3 91q-163 6-301-1Z" fill="#dbe5cd" stroke="#8c9f7c" stroke-width="2"/>
+          <text x="51" y="182" fill="#253e29" font-family="Georgia, serif" font-size="27">Ashmeads</text>
+          <text x="52" y="208" fill="#345039" font-family="system-ui, sans-serif" font-size="18" font-weight="650">Open · tart</text>
+          <use href="#tree" x="236" y="195"/>
+          <use href="#tree" x="271" y="193"/>
+          <use href="#tree" x="306" y="195"/>
+
+          <path d="M33 258q150-7 301 0l3 92q-175 4-304 0Z" fill="#e2e8ce" stroke="#8c9f7c" stroke-width="2"/>
+          <text x="51" y="297" fill="#253e29" font-family="Georgia, serif" font-size="27">Russets</text>
+          <text x="52" y="323" fill="#345039" font-family="system-ui, sans-serif" font-size="18" font-weight="650">Open · sweet</text>
+          <use href="#tree" x="236" y="309"/>
+          <use href="#tree" x="271" y="307"/>
+          <use href="#tree" x="306" y="309"/>
+
+          <path class="route-halo" d="M374 405c38-52 51-108 47-172-4-55 3-89 37-126" fill="none" stroke="#344f39" stroke-width="33" stroke-linecap="round"/>
+          <path d="M374 405c38-52 51-108 47-172-4-55 3-89 37-126" fill="none" stroke="#b39a6e" stroke-width="26" stroke-linecap="round"/>
+          <path d="M374 405c38-52 51-108 47-172-4-55 3-89 37-126" fill="none" stroke="#e6d5ad" stroke-width="22" stroke-linecap="round"/>
+          <path d="M374 405c38-52 51-108 47-172-4-55 3-89 37-126" fill="none" stroke="#927a54" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="1 8"/>
+          <path d="m415 310 30 14 14-1" fill="none" stroke="#725a36" stroke-width="1.6" stroke-linecap="round"/>
+          <text x="461" y="329" fill="#574625" font-family="Georgia, serif" font-size="23">Gravel path</text>
+
+          <path d="m433 66 39-28 40 28m-70-3v44l60 1V63m-39 44V83h18v24" fill="#f6ecd7" stroke="#3f5840" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="m433 66 39-28 40 28" fill="none" stroke="#3f5840" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="519" y="88" fill="#263e2b" font-family="Georgia, serif" font-size="27">Shop</text>
+        </svg>
+      </figure>
+    </section>
+
+    <figure class="photo">
+      <img src="../assets/basket.jpg" alt="A straw basket" loading="lazy">
+      <figcaption>
+        <span class="photo-description">Illustrative basket photo, taken elsewhere.</span>
+        <span>Oxfordian Kissuth · CC BY-SA 3.0</span>
+      </figcaption>
+    </figure>
+  </main>
+
+  <script>
+    const reserve = document.querySelector('.reserve');
+    const reservation = document.getElementById('reservation');
+    const form = document.getElementById('picking-form');
+    const confirmation = document.getElementById('confirmation');
+    const pickedTime = document.getElementById('picked-time');
+
+    reserve.addEventListener('click', () => {
+      const opening = reservation.hidden;
+      reservation.hidden = !opening;
+      reserve.setAttribute('aria-expanded', String(opening));
+    });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const selectedTime = new FormData(form).get('time');
+      if (!selectedTime) return;
+
+      pickedTime.dateTime = selectedTime;
+      pickedTime.textContent = selectedTime;
+      confirmation.hidden = false;
+      form.hidden = true;
+      reserve.querySelector('span').textContent = 'Reservation details';
+      confirmation.focus();
+    });
+  </script>
+</body>
+</html>

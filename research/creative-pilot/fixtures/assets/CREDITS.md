@@ -1,0 +1,1 @@
+`basket.jpg` is a resized copy of [Apples in a basket.jpg](https://commons.wikimedia.org/wiki/File:Apples_in_a_basket.jpg) by Oxfordian Kissuth, licensed [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). The resized image is distributed under the same license. It illustrates a fictional brief; it does not show the orchard in that brief.

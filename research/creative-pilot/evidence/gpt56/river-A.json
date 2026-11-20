@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "river",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "f6f8bbbdbf77c60bfb7546d1fceace06b21f45d3f8c9d1557ea7f40e03fc669b",
+  "usage": {
+    "input_tokens": 14437,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 403,
+    "reasoning_output_tokens": 118
+  },
+  "proposals": [
+    {
+      "premise": "Treat the changing bend as a layered surface: three records can be related by place and era without implying that the river kept the same shape.",
+      "opening": "Desktop shows the ferry photo beside a vertical 1932–2025 record rail; phone shows the photo first, followed by the rail. Source and uncertainty labels share each record.",
+      "move": "Selecting the 1978 mark reveals its scan and east-abutment note in an adjacent panel on desktop and directly below on phone.",
+      "tradeoff": "Spatial layering makes relationships tactile and immediate, but requires explicit warnings that the ferry-era bend differs from the present one."
+    },
+    {
+      "premise": "Use an archive-table reading order: photo, mark and sound remain separate source objects, while repeated bend labels invite careful comparison rather than false alignment.",
+      "opening": "Desktop opens with three wide record rows sharing a source drawer; phone stacks compact record cards. The 2025 audio card pairs playback with its transcript control.",
+      "move": "Pressing play starts the 18-second public-steps recording; progress and transcript appear within the same row or expanded phone card.",
+      "tradeoff": "This direction keeps provenance and uncertainty unusually clear, including the unverified photographer, but offers less atmospheric continuity between the three eras."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 24.57
+}

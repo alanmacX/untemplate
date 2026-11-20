@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "costume",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "9a552493b01cda5e2a32bc8f7829b996073cbb74019bafa2b835c6f0081c3124",
+  "usage": {
+    "input_tokens": 15362,
+    "cached_input_tokens": 14080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 338,
+    "reasoning_output_tokens": 39
+  },
+  "proposals": [
+    {
+      "premise": "A rail-led catalogue treats evidence like garment tags: fit, alteration, and loan restrictions stay beside hem-stitching, lining, and boot-label photos.",
+      "opening": "Desktop opens on a wardrobe rail with three garment cards and a shared production-date strip; phone opens on one stacked card, with dates pinned above its facts.",
+      "move": "Set production dates first. Each card immediately shows Request, Alteration May 8 after 16:00, or a plain reason such as coat reserved May 9–12 or indoor use only.",
+      "tradeoff": "Fast eligibility scanning gains confidence, but the compact rail gives detail photography less initial space."
+    },
+    {
+      "premise": "An evidence-table direction treats misleading size labels and conditional loans as comparison problems, while playful handwritten notes add the wardrobe mischief.",
+      "opening": "Desktop first shows rows for coat, skirt, and boots against actual fit, restrictions, alterations, availability, and detail photos; phone shows the same fields as swipeable garment columns sharing a date header.",
+      "move": "Choose dates in the header, then tap Compare eligibility. Results appear within each row: requestable pieces expose Request, while blocked pieces show the reservation, indoor-only rule, or unavailable appointment.",
+      "tradeoff": "Precise comparison reduces surprises, but the table feels more inventory-like and less tactile."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 16.97
+}

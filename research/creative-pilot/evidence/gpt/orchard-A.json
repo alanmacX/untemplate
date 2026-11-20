@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "orchard",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "aab6c4ea3ff53bc898de0546d14d865b5b81dd2a43589884f47e9c3e608940cc",
+  "usage": {
+    "input_tokens": 16721,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 361,
+    "reasoning_output_tokens": 45
+  },
+  "proposals": [
+    {
+      "premise": "Friday’s harvest note gives visitors the update a friend would share first. The north rows are still muddy, and two rows are open for picking.",
+      "opening": "On desktop, the note and Saturday hours (10–15) sit beside the basket photo. On phones, the note and visit options come before the photo. Both layouts show “Pick apples” beside “Shop only · no booking.”",
+      "move": "“Pick apples” opens available times directly below, with 14:00 as the last slot. Reserving a time puts confirmation in that same panel.",
+      "tradeoff": "The note makes the page feel personal. Visitors scroll to see the hand-marked map."
+    },
+    {
+      "premise": "The hand-marked map shows that the gravel path reaches the shop without entering a row. Use it to make both visits easy to picture.",
+      "opening": "Desktop pairs the map with Saturday hours (10–15) and two visit options. On phones, the hours and options sit above the map. Labels mark the muddy north rows as closed and identify tart Ashmeads and sweet Russets in the open rows.",
+      "move": "“Reserve picking” opens available times beneath the options, ending by 14:00, and confirms the reservation there. “Shop only · no booking” stays visible.",
+      "tradeoff": "Visitors can plan their route at a glance. The basket photo sits farther down."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 21.94
+}

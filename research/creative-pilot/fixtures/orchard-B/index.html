@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saturday at the cider orchard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f5ec;
+      --ink: #27382b;
+      --muted: #526050;
+      --line: #d6d1c0;
+      --green: #294632;
+      --map: #eee9d9;
+      --rust: #773b2e;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.5 system-ui, sans-serif;
+    }
+
+    a { color: inherit; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+
+    :focus-visible {
+      outline: 3px solid var(--rust);
+      outline-offset: 4px;
+    }
+
+    .wrap {
+      width: min(1240px, calc(100% - 112px));
+      margin-inline: auto;
+    }
+
+    .masthead {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wordmark {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      margin: 0;
+      font: 1.24rem/1.2 var(--serif);
+    }
+
+    .wordmark svg { flex: none; }
+
+    .shop-link {
+      flex: none;
+      padding-block: .5rem;
+      font-size: .86rem;
+      font-weight: 650;
+      text-underline-offset: .24em;
+    }
+
+    .shop-link span { margin-left: .25rem; }
+
+    .intro {
+      padding: clamp(32px, 4vw, 57px) 0 clamp(27px, 3vw, 42px);
+    }
+
+    h1, h2, h3, p, figure { margin: 0; }
+
+    h1 {
+      font: 400 clamp(3rem, 6.1vw, 5.7rem)/.99 var(--serif);
+      letter-spacing: -.065em;
+    }
+
+    .harvest {
+      max-width: 48rem;
+      margin-top: 1.2rem;
+      padding-left: .9rem;
+      border-left: 2px solid #a55e48;
+      color: var(--muted);
+    }
+
+    .harvest strong {
+      display: block;
+      margin-bottom: .1rem;
+      color: var(--rust);
+      font-size: .8rem;
+      letter-spacing: .06em;
+    }
+
+    .visit {
+      display: grid;
+      grid-template-columns: minmax(0, 2.08fr) minmax(0, 1fr);
+      gap: clamp(24px, 4.1vw, 62px);
+      align-items: start;
+      padding-bottom: 44px;
+    }
+
+    .map-panel { grid-area: map; }
+    .booking { grid-area: booking; }
+    .hours { grid-area: hours; }
+    .routes { grid-area: routes; }
+    .basket { grid-area: basket; }
+
+    .map-panel {
+      padding: clamp(14px, 2vw, 25px);
+      border: 1px solid #d4ccba;
+      border-radius: 5px;
+      background: #f1edde;
+    }
+
+    .map-heading { margin-bottom: 14px; }
+
+    .map-heading h2, .booking h2 {
+      font: 400 clamp(1.7rem, 2.9vw, 2.45rem)/1.08 var(--serif);
+      letter-spacing: -.035em;
+    }
+
+    .map-heading p {
+      margin-top: .36rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .map {
+      position: relative;
+      isolation: isolate;
+      height: clamp(310px, 28vw, 396px);
+      overflow: hidden;
+      border: 1px solid #cfc6b0;
+      border-radius: 3px;
+      background: var(--map);
+    }
+
+    .map-drawing {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .map-label {
+      position: absolute;
+      z-index: 1;
+      display: block;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 1.15;
+    }
+
+    .map-label strong, .map-label small { display: block; }
+    .map-label small { margin-top: .27rem; font-size: .73rem; }
+    .north { top: 19%; left: 50%; color: #663c34; width: 90%; }
+
+    .row-button {
+      top: 51%;
+      width: min(34%, 10.6rem);
+      min-height: 54px;
+      padding: .53rem .25rem;
+      border: 1px solid #65734e;
+      border-radius: 4px;
+      background: #f6f5e8;
+      color: #26392a;
+      box-shadow: 2px 2px 0 #60704638;
+      font-size: clamp(.85rem, 1.5vw, 1.04rem);
+    }
+
+    .row-button:hover { background: #e7ebd2; }
+    .row-button[aria-pressed="true"] {
+      border-color: var(--green);
+      background: var(--green);
+      color: #fffdf4;
+    }
+
+    .ashmead { left: 26.5%; }
+    .russet { left: 73.5%; }
+
+    .gravel {
+      top: 78%;
+      left: 33%;
+      padding: .25rem .4rem;
+      background: var(--map);
+      color: #5c4834;
+      font-size: .79rem;
+      font-weight: 700;
+    }
+
+    .map-shop {
+      top: 82%;
+      left: 79%;
+      width: 32%;
+      padding: .46rem .15rem;
+      border: 1px solid #a39372;
+      border-radius: 3px;
+      background: #f8f3e5;
+      font-size: .95rem;
+    }
+
+    .map-caption {
+      margin-top: .65rem;
+      color: var(--muted);
+      font-size: .75rem;
+    }
+
+    .hours {
+      padding: .45rem 0 1rem;
+      border-top: 2px solid var(--green);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hours h2 {
+      font: 400 clamp(1.85rem, 3.2vw, 3rem)/1.12 var(--serif);
+      letter-spacing: -.043em;
+    }
+
+    .hours p {
+      margin-top: .34rem;
+      color: var(--muted);
+      font-size: .91rem;
+    }
+
+    .routes {
+      scroll-margin-top: 16px;
+      padding: 1rem 0;
+    }
+
+    .routes h2 {
+      margin-bottom: .42rem;
+      font: 400 1.4rem/1.15 var(--serif);
+    }
+
+    .routes p {
+      max-width: 33ch;
+      color: var(--muted);
+      font-size: .91rem;
+    }
+
+    .routes strong { color: var(--ink); }
+
+    .basket img {
+      display: block;
+      width: 100%;
+      height: clamp(105px, 13vw, 176px);
+      object-fit: cover;
+      object-position: center 53%;
+      border-radius: 3px;
+    }
+
+    .basket figcaption {
+      margin-top: .55rem;
+      color: var(--muted);
+      font-size: .73rem;
+    }
+
+    .booking {
+      margin-top: 16px;
+      padding: clamp(16px, 2vw, 24px);
+      border: 1px solid #a6b197;
+      border-radius: 5px;
+      background: #edf0e3;
+    }
+
+    .booking h2 { scroll-margin-top: 20px; }
+
+    .preview {
+      margin-top: .4rem;
+      color: var(--muted);
+      font-size: .86rem;
+    }
+
+    .confirmation {
+      margin-top: 1rem;
+      padding: .8rem 1rem;
+      border-left: 3px solid var(--green);
+      background: #f9f8ef;
+    }
+
+    .confirmation h3 {
+      font: 400 1.23rem/1.25 var(--serif);
+      overflow-wrap: anywhere;
+    }
+
+    .confirmation time { white-space: nowrap; }
+
+    .confirmation p {
+      margin-top: .28rem;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+    form { margin-top: 1rem; }
+
+    fieldset {
+      padding: 0;
+      margin: 0 0 .8rem;
+      border: 0;
+    }
+
+    legend {
+      padding: 0;
+      margin-bottom: .38rem;
+      font-weight: 650;
+    }
+
+    .time-option {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      min-height: 44px;
+      padding: .4rem .75rem;
+      border: 1px solid #899579;
+      border-radius: 4px;
+      background: #fbf9ee;
+      cursor: pointer;
+    }
+
+    .time-option input {
+      width: 1.02rem;
+      height: 1.02rem;
+      margin: 0;
+      accent-color: var(--green);
+    }
+
+    .reserve {
+      min-height: 44px;
+      padding: .55rem .9rem;
+      border: 1px solid var(--green);
+      border-radius: 4px;
+      background: var(--green);
+      color: #fffdf4;
+      font-weight: 650;
+    }
+
+    .reserve:hover { background: #3c6044; }
+
+    @media (max-width: 690px) {
+      .wrap { width: calc(100% - 36px); }
+      .masthead { min-height: 58px; }
+      .wordmark { font-size: 1.1rem; }
+      .shop-link { font-size: .8rem; }
+      .intro { padding-top: 28px; }
+      h1 { max-width: 11ch; }
+      .harvest { margin-top: .9rem; font-size: .9rem; }
+
+      .visit {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "hours" "map" "routes" "booking" "basket";
+        gap: 0;
+      }
+
+      .map-column, .visit-details { display: contents; }
+      .hours { margin-bottom: 14px; padding: .55rem 0 .6rem; }
+      .map { height: clamp(290px, 84vw, 350px); }
+      .map-heading { margin-bottom: 11px; }
+      .map-heading p { font-size: .84rem; }
+      .routes { padding: .95rem 0; }
+      .booking { margin: 0 0 1rem; }
+      .basket img { height: clamp(142px, 42vw, 185px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead wrap">
+    <p class="wordmark">
+      <svg width="25" height="26" viewBox="0 0 25 26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12.5 10.1c-2.4-2.4-7.6-2.3-8.8 1.7-1 3.4 1.2 9.6 4.3 10.8 1.8.7 3.2-.5 4.5-.5s2.7 1.2 4.5.5c3.1-1.2 5.3-7.4 4.3-10.8-1.2-4-6.1-4.1-8.8-1.7Z"/>
+        <path d="M12.5 9.9c.2-2.7-.5-4.2-1.8-5.4m2.1 3.2c.8-2.9 3.5-4.5 6.6-4-1 2.7-3.3 4.2-6.6 4Z"/>
+      </svg>
+      The cider orchard
+    </p>
+    <a class="shop-link" href="#shop-route">Shop route <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">Saturday at the orchard</h1>
+      <p class="harvest"><strong>Friday’s harvest note</strong>The north rows are still too muddy after the rain.</p>
+    </section>
+
+    <div class="visit">
+      <div class="map-column">
+        <section class="map-panel" aria-labelledby="map-title">
+          <header class="map-heading">
+            <h2 id="map-title">Where you can go</h2>
+            <p>Choose either open row to see Saturday picking times.</p>
+          </header>
+
+          <figure>
+            <div class="map">
+              <svg class="map-drawing" viewBox="0 0 620 350" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <pattern id="paper-grain" width="31" height="29" patternUnits="userSpaceOnUse">
+                    <path d="M4 8h1m14 15h1m5-19h1" stroke="#a09275" stroke-width="1.4" stroke-linecap="round" opacity=".28"/>
+                  </pattern>
+                  <pattern id="mud-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+                    <path d="M1 0v12" stroke="#aa6f60" opacity=".28"/>
+                  </pattern>
+                  <g id="tree">
+                    <path d="M-11 1c-1-5 3-9 7-9 3-4 8-3 11 1 6 1 7 7 3 11-4 4-14 4-19 1Z" fill="#d5ddba" stroke="#78835c" stroke-width="1"/>
+                    <path d="M0 4v6" stroke="#78835c" stroke-linecap="round"/>
+                  </g>
+                </defs>
+                <path d="M0 0h620v350H0z" fill="url(#paper-grain)"/>
+                <path d="M36 36Q125 25 224 29t176 0q88 0 185 9l-5 61q-135 6-267 3T39 99Z" fill="#ead8ce" stroke="#a8786a" stroke-width="1.6" stroke-dasharray="5 5"/>
+                <path d="M36 36Q125 25 224 29t176 0q88 0 185 9l-5 61q-135 6-267 3T39 99Z" fill="url(#mud-hatch)"/>
+                <path d="M49 125q116-9 232 1l4 103q-113 11-238 1Zm288 1q115-8 232 0l6 104q-117 11-238 0Z" fill="#e0e5cc" stroke="#939d76" stroke-width="1.5"/>
+                <g opacity=".93">
+                  <use href="#tree" x="76" y="144"/><use href="#tree" x="120" y="141"/><use href="#tree" x="164" y="143"/><use href="#tree" x="209" y="141"/><use href="#tree" x="254" y="145"/>
+                  <use href="#tree" x="75" y="213"/><use href="#tree" x="120" y="215"/><use href="#tree" x="164" y="213"/><use href="#tree" x="209" y="216"/><use href="#tree" x="254" y="211"/>
+                  <use href="#tree" x="365" y="144"/><use href="#tree" x="409" y="142"/><use href="#tree" x="454" y="144"/><use href="#tree" x="499" y="142"/><use href="#tree" x="544" y="145"/>
+                  <use href="#tree" x="365" y="213"/><use href="#tree" x="410" y="216"/><use href="#tree" x="455" y="213"/><use href="#tree" x="500" y="215"/><use href="#tree" x="545" y="213"/>
+                </g>
+                <path d="M46 324c60-53 126-43 192-32s161 22 224-5" fill="none" stroke="#cdbb99" stroke-width="24" stroke-linecap="round"/>
+                <path d="M46 324c60-53 126-43 192-32s161 22 224-5" fill="none" stroke="#866c4a" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6"/>
+                <path d="m449 283 14 4-9 10" fill="none" stroke="#866c4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <p class="map-label north"><strong>North rows</strong><small>Closed · muddy after rain</small></p>
+              <button class="map-label row-button ashmead" type="button" data-row="Ashmeads" aria-controls="picking" aria-pressed="false"><strong>Ashmeads</strong><small>Tart <span aria-hidden="true">↘</span></small></button>
+              <button class="map-label row-button russet" type="button" data-row="Russets" aria-controls="picking" aria-pressed="false"><strong>Russets</strong><small>Sweet <span aria-hidden="true">↘</span></small></button>
+              <p class="map-label gravel">Gravel path</p>
+              <p class="map-label map-shop"><strong>Shop</strong><small>No booking needed</small></p>
+            </div>
+            <figcaption class="map-caption">Orchard sketch · not to scale</figcaption>
+          </figure>
+        </section>
+
+        <section id="picking" class="booking" aria-labelledby="picking-title" hidden>
+          <h2 id="picking-title" tabindex="-1">Saturday picking</h2>
+          <p class="preview">Scenario preview. Reservations here are simulated.</p>
+
+          <div id="confirmation" class="confirmation" hidden>
+            <h3 id="confirmation-title" tabindex="-1">Reservation confirmed · <time datetime="14:00">14:00</time></h3>
+            <p>Saturday picking · <span id="confirmed-row"></span></p>
+          </div>
+
+          <form id="reservation">
+            <fieldset>
+              <legend>Picking time</legend>
+              <label class="time-option">
+                <input type="radio" name="time" value="14:00" required>
+                <span><time datetime="14:00">14:00</time> · Last slot</span>
+              </label>
+            </fieldset>
+            <button class="reserve" type="submit">Reserve picking</button>
+          </form>
+        </section>
+      </div>
+
+      <aside class="visit-details" aria-label="Visiting the orchard">
+        <section class="hours" aria-labelledby="hours-title">
+          <h2 id="hours-title">Saturday 10–15</h2>
+          <p>Last picking slot at <time datetime="14:00">14:00</time>.</p>
+        </section>
+
+        <section id="shop-route" class="routes" aria-labelledby="route-title" tabindex="-1">
+          <h2 id="route-title">Coming just for the shop?</h2>
+          <p>The gravel path takes you straight there without entering an apple row. <strong>No booking needed.</strong></p>
+        </section>
+
+        <figure class="basket">
+          <img src="../assets/basket.jpg" alt="An illustrative photo of a straw basket">
+          <figcaption>Illustrative basket photo from elsewhere · Oxfordian Kissuth · CC BY-SA 3.0</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    const rowButtons = document.querySelectorAll("[data-row]");
+    const picking = document.getElementById("picking");
+    const pickingTitle = document.getElementById("picking-title");
+    const form = document.getElementById("reservation");
+    const reserve = form.querySelector("button");
+    const confirmation = document.getElementById("confirmation");
+    const confirmationTitle = document.getElementById("confirmation-title");
+    const confirmedRow = document.getElementById("confirmed-row");
+    let selectedRow = "";
+    let reservedRow = "";
+
+    for (const button of rowButtons) {
+      button.addEventListener("click", () => {
+        const row = button.dataset.row;
+        if (row !== selectedRow) form.reset();
+
+        selectedRow = row;
+        for (const choice of rowButtons) {
+          choice.setAttribute("aria-pressed", String(choice === button));
+        }
+
+        pickingTitle.textContent = `Saturday picking · ${selectedRow}`;
+        form.hidden = selectedRow === reservedRow;
+        picking.hidden = false;
+
+        if (form.hidden) {
+          confirmationTitle.focus();
+        } else {
+          pickingTitle.focus();
+        }
+      });
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const time = new FormData(form).get("time");
+      if (!selectedRow || !time) return;
+
+      const confirmedTime = confirmationTitle.querySelector("time");
+      confirmedTime.dateTime = time;
+      confirmedTime.textContent = time;
+      reservedRow = selectedRow;
+      confirmedRow.textContent = reservedRow;
+      confirmation.hidden = false;
+      reserve.textContent = "Update preview reservation";
+      form.hidden = true;
+      confirmationTitle.focus();
+    });
+  </script>
+</body>
+</html>

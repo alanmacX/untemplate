@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "lab-loan",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "5f77a5ea122412a58da56dc0e5f0aaa4f3fb0323ccbc1ed9820dc1517895fab3",
+  "usage": {
+    "input_tokens": 14557,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1559,
+    "reasoning_output_tokens": 1227
+  },
+  "proposals": [
+    {
+      "premise": "Grocery click-and-collect and appointment booking connect a known choice to availability, then a collection time. Map product or service to tool, stock to availability, and slot to staffed collection.",
+      "opening": "Desktop opens with four status rows beside pickup information: two irons available, camera due Thursday, and multimeter for supervised-bench use only. Phone stacks the rows before pickup details.",
+      "move": "Request on an available row opens three-day terms, required free iron induction, and Tuesday 18–20 or Saturday 10–14 choices. The eligible item and collection window are confirmed there.",
+      "tradeoff": "Availability and pickup are immediately scannable, but members who do not know a tool’s name must read each suitability description."
+    },
+    {
+      "premise": "Bus planning and recipe finding start with a destination or intended dish, not a route number or recipe title. Map the member’s attempted task to that intent, then reveal suitable tools.",
+      "opening": "Desktop opens with a task prompt sharing space with collection times. Phone shows the prompt first; task-based results then show suitability, availability, and pickup information together.",
+      "move": "The first control selects the attempted task. Results appear below it; requesting an available match adds three-day terms, iron induction when required, and a staffed collection window before confirmation.",
+      "tradeoff": "Beginners avoid guessing names, but knowledgeable members take an extra step. The damaged multimeter can appear as supervised-bench guidance, without a loan control."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 38.89
+}

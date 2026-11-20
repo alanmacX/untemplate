@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "costume",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "6b4772abb5a28c7c83e3a980c25cc7a5d10f9cf976ebd8575c8de5d4cb0f1446",
+  "usage": {
+    "input_tokens": 15431,
+    "cached_input_tokens": 14080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 486,
+    "reasoning_output_tokens": 190
+  },
+  "proposals": [
+    {
+      "premise": "Production dates determine eligibility, while fit notes, restrictions and detail photos prevent misleading requests; organize the catalogue as a practical wardrobe rail with slightly mischievous tags.",
+      "opening": "Desktop shows the date fields beside skirt, coat and boots; phone shows dates first, then the same pieces. Fit, restrictions and availability share each item card.",
+      "move": "Enter production dates. Cards update in place: eligible pieces gain Request; unavailable ones show why, including the coat reservation on May 9–12.",
+      "tradeoff": "Fast, dependable shortlisting, but visitors browse materials and construction only after committing to dates."
+    },
+    {
+      "premise": "Assume visitors have not settled feasibility: the fold-out hem, indoor-only coat and boots fitting like EU 39 may shape the production choice before dates do.",
+      "opening": "Desktop opens with three large detail photographs beside concise fit and restriction notes; phone leads with one detail at a time. Hem stitching, lining and boot label share space with their consequences.",
+      "move": "Choose Compare fit and restrictions. A comparison tray appears below on desktop and after the cards on phone, then accepts production dates and reveals Request or the blocking reason.",
+      "tradeoff": "Supports informed decisions and exposes the May 8 after-16:00 alteration possibility, but availability takes an extra step."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 20.4
+}

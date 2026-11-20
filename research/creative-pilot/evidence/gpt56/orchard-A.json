@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "orchard",
+  "arm": "A",
+  "seed": null,
+  "prompt_sha256": "aab6c4ea3ff53bc898de0546d14d865b5b81dd2a43589884f47e9c3e608940cc",
+  "usage": {
+    "input_tokens": 15360,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 402,
+    "reasoning_output_tokens": 129
+  },
+  "proposals": [
+    {
+      "premise": "Friday’s muddy north rows make a plain harvest note the clearest basis for a friendly, current visit plan.",
+      "opening": "Desktop shows the note beside the straw basket photo; phone shows the note first. Hours, last slot, and shop access share the same view.",
+      "move": "The first control is a picking-time selector. Choosing a Saturday slot reserves it, with confirmation appearing directly below; shop-only visitors continue without booking.",
+      "tradeoff": "This gains immediate clarity and an informal tone, but gives the hand-marked map less initial visual prominence."
+    },
+    {
+      "premise": "The hand-marked map can turn today’s access limits into orientation: Ashmead and Russet rows open, north rows muddy, gravel path usable.",
+      "opening": "Desktop opens with the map beside Saturday details; phone stacks the map above them. The basket photo shares space with the shop-without-booking message.",
+      "move": "The first control is a Saturday slot button. Selecting a time reserves picking and places confirmation beneath the map, while the gravel shop route remains visible.",
+      "tradeoff": "This gains spatial confidence before arrival, but visitors must read map markings carefully to distinguish picking access from shop access."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 19.21
+}

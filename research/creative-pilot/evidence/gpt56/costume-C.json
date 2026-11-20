@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "costume",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "4fcb0f936df69c3ada495725a4e6bb6ce44d5c1be2104172c7b31006667ac374",
+  "usage": {
+    "input_tokens": 15491,
+    "cached_input_tokens": 14080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 688,
+    "reasoning_output_tokens": 388
+  },
+  "proposals": [
+    {
+      "premise": "Like hotel booking and grocery comparison, dates filter what is available while labels expose differences. Map booking calendars to loan dates and comparison labels to fit, hem, indoor-only use, and detail photos.",
+      "opening": "Desktop shows date controls beside wardrobe cards; phone shows dates first, then stacked cards. Photos share space with fit and restriction notes.",
+      "move": "Enter production dates. Each card immediately shows Request or Cannot request, with the reason beside it and availability in the same card.",
+      "tradeoff": "Fast, familiar comparison supports decisive borrowers, but date-first filtering may hide useful pieces before an alteration is considered."
+    },
+    {
+      "premise": "Assume visitors still need to resolve eligibility: the May 8 alteration can affect a later loan. Clinic intake and airline connection planning both surface prerequisites before choices; map appointment to prerequisite and reservations or restrictions to blockers.",
+      "opening": "Desktop opens with a production timeline beside candidate pieces; phone opens with the timeline above them. May 8 and May 9–12 share the first view.",
+      "move": "Select a piece on the timeline. Its fit evidence, detail photos, restriction, and appointment option appear below, followed by Request or the blocking reason.",
+      "tradeoff": "This reveals dependencies and salvageable choices, but adds a planning step for visitors who already know exactly what they need."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 26.66
+}

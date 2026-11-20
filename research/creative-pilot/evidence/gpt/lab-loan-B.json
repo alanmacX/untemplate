@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "lab-loan",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "ecb48574ecf24e61be33a85608451394fd120c9359e325b7281f6c7ab1b4b078",
+  "usage": {
+    "input_tokens": 16796,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 402,
+    "reasoning_output_tokens": 90
+  },
+  "proposals": [
+    {
+      "premise": "Two irons are available, so put the soldering iron first in a tool list for members ready to borrow.",
+      "opening": "Desktop shows the tool list beside three-day loan terms and pickup hours. Phone shows the iron first, with its availability and free required induction above the request button. The list marks the camera due Thursday and the damaged-lead multimeter supervised-bench-only.",
+      "move": "Request an iron opens an inline panel to confirm induction completion, select Tuesday 18–20 or Saturday 10–14, and confirm the iron and window.",
+      "tradeoff": "Members who recognize their tool can act immediately. Everyone else has to scan tool names."
+    },
+    {
+      "premise": "Members often know their task before they know the tool name, so let them start with what they want to do.",
+      "opening": "Desktop places task choices beside three-day loan terms and pickup hours. Phone puts the choices first, with the matching tool and its status directly below after selection.",
+      "move": "Choose “Solder something” to reveal two available irons and the free required induction. Eligible members request an iron and confirm Tuesday 18–20 or Saturday 10–14 there. Other tasks show the camera due Thursday or the damaged-lead multimeter at the supervised bench.",
+      "tradeoff": "Beginners can find a match in familiar words. Members checking all stock have to open each task."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 25.47
+}

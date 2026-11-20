@@ -1,0 +1,31 @@
+{
+  "engine": "gpt",
+  "model": "gpt-6.2-sol",
+  "case": "soundwalk",
+  "arm": "C",
+  "seed": null,
+  "prompt_sha256": "0a5267a892800576c082ee2a61770f25f95f5a0c8d8af291bff9bf8829ee2862",
+  "usage": {
+    "input_tokens": 16849,
+    "cached_input_tokens": 13696,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 810,
+    "reasoning_output_tokens": 502
+  },
+  "proposals": [
+    {
+      "premise": "Visitors choosing a walk need to know where they can pause. The narrow bridge path makes passing through and taking the step-free route distinct choices.",
+      "opening": "Desktop pairs a licensed photo with the square-to-hall stop list and route choices. Phone puts the route choices in a bottom bar and keeps the first stop and bell preview together above it.",
+      "move": "Tap “Through the bridge” or “Step-free.” The panel above shows “Next: square bell · time unlisted” and keeps the choir’s 20:30 finish visible.",
+      "tradeoff": "The route is clear before anyone starts walking. The choir deadline shares attention with the stop list."
+    },
+    {
+      "premise": "Visitors may join at the bridge. Catching a train and collecting a parcel before the counter closes both put the cutoff beside the next action. Here, that’s the choir’s 20:30 finish beside the route choice.",
+      "opening": "Desktop pairs the hall stop card with routes from the square and bridge. Phone puts the deadline above thumb-level route buttons, with the bell and bridge previews below.",
+      "move": "Tap “From the bridge · step-free.” The card above shows “Next: choir behind the hall · ends 20:30” and directs walkers via the far side.",
+      "tradeoff": "Late arrivals can act immediately. The bell and bridge get less prominence."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 44.51
+}

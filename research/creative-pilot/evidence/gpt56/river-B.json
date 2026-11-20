@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "river",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "f77c16f36a199f6b3d6d222bed503c0840aec63a5d026293c93468c189883863",
+  "usage": {
+    "input_tokens": 15438,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 346,
+    "reasoning_output_tokens": 61
+  },
+  "proposals": [
+    {
+      "premise": "Three records share one bend, so a chronological archive can expose relationships while labeling the unverified photographer, changed river shape, east abutment and public steps.",
+      "opening": "Desktop shows the three dated records in one horizontal sequence beside a source panel; phone stacks the same sequence, with source and uncertainty labels sharing each card.",
+      "move": "Select a record card to expand its photo, scan or audio player in place; the source, transcript and related-record links appear directly below.",
+      "tradeoff": "Chronology makes finding and comparing records immediate, but the audio receives no special prominence."
+    },
+    {
+      "premise": "Assume visitors do not recognize the bend across eras; because its shape changed, organize the experience around evidence fragments rather than a stable map.",
+      "opening": "Desktop opens with the 2025 sound player beside the transcript and three tactile record tabs; phone shows the player first, with transcript and tabs sharing the next screen.",
+      "move": "Press a record tab to replace the evidence pane with the 1932 photo or 1978 scan; its location note, uncertainty and links to the other records appear underneath.",
+      "tradeoff": "Sound creates a slower, present-day entry into comparison, but visitors seeking the oldest record need an extra selection."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 20.41
+}

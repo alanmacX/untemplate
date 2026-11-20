@@ -1,0 +1,31 @@
+{
+  "engine": "gpt56",
+  "model": "gpt-5.6-sol",
+  "case": "orchard",
+  "arm": "B",
+  "seed": null,
+  "prompt_sha256": "30caff4cd1f2d75f5cd1cbaf95d2b659b2e137e7f27f30ca440aa27620f3262d",
+  "usage": {
+    "input_tokens": 15423,
+    "cached_input_tokens": 11136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 382,
+    "reasoning_output_tokens": 88
+  },
+  "proposals": [
+    {
+      "premise": "Friday’s note makes today’s choice direct: pick tart Ashmeads or sweet Russets, avoid the muddy north rows, or visit the shop by gravel path.",
+      "opening": "Desktop first shows the harvest note beside the straw-basket photo; phone stacks note, hours, and a clear “Shop only—no booking” line before the photo.",
+      "move": "The first control is “Reserve picking.” It opens Saturday times through 14:00; the chosen slot and available rows appear in place.",
+      "tradeoff": "Fast task completion and familiar booking flow, at the cost of making the hand-marked map secondary."
+    },
+    {
+      "premise": "Assume visitors have not decided whether to pick and may need route confidence after rain; the gravel shop path makes a map-led choice useful.",
+      "opening": "Desktop first pairs the hand-marked map with Saturday 10–15 details; phone shows the map first, followed immediately by open rows and “Shop only—no booking.”",
+      "move": "The first control is a two-choice switch: “Pick apples” reveals reservable slots through 14:00 below the map; “Shop only” highlights the gravel route.",
+      "tradeoff": "Clarifies safe access and preserves undecided visits, but adds one decision before a picker reaches booking."
+    }
+  ],
+  "attempts": 1,
+  "seconds": 16.24
+}
