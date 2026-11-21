@@ -3,7 +3,7 @@ name: anti-aidesign
 description: Develop a visual direction for an open-ended frontend brief or remove a generic AI look from an existing page or UI. Covers expressive and static web work such as portfolios, essays, visual experiments, and atmospheres, as well as functional products. Follow named designer-led directions and required design systems; apply the skill only to choices the user leaves open.
 ---
 
-# Anti-AI Design · v15.4
+# Anti-AI Design · v16
 
 ## 什么时候用
 
@@ -17,15 +17,17 @@ description: Develop a visual direction for an open-ended frontend brief or remo
 
 构图之前先定首眼与各处关键材料。要让人相信某个具体实物、人物、场所或感到真实材质，用项目素材、适配的授权图或可交付的原创视觉；概念图按概念使用。禁止用临时 CSS、内联 SVG、Canvas 或噪点拼图假扮实拍、材质、商品、案例、人像；缺图就往真实内容和状态上重排。仅把标题、品牌名或领域画一遍的装饰图，先连同图位从首屏撤掉；换成扁平插画、图库照或生成图不会给它新增任务。图表、示意、艺术构成和表达作品所需的自绘可用，检查它让人看到什么、删后失去什么。标志和头像沿用项目素材；缺素材时由字与信息承担辨认。先读[材料选择与验收](references/material-gate.md)再做依赖图像或材质的设计。
 
-## 像设计师一样看、试、再看
+## 阶段一：打开设计方向（Creative Tasking）
 
-**试一次第一反应之外的办法。** 遇到开放的视觉选择，拿同一份真实材料比较两种开场；另一稿要动第一眼看到的东西、阅读顺序或节奏，再按实际画面取舍。
+把开放的需求改写成一个具体的观看或使用时刻：人带着什么进来，先该遇见什么，怎样读、看、玩或完成动作？从当前作品的真实字、图、声音、材料、数据或交互状态起稿。找两种能改变第一眼、读序、节奏或动作结果的关系，做成可看的粗稿；局部需求只试相关局部。方式可借自别处，选材和取舍来自当前作品。见[材料开稿](references/working-unit.md)、[路线探索](references/route-exploration.md)和[审美判断](references/aesthetic-loop.md)。
 
-1. **先想观众遇见作品的那一刻。** 第一眼该被什么抓住，接着想让人读快一点、停一会儿，或发现什么？直接拿实际字、影像、颜色、声音、形状或功能做构图。决定谁占主导，什么退到背景，用尺度、距离、疏密和停顿把感觉做出来。参考看作者选了什么、舍了什么。见[审美回路](references/aesthetic-loop.md)。
-2. **把一个有代价的选择做到画面上。** 比如一眼并看或贴近细读、用大面积材料或只露一个局部、让字主动叙述或在画面里安静下来。方向还开着且材质或布局会明显不同，就起两个独立的粗稿；简单改动可试一个局部对照。两稿先换主材料、读序或动作关系；对没有任务的图位，至少试一次撤掉图和占位的画面。先让实际材料承担主画面，按需读[材料开稿](references/working-unit.md)和[路线探索](references/route-exploration.md)。
-3. **渲染之后改一次判断。** 在桌面和手机上先读画面，再核原意。指出一个实际发生的关系：哪个抢眼、哪段读得太快、哪处太满或太空、什么被遮住或被看得更清楚。动一两个具体地方，重看一次再选；如果选的方向已经成立，保住它。判断写在工作笔记里，别变成页面上的说明文字。
+选一份实现成可看的初稿。留下能在画面上核对的交接：希望作品让人怎样读或用、哪处选择实现了这个意图、哪些事实和行为要保住。改已有作品时，以原版为第一份可看稿；用户选定的方向照要求执行，开放的部分再发散。见[已有作品去 AI 味](references/existing-redesign.md)。
 
-**改现有作品时**，先开原版并留前后对照。找出值得留下的视觉特点、内容和功能，再定位最像默认模板的那层。能靠删多余层或重排关系解决就局部改；问题出在整张画面时可以重构。按[已有作品去 AI 味](references/existing-redesign.md)交付。
+## 阶段二：复看画面，重设问题（Reframing）
+
+先读实拍的桌面、手机和关键状态，暂时搁下方案说明。说清画面实际让人先看什么、把什么误读为一组、漏掉了哪条条件，或在哪一步失去了节奏。对照意图，挑一处值得改变的关系，改写这处画面应该让人读到、感到或做到的事。然后按证据选修法：量边线、改分组、让装饰退后、强化一个信号、补时间和比较口径，或重新安排主画面。见[怎样根据画面修稿](references/reframing.md)。
+
+重拍同一视口和状态，核对那处关系是否改善，以及初稿中有用或有辨识度的部分是否保住。画面成立可以留着；改动让它更平庸或难用就撤回。主构图假设错了就回阶段一。两段的判断写在工作笔记里，产品里只放读者需要的东西。
 
 ## 落到成品
 
