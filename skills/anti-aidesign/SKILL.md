@@ -3,7 +3,7 @@ name: anti-aidesign
 description: Develop a visual direction for an open-ended frontend brief or remove a generic AI look from an existing page or UI. Covers expressive and static web work such as portfolios, essays, visual experiments, and atmospheres, as well as functional products. Follow named designer-led directions and required design systems; apply the skill only to choices the user leaves open.
 ---
 
-# Anti-AI Design · v17
+# Anti-AI Design · v17.1
 
 ## 什么时候用
 
@@ -18,6 +18,8 @@ description: Develop a visual direction for an open-ended frontend brief or remo
 构图之前先定首眼与各处关键材料。要让人相信某个具体实物、人物、场所或感到真实材质，用项目素材、适配的授权图或可交付的原创视觉；概念图按概念使用。禁止用临时 CSS、内联 SVG、Canvas 或噪点拼图假扮实拍、材质、商品、案例、人像；缺图就往真实内容和状态上重排。仅把标题、品牌名或领域画一遍的装饰图，先连同图位从首屏撤掉；换成扁平插画、图库照或生成图不会给它新增任务。图表、示意、艺术构成和表达作品所需的自绘可用，检查它让人看到什么、删后失去什么。标志和头像沿用项目素材；缺素材时由字与信息承担辨认。先读[材料选择与验收](references/material-gate.md)再做依赖图像或材质的设计。
 
 ## 阶段一：打开设计方向（Creative Tasking）
+
+视觉风格的可能性没有上限。每个项目都可以从自己的内容、使用场景和文化语境里长出一套没有名字的视觉语言。设计系统和已有流派可以提供做法；候选从当前项目生长，两份小样只是这次拿来比较的两种可能。
 
 把开放的需求改写成一个具体的观看或使用时刻：人带着什么进来，先该遇见什么，怎样读、看、玩或完成动作？从当前作品的真实字、图、声音、材料、数据或交互状态起稿。方向还开放时，在写成品前做出两份独立可看的小样，用相同内容比较。按使用环境、内容和想让人感到的东西选整套视觉方向：第一眼、信息密度、字与素材、控件与反馈（需要时）。局部需求只试相关局部。见[按需求选择视觉方向](references/direction-selection.md)、[材料开稿](references/working-unit.md)和[路线探索](references/route-exploration.md)。
 
