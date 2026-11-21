@@ -3,7 +3,7 @@ name: anti-aidesign
 description: Develop a visual direction for an open-ended frontend brief or remove a generic AI look from an existing page or UI. Covers expressive and static web work such as portfolios, essays, visual experiments, and atmospheres, as well as functional products. Follow named designer-led directions and required design systems; apply the skill only to choices the user leaves open.
 ---
 
-# Anti-AI Design · v16.1
+# Anti-AI Design · v17
 
 ## 什么时候用
 
@@ -19,11 +19,11 @@ description: Develop a visual direction for an open-ended frontend brief or remo
 
 ## 阶段一：打开设计方向（Creative Tasking）
 
-把开放的需求改写成一个具体的观看或使用时刻：人带着什么进来，先该遇见什么，怎样读、看、玩或完成动作？从当前作品的真实字、图、声音、材料、数据或交互状态起稿。找两种能改变第一眼、读序、节奏或动作结果的关系，做成可看的粗稿；局部需求只试相关局部。方式可借自别处，选材和取舍来自当前作品。见[材料开稿](references/working-unit.md)、[路线探索](references/route-exploration.md)和[审美判断](references/aesthetic-loop.md)。
+把开放的需求改写成一个具体的观看或使用时刻：人带着什么进来，先该遇见什么，怎样读、看、玩或完成动作？从当前作品的真实字、图、声音、材料、数据或交互状态起稿。方向还开放时，在写成品前做出两份独立可看的小样，用相同内容比较。按使用环境、内容和想让人感到的东西选整套视觉方向：第一眼、信息密度、字与素材、控件与反馈（需要时）。局部需求只试相关局部。见[按需求选择视觉方向](references/direction-selection.md)、[材料开稿](references/working-unit.md)和[路线探索](references/route-exploration.md)。
 
 先让内容、素材或动作形成主画面，再决定哪里需要底色和边界。并看粗稿的实拍：如果页头、大底板、同规格方块和收尾仍在同样的位置，往其中一版换一种组织画面的依据，连同分组和轮廓重画。构图不同、成品却落回同一套配色和字的气质时，取当前作品的实际材料或观看环境重试整张画面的表面，见[怎样判断色面和容器](references/visual-decisions.md#让画面依据可见)。
 
-选一份实现成可看的初稿。留下能在画面上核对的交接：希望作品让人怎样读或用、哪处选择实现了这个意图、哪些事实和行为要保住。改已有作品时，以原版为第一份可看稿；用户选定的方向照要求执行，开放的部分再发散。见[已有作品去 AI 味](references/existing-redesign.md)。
+选一份实现成可看的初稿。交接用入选小样及画面上能核对的取舍；实现者据此保住主要内容、读序和状态，并回看成品有没有落回另一套样子。改已有作品时，可以用原版做第一份可看稿；用户选定的方向照要求执行，开放的部分再发散。见[已有作品去 AI 味](references/existing-redesign.md)。
 
 ## 阶段二：复看画面，重设问题（Reframing）
 
